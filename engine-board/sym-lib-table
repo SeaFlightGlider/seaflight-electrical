@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name engine-board-eagle-import)(type Legacy)(uri ${KIPRJMOD}/engine-board-eagle-import.lib)(options "")(descr ""))
+  (lib (name engine-board-rescue)(type Legacy)(uri ${KIPRJMOD}/engine-board-rescue.lib)(options "")(descr ""))
+)

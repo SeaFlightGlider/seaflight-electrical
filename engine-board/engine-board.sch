@@ -1,2367 +1,632 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 1 5
+Title "SeaFlight Open Source Glider "
+Date "2021-11-10"
+Rev "1.0"
+Comp "Woods Hole Oceanographic Institute"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:QuickFit_01x16_Header J10
-U 1 1 60C52A09
-P 1100 1150
-F 0 "J10" H 992 2125 50  0000 C CNN
-F 1 "USB/SER/CHRGR" H 992 2034 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1600_2x08_P3.00mm_Horizontal" H 992 1943 50  0000 C CNN
-F 3 "~" H 1100 1150 50  0001 C CNN
-	1    1100 1150
-	-1   0    0    -1  
-$EndComp
-Text Label 1650 750  0    50   ~ 0
-usb_pwr
-Text Label 1650 850  0    50   ~ 0
+Text Label 5100 6050 0    50   ~ 0
 usb_data_D0
-Text Label 1650 950  0    50   ~ 0
+Text Label 5100 6150 0    50   ~ 0
 usb_data_D1
-Text Label 1650 1050 0    50   ~ 0
-rs232_tx
-Text Label 1650 1150 0    50   ~ 0
-rs232_rx
-Text Label 1650 1250 0    50   ~ 0
-rs232_gnd
-Text Label 1650 1350 0    50   ~ 0
-lipo_bat1_sense5
-Text Label 1650 1450 0    50   ~ 0
-lipo_bat1_sense4
-Text Label 1650 1550 0    50   ~ 0
-lipo_bat1_sense3
-Text Label 1650 1650 0    50   ~ 0
-lipo_bat1_sense2
-Text Label 1650 1750 0    50   ~ 0
-lipo_bat1_sense1
-Text Label 1650 1850 0    50   ~ 0
-lipo_bat1_therm1
-Text Label 1650 1950 0    50   ~ 0
-lipo_bat1_therm2
+Text Label 10350 5350 0    50   ~ 0
+pump_motor_pwm
+Text Label 9100 5450 0    50   ~ 0
+pump_motor_ccw
+Text Label 9100 5550 0    50   ~ 0
+pump_motor_cw
+Text Label 5450 5250 0    50   ~ 0
+pump_motor_analog_speed
+Text Label 5400 5350 0    50   ~ 0
+pump_motor_analog_current
 Wire Wire Line
-	1300 750  1650 750 
+	5400 5350 6500 5350
 Wire Wire Line
-	1300 850  1650 850 
-Wire Wire Line
-	1300 950  1650 950 
-Wire Wire Line
-	1300 1050 1650 1050
-Wire Wire Line
-	1300 1150 1650 1150
-Wire Wire Line
-	1300 1250 1650 1250
-Wire Wire Line
-	1300 1350 1650 1350
-Wire Wire Line
-	1300 1450 1650 1450
-Wire Wire Line
-	1300 1550 1650 1550
-Wire Wire Line
-	1300 1650 1650 1650
-Wire Wire Line
-	1300 1750 1650 1750
-Wire Wire Line
-	1300 1850 1650 1850
-Wire Wire Line
-	1300 1950 1650 1950
+	5450 5250 6500 5250
 $Comp
-L Connector_Generic:Conn_02x04_Top_Bottom J12
-U 1 1 60C75C8C
-P 4250 450
-F 0 "J12" H 4300 767 50  0000 C CNN
-F 1 "Steering Turbines" H 4300 676 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0821_2x04-1MP_P3.00mm_Horizontal" H 4250 450 50  0001 C CNN
-F 3 "~" H 4250 450 50  0001 C CNN
-	1    4250 450 
-	1    0    0    -1  
-$EndComp
-Text Label 3400 350  0    50   ~ 0
-turbine1_wht
-Text Label 3400 450  0    50   ~ 0
-turbine1_grn
-Text Label 3400 550  0    50   ~ 0
-turbine1_blu
-Text Label 4850 350  0    50   ~ 0
-turbine2_wht
-Text Label 4850 450  0    50   ~ 0
-turbine2_grn
-Text Label 4850 550  0    50   ~ 0
-turbine2_blu
-Wire Wire Line
-	4550 350  4850 350 
-Wire Wire Line
-	4550 450  4850 450 
-Wire Wire Line
-	4550 550  4850 550 
-Wire Wire Line
-	3400 350  4050 350 
-Wire Wire Line
-	3400 450  4050 450 
-Wire Wire Line
-	3400 550  4050 550 
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 60C7BBE6
-P 5450 1750
-F 0 "#PWR0101" H 5450 1600 50  0001 C CNN
-F 1 "+3.3V" H 5465 1923 50  0000 C CNN
-F 2 "" H 5450 1750 50  0001 C CNN
-F 3 "" H 5450 1750 50  0001 C CNN
-	1    5450 1750
-	1    0    0    -1  
+L Device:R_Small R102
+U 1 1 60DA427C
+P 6000 6350
+F 0 "R102" V 6196 6350 50  0000 C CNN
+F 1 "33ohm" V 6105 6350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 6000 6350 50  0001 C CNN
+F 3 "~" H 6000 6350 50  0001 C CNN
+	1    6000 6350
+	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0103
-U 1 1 60C8031C
-P 5450 1850
-F 0 "#PWR0103" H 5450 1600 50  0001 C CNN
-F 1 "GND" H 5455 1677 50  0000 C CNN
-F 2 "" H 5450 1850 50  0001 C CNN
-F 3 "" H 5450 1850 50  0001 C CNN
-	1    5450 1850
-	1    0    0    -1  
+L Device:R_Small R101
+U 1 1 60DAF797
+P 6000 6050
+F 0 "R101" V 6196 6050 50  0000 C CNN
+F 1 "33ohm" V 6105 6050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 6000 6050 50  0001 C CNN
+F 3 "~" H 6000 6050 50  0001 C CNN
+	1    6000 6050
+	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:Conn_01x06_Female J11
-U 1 1 60C848A4
-P 6400 1750
-F 0 "J11" H 6428 1726 50  0000 L CNN
-F 1 "Pump Current Sensor" H 6428 1635 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 6400 1750 50  0001 C CNN
-F 3 "~" H 6400 1750 50  0001 C CNN
-	1    6400 1750
-	1    0    0    -1  
-$EndComp
-Text Label 5650 1550 0    50   ~ 0
+Wire Wire Line
+	5100 6050 5900 6050
+Wire Wire Line
+	5100 6150 5700 6150
+Wire Wire Line
+	5700 6150 5700 6350
+Wire Wire Line
+	5700 6350 5900 6350
+Wire Wire Line
+	6100 6350 6300 6350
+Wire Wire Line
+	6300 6350 6300 6150
+Text Label 9100 6050 0    50   ~ 0
 i2c_scl_1
-Text Label 5650 1650 0    50   ~ 0
+Text Label 9100 6150 0    50   ~ 0
 i2c_sda_1
 Wire Wire Line
-	5650 1550 6200 1550
+	9100 6050 8900 6050
 Wire Wire Line
-	5650 1650 6200 1650
+	10150 5350 10300 5350
 Wire Wire Line
-	5450 1750 6200 1750
+	10150 5700 10300 5700
 Wire Wire Line
-	5450 1850 6200 1850
+	10300 5700 10300 5350
+Connection ~ 10300 5350
 Wire Wire Line
-	6200 2250 6200 2050
-Text Label 4900 2150 0    50   ~ 0
-pump_measured_BATT+
+	10300 5350 10350 5350
 Wire Wire Line
-	5850 2150 5850 1950
+	9650 5650 9650 5700
 Wire Wire Line
-	5850 1950 6200 1950
-Text Label 3500 7700 0    50   ~ 0
-usb_data_D0
-Text Label 3500 7800 0    50   ~ 0
-usb_data_D1
+	9650 5700 9850 5700
+Text Label 5650 5450 0    50   ~ 0
+solenoid_mosfet_gate
+Wire Wire Line
+	6500 5450 5650 5450
 $Comp
-L power:GND #PWR0107
-U 1 1 60CF5EB1
-P 2450 650
-F 0 "#PWR0107" H 2450 400 50  0001 C CNN
-F 1 "GND" H 2455 477 50  0000 C CNN
-F 2 "" H 2450 650 50  0001 C CNN
-F 3 "" H 2450 650 50  0001 C CNN
-	1    2450 650 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 650  2450 650 
-$Comp
-L power:+BATT #PWR0108
-U 1 1 60CF82A8
-P 2350 450
-F 0 "#PWR0108" H 2350 300 50  0001 C CNN
-F 1 "+BATT" H 2365 623 50  0000 C CNN
-F 2 "" H 2350 450 50  0001 C CNN
-F 3 "" H 2350 450 50  0001 C CNN
-	1    2350 450 
+L Jumper:SolderJumper_2_Open JP104
+U 1 1 60E9D75B
+P 10000 5700
+F 0 "JP104" H 10000 5905 50  0000 C CNN
+F 1 "pump_pwm2" H 10000 5814 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 10000 5700 50  0001 C CNN
+F 3 "~" H 10000 5700 50  0001 C CNN
+	1    10000 5700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-BATT #PWR0109
-U 1 1 60CF97A5
-P 2700 550
-F 0 "#PWR0109" H 2700 400 50  0001 C CNN
-F 1 "-BATT" H 2715 723 50  0000 C CNN
-F 2 "" H 2700 550 50  0001 C CNN
-F 3 "" H 2700 550 50  0001 C CNN
-	1    2700 550 
+L Jumper:SolderJumper_2_Open JP103
+U 1 1 60E6B731
+P 10000 5350
+F 0 "JP103" H 10000 5555 50  0000 C CNN
+F 1 "pump_pwm1" H 10000 5464 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 10000 5350 50  0001 C CNN
+F 3 "~" H 10000 5350 50  0001 C CNN
+	1    10000 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 60E5F677
+P 9150 4850
+F 0 "#PWR0111" H 9150 4700 50  0001 C CNN
+F 1 "+5V" H 9165 5023 50  0000 C CNN
+F 2 "" H 9150 4850 50  0001 C CNN
+F 3 "" H 9150 4850 50  0001 C CNN
+	1    9150 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 550  2700 550 
-Wire Wire Line
-	1300 450  2350 450 
-Wire Wire Line
-	4900 2150 5850 2150
+	9150 4850 8900 4850
 $Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J24
-U 1 1 60D31783
-P 6150 2750
-F 0 "J24" H 6200 3167 50  0000 C CNN
-F 1 "Battery Input" H 6200 3076 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-12BE" H 6150 2750 50  0001 C CNN
-F 3 "~" H 6150 2750 50  0001 C CNN
-	1    6150 2750
+L Jumper:SolderJumper_2_Open JP102
+U 1 1 60E6EE32
+P 5900 5050
+F 0 "JP102" H 5900 5255 50  0000 C CNN
+F 1 "PumpAngGND" H 5900 5164 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5900 5050 50  0001 C CNN
+F 3 "~" H 5900 5050 50  0001 C CNN
+	1    5900 5050
 	1    0    0    -1  
 $EndComp
-Text Label 5200 2950 0    50   ~ 0
-lipo_bat1_sense1
-Text Label 5200 3050 0    50   ~ 0
-lipo_bat1_sense2
-Text Label 6600 2550 0    50   ~ 0
-lipo_bat1_sense3
-Text Label 6600 2650 0    50   ~ 0
-lipo_bat1_sense4
-Text Label 6600 2750 0    50   ~ 0
-lipo_bat1_sense5
-Text Label 6650 2950 0    50   ~ 0
-lipo_bat_therm1
-Text Label 6650 3050 0    50   ~ 0
-lipo_bat_therm2
+Text Label 4650 5050 0    50   ~ 0
+pump_motor_analog_gnd
 Wire Wire Line
-	5550 2550 5950 2550
+	4650 5050 5750 5050
 Wire Wire Line
-	5550 2550 5550 2650
+	6050 5050 6500 5050
+Text Label 5650 5550 0    50   ~ 0
+leak_sense_output
 Wire Wire Line
-	5550 2650 5950 2650
+	5650 5550 6500 5550
+Text Label 6250 5950 0    50   ~ 0
+SDO
+Text Label 6250 5850 0    50   ~ 0
+SDI
+Text Label 6250 5750 0    50   ~ 0
+SCK
 Wire Wire Line
-	5950 2750 5350 2750
+	6250 5750 6500 5750
 Wire Wire Line
-	5950 2850 5350 2850
+	6250 5850 6500 5850
 Wire Wire Line
-	5350 2850 5350 2750
+	6250 5950 6500 5950
 Wire Wire Line
-	5950 2950 5200 2950
+	9100 6150 8900 6150
 Wire Wire Line
-	5950 3050 5200 3050
+	8900 5550 9100 5550
 Wire Wire Line
-	6600 2550 6450 2550
+	8900 5450 9100 5450
+Text Label 8900 4650 0    50   ~ 0
+3v3_feather
+Text Label 9100 5950 0    50   ~ 0
+imu_cs
 Wire Wire Line
-	6600 2650 6450 2650
+	8900 5750 9100 5750
 Wire Wire Line
-	6600 2750 6450 2750
+	8900 5850 9100 5850
 Wire Wire Line
-	6650 2950 6450 2950
+	8900 5950 9100 5950
+Text Label 5300 5650 0    50   ~ 0
+sdcard_cs
 Wire Wire Line
-	6650 3050 6450 3050
+	6500 5650 5300 5650
+Wire Wire Line
+	8900 5650 9650 5650
+Wire Wire Line
+	8900 5350 9850 5350
 $Comp
-L Connector_Generic:Conn_02x04_Top_Bottom J61
-U 1 1 60D4B0D8
-P 8050 350
-F 0 "J61" H 8100 667 50  0000 C CNN
-F 1 "Turbine 1 ESC" H 8100 576 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-08BE" H 8050 350 50  0001 C CNN
-F 3 "~" H 8050 350 50  0001 C CNN
-	1    8050 350 
+L power:GND #PWR0109
+U 1 1 60CAA183
+P 8900 6350
+F 0 "#PWR0109" H 8900 6100 50  0001 C CNN
+F 1 "GND" H 8905 6177 50  0000 C CNN
+F 2 "" H 8900 6350 50  0001 C CNN
+F 3 "" H 8900 6350 50  0001 C CNN
+	1    8900 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L engine-board-rescue:FEATHER_M0_BASIC_PROTO-FEATHER_M0_BASIC_PROTO-engine-board-rescue U102
+U 1 1 60CE6FB5
+P 7700 5550
+F 0 "U102" H 7700 6717 50  0000 C CNN
+F 1 "FEATHER_M0_BASIC_PROTO" H 7700 6626 50  0000 C CNN
+F 2 "Module:ADAFRUIT_FEATHER" H 7700 5550 50  0001 L BNN
+F 3 "" H 7700 5550 50  0001 L BNN
+F 4 "Adafruit" H 7700 5550 50  0001 L BNN "MANUFACTURER"
+F 5 "Manufacturer Recommendation" H 7700 5550 50  0001 L BNN "STANDARD"
+	1    7700 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 6050 6450 6050
+Wire Wire Line
+	6300 6150 6400 6150
+Wire Wire Line
+	6450 6450 6450 6050
+Connection ~ 6450 6050
+Wire Wire Line
+	6450 6050 6500 6050
+Wire Wire Line
+	6400 6150 6400 6400
+Connection ~ 6400 6150
+Wire Wire Line
+	6400 6150 6500 6150
+Text Label 3900 7250 0    50   ~ 0
+i2c_scl_1
+Text Label 3900 7350 0    50   ~ 0
+i2c_sda_1
+Text Label 1600 7350 2    50   ~ 0
+pump_motor_ccw
+Text Label 1600 7250 2    50   ~ 0
+pump_motor_cw
+Text Label 1600 6250 2    50   ~ 0
+solenoid_mosfet_gate
+Text Label 1600 6150 2    50   ~ 0
+leak_sense_output
+Text Label 1600 7150 2    50   ~ 0
+pump_motor_analog_speed
+Text Label 1600 7050 2    50   ~ 0
+pump_motor_analog_current
+Text Label 1600 4950 2    50   ~ 0
+imu_cs
+Text Label 9100 5750 0    50   ~ 0
+turbine_1_pwm
+Text Label 9100 5850 0    50   ~ 0
+turbine_2_pwm
+$Sheet
+S 2800 600  800  700 
+U 618F9F5D
+F0 "Sensors" 50
+F1 "engine-board-sensors.sch" 50
+F2 "i2c_sda_1" I L 2800 750 50 
+F3 "i2c_scl_1" I L 2800 850 50 
+F4 "leak_sense_output" I L 2800 950 50 
+$EndSheet
+$Sheet
+S 6450 650  1200 1400
+U 619906DF
+F0 "Pump" 50
+F1 "Pump.sch" 50
+F2 "i2c_scl_1" I L 6450 800 50 
+F3 "i2c_sda_1" I L 6450 900 50 
+F4 "pump_motor_pwm" I L 6450 1050 50 
+F5 "pump_motor_ccw" I L 6450 1150 50 
+F6 "pump_motor_cw" I L 6450 1250 50 
+F7 "pump_motor_analog_speed" I L 6450 1350 50 
+F8 "pump_motor_analog_current" I L 6450 1450 50 
+F9 "turbine_1_pwm" I L 6450 1550 50 
+F10 "pump_motor_analog_gnd" I L 6450 1650 50 
+F11 "solenoid_mosfet_gate" I L 6450 1750 50 
+F12 "turbine_2_pwm" I L 6450 1850 50 
+$EndSheet
+$Sheet
+S 1200 600  800  750 
+U 61B60659
+F0 "Power" 50
+F1 "Power.sch" 50
+F2 "i2c_scl_1" I L 1200 750 50 
+F3 "i2c_sda_1" I L 1200 850 50 
+$EndSheet
+$Sheet
+S 4600 650  750  1400
+U 618FBF9F
+F0 "Telemetry" 50
+F1 "Telemetry.sch" 50
+F2 "usb_data_D0" I L 4600 700 50 
+F3 "usb_data_D1" I L 4600 800 50 
+F4 "gps_pps" I L 4600 900 50 
+F5 "i2c_scl" I L 4600 1000 50 
+F6 "i2c_sda" I L 4600 1100 50 
+F7 "irid_sleep" I L 4600 1200 50 
+F8 "irid_RXD" I L 4600 1300 50 
+F9 "irid_CTS" I L 4600 1400 50 
+F10 "irid_RTS" I L 4600 1500 50 
+F11 "irid_NetAV" I L 4600 1600 50 
+F12 "irid_RI" I L 4600 1700 50 
+F13 "irid_TXD" I L 4600 1800 50 
+$EndSheet
+Text Label 8800 1000 0    50   ~ 0
+sdcard_cs
+Text Label 8800 1100 0    50   ~ 0
+SDI
+Text Label 8800 1300 0    50   ~ 0
+SCK
+Text Label 8800 1200 0    50   ~ 0
+SDO
+Wire Wire Line
+	8800 1000 9250 1000
+Wire Wire Line
+	9250 1100 8800 1100
+$Comp
+L power:GND #PWR0110
+U 1 1 619A600C
+P 8600 1400
+AR Path="/619A600C" Ref="#PWR0110"  Part="1" 
+AR Path="/618F9F5D/619A600C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0110" H 8600 1150 50  0001 C CNN
+F 1 "GND" H 8605 1227 50  0000 C CNN
+F 2 "" H 8600 1400 50  0001 C CNN
+F 3 "" H 8600 1400 50  0001 C CNN
+	1    8600 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0112
-U 1 1 60D59999
-P 5450 4700
-F 0 "#PWR0112" H 5450 4550 50  0001 C CNN
-F 1 "+3.3V" H 5465 4873 50  0000 C CNN
-F 2 "" H 5450 4700 50  0001 C CNN
-F 3 "" H 5450 4700 50  0001 C CNN
-	1    5450 4700
+U 1 1 619A6012
+P 8800 1650
+AR Path="/619A6012" Ref="#PWR0112"  Part="1" 
+AR Path="/618F9F5D/619A6012" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0112" H 8800 1500 50  0001 C CNN
+F 1 "+3.3V" H 8815 1823 50  0000 C CNN
+F 2 "" H 8800 1650 50  0001 C CNN
+F 3 "" H 8800 1650 50  0001 C CNN
+	1    8800 1650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8800 1200 9250 1200
+Wire Wire Line
+	8800 1300 9250 1300
+Wire Wire Line
+	8600 1400 9250 1400
+Wire Wire Line
+	8800 1650 9000 1650
+Wire Wire Line
+	9000 1650 9000 1500
+Wire Wire Line
+	9000 1500 9250 1500
 $Comp
-L power:GND #PWR0113
-U 1 1 60D5999F
-P 5450 4800
-F 0 "#PWR0113" H 5450 4550 50  0001 C CNN
-F 1 "GND" H 5455 4627 50  0000 C CNN
-F 2 "" H 5450 4800 50  0001 C CNN
-F 3 "" H 5450 4800 50  0001 C CNN
-	1    5450 4800
+L Connector:Conn_01x08_Female J101
+U 1 1 619A6022
+P 9450 1200
+AR Path="/619A6022" Ref="J101"  Part="1" 
+AR Path="/618F9F5D/619A6022" Ref="J?"  Part="1" 
+F 0 "J101" H 9478 1176 50  0000 L CNN
+F 1 "SD Card" H 9478 1085 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 9450 1200 50  0001 C CNN
+F 3 "~" H 9450 1200 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-108-01-G-S/1110611" H 9450 1200 50  0001 C CNN "Link"
+F 5 "Samtec Inc." H 9450 1200 50  0001 C CNN "MANUFACTURER"
+F 6 "SSQ-108-01-G-S" H 9450 1200 50  0001 C CNN "MPN"
+F 7 "1.68" H 9450 1200 50  0001 C CNN "Price"
+F 8 "https://www.adafruit.com/product/254" H 9450 1200 50  0001 C CNN "Link2"
+F 9 "7.50" H 9450 1200 50  0001 C CNN "Price2"
+	1    9450 1200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x06_Female J44
-U 1 1 60D599A5
-P 6400 4700
-F 0 "J44" H 6428 4676 50  0000 L CNN
-F 1 "Turbine Current Sensor" H 6428 4585 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 6400 4700 50  0001 C CNN
-F 3 "~" H 6400 4700 50  0001 C CNN
-	1    6400 4700
-	1    0    0    -1  
-$EndComp
-Text Label 5650 4500 0    50   ~ 0
+Text Label 2800 850  2    50   ~ 0
 i2c_scl_1
-Text Label 5650 4600 0    50   ~ 0
+Text Label 2800 750  2    50   ~ 0
 i2c_sda_1
-$Comp
-L power:+BATT #PWR0114
-U 1 1 60D599AD
-P 6000 5200
-F 0 "#PWR0114" H 6000 5050 50  0001 C CNN
-F 1 "+BATT" H 6015 5373 50  0000 C CNN
-F 2 "" H 6000 5200 50  0001 C CNN
-F 3 "" H 6000 5200 50  0001 C CNN
-	1    6000 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 4500 6200 4500
-Wire Wire Line
-	5650 4600 6200 4600
-Wire Wire Line
-	5450 4700 6200 4700
-Wire Wire Line
-	5450 4800 6200 4800
-Wire Wire Line
-	6000 5200 6200 5200
-Wire Wire Line
-	6200 5200 6200 5000
-Text Label 4900 5100 0    50   ~ 0
-turbine1_measured_pwr
-Wire Wire Line
-	5850 5100 5850 4900
-Wire Wire Line
-	5850 4900 6200 4900
-Wire Wire Line
-	4900 5100 5850 5100
-Text Label 6950 250  0    50   ~ 0
-turbine1_measured_pwr
-$Comp
-L power:-BATT #PWR0115
-U 1 1 60D5D5DC
-P 6700 350
-F 0 "#PWR0115" H 6700 200 50  0001 C CNN
-F 1 "-BATT" H 6715 523 50  0000 C CNN
-F 2 "" H 6700 350 50  0001 C CNN
-F 3 "" H 6700 350 50  0001 C CNN
-	1    6700 350 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 250  7850 250 
-Wire Wire Line
-	6700 350  6700 450 
-Text Label 8550 350  0    50   ~ 0
-turbine1_wht
-Text Label 8550 450  0    50   ~ 0
-turbine1_grn
-Text Label 8550 550  0    50   ~ 0
-turbine1_blu
-Wire Wire Line
-	8550 350  8350 350 
-Wire Wire Line
-	8550 450  8350 450 
-Wire Wire Line
-	8550 550  8350 550 
-$Comp
-L power:GND #PWR0104
-U 1 1 60D75979
-P 9500 300
-F 0 "#PWR0104" H 9500 50  50  0001 C CNN
-F 1 "GND" H 9505 127 50  0000 C CNN
-F 2 "" H 9500 300 50  0001 C CNN
-F 3 "" H 9500 300 50  0001 C CNN
-	1    9500 300 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9650 250  9650 400 
-Wire Wire Line
-	9650 400  9900 400 
-Wire Wire Line
-	9500 300  9900 300 
-Text Label 8750 950  0    50   ~ 0
-pump_measured_BATT+
-$Comp
-L power:-BATT #PWR0117
-U 1 1 60D871EE
-P 8900 1300
-F 0 "#PWR0117" H 8900 1150 50  0001 C CNN
-F 1 "-BATT" H 8915 1473 50  0000 C CNN
-F 2 "" H 8900 1300 50  0001 C CNN
-F 3 "" H 8900 1300 50  0001 C CNN
-	1    8900 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 950  9650 950 
-Wire Wire Line
-	8900 1300 9350 1300
-Wire Wire Line
-	9350 1300 9350 1250
-Wire Wire Line
-	9350 1150 9750 1150
-Wire Wire Line
-	9750 1250 9350 1250
-Connection ~ 9350 1250
-Wire Wire Line
-	9350 1250 9350 1150
-$Comp
-L power:GND #PWR0118
-U 1 1 60D918FF
-P 10550 750
-F 0 "#PWR0118" H 10550 500 50  0001 C CNN
-F 1 "GND" H 10555 577 50  0000 C CNN
-F 2 "" H 10550 750 50  0001 C CNN
-F 3 "" H 10550 750 50  0001 C CNN
-	1    10550 750 
-	1    0    0    -1  
-$EndComp
-Text Label 8750 7000 0    50   ~ 0
-pump_motor_pwm
-Text Label 7500 7100 0    50   ~ 0
-pump_motor_ccw
-Text Label 7500 7200 0    50   ~ 0
-pump_motor_cw
-Text Label 3850 6900 0    50   ~ 0
-pump_motor_analog_speed
-Text Label 3800 7000 0    50   ~ 0
-pump_motor_analog_current
-Wire Wire Line
-	3800 7000 4900 7000
-Wire Wire Line
-	3850 6900 4900 6900
-Text Label 10400 1050 0    50   ~ 0
-pump_motor_pwm
-Text Label 10400 1150 0    50   ~ 0
-pump_motor_ccw
-Text Label 10400 1250 0    50   ~ 0
-pump_motor_cw
-Text Label 10400 1350 0    50   ~ 0
-pump_motor_analog_speed
-Text Label 10400 1450 0    50   ~ 0
-pump_motor_analog_current
-$Comp
-L power:GND #PWR0119
-U 1 1 60DB3FC2
-P 9750 1450
-F 0 "#PWR0119" H 9750 1200 50  0001 C CNN
-F 1 "GND" H 9755 1277 50  0000 C CNN
-F 2 "" H 9750 1450 50  0001 C CNN
-F 3 "" H 9750 1450 50  0001 C CNN
-	1    9750 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10250 1050 10400 1050
-Wire Wire Line
-	10250 1150 10400 1150
-Wire Wire Line
-	10250 1250 10400 1250
-Wire Wire Line
-	10250 1350 10400 1350
-Wire Wire Line
-	10250 1450 10400 1450
-Wire Wire Line
-	10550 750  10350 750 
-Wire Wire Line
-	10350 750  10350 950 
-Wire Wire Line
-	10350 950  10250 950 
-$Comp
-L power:+3.3V #PWR0121
-U 1 1 60DDF324
-P 9300 2600
-F 0 "#PWR0121" H 9300 2450 50  0001 C CNN
-F 1 "+3.3V" H 9315 2773 50  0000 C CNN
-F 2 "" H 9300 2600 50  0001 C CNN
-F 3 "" H 9300 2600 50  0001 C CNN
-	1    9300 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0122
-U 1 1 60DDF32A
-P 9300 2700
-F 0 "#PWR0122" H 9300 2450 50  0001 C CNN
-F 1 "GND" H 9305 2527 50  0000 C CNN
-F 2 "" H 9300 2700 50  0001 C CNN
-F 3 "" H 9300 2700 50  0001 C CNN
-	1    9300 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x06_Female J32
-U 1 1 60DDF330
-P 10250 2600
-F 0 "J32" H 10278 2576 50  0000 L CNN
-F 1 "Solenoid Current Sensor" H 10278 2485 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 10250 2600 50  0001 C CNN
-F 3 "~" H 10250 2600 50  0001 C CNN
-	1    10250 2600
-	1    0    0    -1  
-$EndComp
-Text Label 9500 2400 0    50   ~ 0
-i2c_scl_1
-Text Label 9500 2500 0    50   ~ 0
-i2c_sda_1
-Wire Wire Line
-	9500 2400 10050 2400
-Wire Wire Line
-	9500 2500 10050 2500
-Wire Wire Line
-	9300 2600 10050 2600
-Wire Wire Line
-	9300 2700 10050 2700
-Wire Wire Line
-	10050 3100 10050 2900
-Text Label 8750 3000 0    50   ~ 0
-solenoid_measured_BATT+
-Wire Wire Line
-	9700 3000 9700 2800
-Wire Wire Line
-	9700 2800 10050 2800
-Wire Wire Line
-	8750 3000 9700 3000
-$Comp
-L power:-BATT #PWR0123
-U 1 1 60DEBE0C
-P 6000 2250
-F 0 "#PWR0123" H 6000 2100 50  0001 C CNN
-F 1 "-BATT" H 6015 2423 50  0000 C CNN
-F 2 "" H 6000 2250 50  0001 C CNN
-F 3 "" H 6000 2250 50  0001 C CNN
-	1    6000 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-BATT #PWR0124
-U 1 1 60DEC9F8
-P 9850 3100
-F 0 "#PWR0124" H 9850 2950 50  0001 C CNN
-F 1 "-BATT" H 9865 3273 50  0000 C CNN
-F 2 "" H 9850 3100 50  0001 C CNN
-F 3 "" H 9850 3100 50  0001 C CNN
-	1    9850 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10050 3100 9850 3100
-Wire Wire Line
-	6200 2250 6000 2250
-$Comp
-L power:+3.3V #PWR0125
-U 1 1 60DF7C35
-P 9300 3300
-F 0 "#PWR0125" H 9300 3150 50  0001 C CNN
-F 1 "+3.3V" H 9315 3473 50  0000 C CNN
-F 2 "" H 9300 3300 50  0001 C CNN
-F 3 "" H 9300 3300 50  0001 C CNN
-	1    9300 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0126
-U 1 1 60DF7C3B
-P 9300 3400
-F 0 "#PWR0126" H 9300 3150 50  0001 C CNN
-F 1 "GND" H 9305 3227 50  0000 C CNN
-F 2 "" H 9300 3400 50  0001 C CNN
-F 3 "" H 9300 3400 50  0001 C CNN
-	1    9300 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x06_Female J33
-U 1 1 60DF7C41
-P 10350 3450
-F 0 "J33" H 10378 3426 50  0000 L CNN
-F 1 "BME280 Sensor" H 10378 3335 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 10350 3450 50  0001 C CNN
-F 3 "~" H 10350 3450 50  0001 C CNN
-	1    10350 3450
-	1    0    0    -1  
-$EndComp
-Text Label 9600 3450 0    50   ~ 0
-i2c_scl_1
-Text Label 9600 3550 0    50   ~ 0
-i2c_sda_1
-Wire Wire Line
-	9600 3450 10150 3450
-Wire Wire Line
-	9600 3550 10150 3550
-Wire Wire Line
-	9300 3300 9450 3300
-Wire Wire Line
-	9450 3300 9450 3250
-Wire Wire Line
-	9300 3400 9300 3350
-$Comp
-L Connector:Conn_01x07_Female J34
-U 1 1 60E33B3F
-P 10350 4300
-F 0 "J34" H 10378 4326 50  0000 L CNN
-F 1 "RV1805 Clock" H 10378 4235 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-07A_1x07_P2.54mm_Vertical" H 10350 4300 50  0001 C CNN
-F 3 "~" H 10350 4300 50  0001 C CNN
-	1    10350 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0127
-U 1 1 60E373E6
-P 9300 4050
-F 0 "#PWR0127" H 9300 3900 50  0001 C CNN
-F 1 "+3.3V" H 9315 4223 50  0000 C CNN
-F 2 "" H 9300 4050 50  0001 C CNN
-F 3 "" H 9300 4050 50  0001 C CNN
-	1    9300 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0128
-U 1 1 60E373EC
-P 9300 4150
-F 0 "#PWR0128" H 9300 3900 50  0001 C CNN
-F 1 "GND" H 9305 3977 50  0000 C CNN
-F 2 "" H 9300 4150 50  0001 C CNN
-F 3 "" H 9300 4150 50  0001 C CNN
-	1    9300 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9300 4150 9300 4100
-Wire Wire Line
-	9300 4100 10150 4100
-Text Label 9600 4200 0    50   ~ 0
-i2c_sda_1
-Wire Wire Line
-	9600 4200 10150 4200
-Text Label 9600 4300 0    50   ~ 0
-i2c_scl_1
-Wire Wire Line
-	9600 4300 10150 4300
-Wire Wire Line
-	9950 4050 9950 4000
-Wire Wire Line
-	9950 4000 10150 4000
-Text Label 9400 4400 0    50   ~ 0
-rv_1805_sense_psw
-Text Label 9400 4500 0    50   ~ 0
-rv1805_sense_int
-Text Label 9400 4600 0    50   ~ 0
-rv1806_sense_int
-Wire Wire Line
-	9400 4400 10150 4400
-Wire Wire Line
-	9400 4500 10150 4500
-Wire Wire Line
-	9400 4600 10150 4600
-$Comp
-L power:+5V #PWR0129
-U 1 1 60E6E345
-P 9550 5050
-F 0 "#PWR0129" H 9550 4900 50  0001 C CNN
-F 1 "+5V" H 9565 5223 50  0000 C CNN
-F 2 "" H 9550 5050 50  0001 C CNN
-F 3 "" H 9550 5050 50  0001 C CNN
-	1    9550 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0130
-U 1 1 60E6ED6C
-P 9300 5150
-F 0 "#PWR0130" H 9300 4900 50  0001 C CNN
-F 1 "GND" H 9305 4977 50  0000 C CNN
-F 2 "" H 9300 5150 50  0001 C CNN
-F 3 "" H 9300 5150 50  0001 C CNN
-	1    9300 5150
-	1    0    0    -1  
-$EndComp
-Text Label 10500 5050 0    50   ~ 0
-i2c_scl_1
-Text Label 10500 5150 0    50   ~ 0
-i2c_sda_1
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J35
-U 1 1 60E8CA32
-P 10200 5050
-F 0 "J35" H 10250 5267 50  0000 C CNN
-F 1 "Reservoir Pressure Sensor" H 10250 5176 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-04BE" H 10200 5050 50  0001 C CNN
-F 3 "~" H 10200 5050 50  0001 C CNN
-	1    10200 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0131
-U 1 1 60EA939F
-P 9550 5650
-F 0 "#PWR0131" H 9550 5500 50  0001 C CNN
-F 1 "+5V" H 9565 5823 50  0000 C CNN
-F 2 "" H 9550 5650 50  0001 C CNN
-F 3 "" H 9550 5650 50  0001 C CNN
-	1    9550 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0132
-U 1 1 60EA93A5
-P 9300 5750
-F 0 "#PWR0132" H 9300 5500 50  0001 C CNN
-F 1 "GND" H 9305 5577 50  0000 C CNN
-F 2 "" H 9300 5750 50  0001 C CNN
-F 3 "" H 9300 5750 50  0001 C CNN
-	1    9300 5750
-	1    0    0    -1  
-$EndComp
-Text Label 10500 5650 0    50   ~ 0
-i2c_scl_1
-Text Label 10500 5750 0    50   ~ 0
-i2c_sda_1
-Wire Wire Line
-	9550 5650 10000 5650
-Wire Wire Line
-	9300 5750 10000 5750
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J36
-U 1 1 60EA93AF
-P 10200 5650
-F 0 "J36" H 10250 5867 50  0000 C CNN
-F 1 "Bladder Pressure Sensor" H 10250 5776 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-04BE" H 10200 5650 50  0001 C CNN
-F 3 "~" H 10200 5650 50  0001 C CNN
-	1    10200 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0133
-U 1 1 60EB129D
-P 9550 6650
-F 0 "#PWR0133" H 9550 6500 50  0001 C CNN
-F 1 "+3.3V" H 9565 6823 50  0000 C CNN
-F 2 "" H 9550 6650 50  0001 C CNN
-F 3 "" H 9550 6650 50  0001 C CNN
-	1    9550 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0134
-U 1 1 60EB12A3
-P 10200 6800
-F 0 "#PWR0134" H 10200 6550 50  0001 C CNN
-F 1 "GND" H 10205 6627 50  0000 C CNN
-F 2 "" H 10200 6800 50  0001 C CNN
-F 3 "" H 10200 6800 50  0001 C CNN
-	1    10200 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x06_Female J37
-U 1 1 60EB12A9
-P 10400 6450
-F 0 "J37" H 10428 6426 50  0000 L CNN
-F 1 "VL6180 Range Sensor" H 10428 6335 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 10400 6450 50  0001 C CNN
-F 3 "~" H 10400 6450 50  0001 C CNN
-	1    10400 6450
-	1    0    0    -1  
-$EndComp
-Text Label 9700 6450 0    50   ~ 0
-i2c_scl_1
-Text Label 9700 6550 0    50   ~ 0
-i2c_sda_1
-Wire Wire Line
-	10200 6800 10200 6750
-Wire Wire Line
-	9550 6650 10200 6650
-Wire Wire Line
-	9700 6550 10200 6550
-Wire Wire Line
-	9700 6450 10200 6450
-$Comp
-L Connector:Conn_01x04_Female J42
-U 1 1 60EF3859
-P 10400 7300
-F 0 "J42" H 10428 7276 50  0000 L CNN
-F 1 "HMC6343 COMPASS" H 10428 7185 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 10400 7300 50  0001 C CNN
-F 3 "~" H 10400 7300 50  0001 C CNN
-	1    10400 7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x08_Female J43
-U 1 1 60F005F2
-P 5900 5600
-F 0 "J43" H 5928 5576 50  0000 L CNN
-F 1 "NEO08MU GPS" H 5928 5485 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-08A_1x08_P2.54mm_Vertical" H 5900 5600 50  0001 C CNN
-F 3 "~" H 5900 5600 50  0001 C CNN
-	1    5900 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0135
-U 1 1 60F03914
-P 4800 5700
-F 0 "#PWR0135" H 4800 5450 50  0001 C CNN
-F 1 "GND" H 4805 5527 50  0000 C CNN
-F 2 "" H 4800 5700 50  0001 C CNN
-F 3 "" H 4800 5700 50  0001 C CNN
-	1    4800 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0136
-U 1 1 60F04211
-P 5000 5950
-F 0 "#PWR0136" H 5000 5800 50  0001 C CNN
-F 1 "+3.3V" H 5015 6123 50  0000 C CNN
-F 2 "" H 5000 5950 50  0001 C CNN
-F 3 "" H 5000 5950 50  0001 C CNN
-	1    5000 5950
-	1    0    0    -1  
-$EndComp
-Text Label 5150 5900 0    50   ~ 0
-i2c_scl_1
-Text Label 5150 6000 0    50   ~ 0
-i2c_sda_1
-Wire Wire Line
-	5150 5900 5700 5900
-Wire Wire Line
-	5150 6000 5700 6000
-Wire Wire Line
-	4800 5700 5700 5700
-Wire Wire Line
-	5000 5950 5050 5950
-Wire Wire Line
-	5050 5950 5050 5800
-Wire Wire Line
-	5050 5800 5700 5800
-Text Label 4850 5300 0    50   ~ 0
-neo08mu_gps_pps
-Text Label 4850 5400 0    50   ~ 0
-neo08mu_gps_rst
-Text Label 4850 5500 0    50   ~ 0
-neo08mu_gps_safe
-Text Label 4850 5600 0    50   ~ 0
-neo08mu_gps_int
-Wire Wire Line
-	4850 5300 5700 5300
-Wire Wire Line
-	4850 5400 5700 5400
-Wire Wire Line
-	4850 5500 5700 5500
-Wire Wire Line
-	4850 5600 5700 5600
-$Comp
-L power:GND #PWR0137
-U 1 1 60F3926C
-P 9450 7200
-F 0 "#PWR0137" H 9450 6950 50  0001 C CNN
-F 1 "GND" H 9455 7027 50  0000 C CNN
-F 2 "" H 9450 7200 50  0001 C CNN
-F 3 "" H 9450 7200 50  0001 C CNN
-	1    9450 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0138
-U 1 1 60F3A0F0
-P 9600 7450
-F 0 "#PWR0138" H 9600 7300 50  0001 C CNN
-F 1 "+3.3V" H 9615 7623 50  0000 C CNN
-F 2 "" H 9600 7450 50  0001 C CNN
-F 3 "" H 9600 7450 50  0001 C CNN
-	1    9600 7450
-	1    0    0    -1  
-$EndComp
-Text Label 9750 7400 0    50   ~ 0
-i2c_sda_1
-Text Label 9750 7500 0    50   ~ 0
-i2c_scl_1
-Wire Wire Line
-	9750 7500 10200 7500
-Wire Wire Line
-	9750 7400 10200 7400
-Wire Wire Line
-	9450 7200 10200 7200
-Wire Wire Line
-	9600 7450 9700 7450
-Wire Wire Line
-	9700 7450 9700 7300
-Wire Wire Line
-	9700 7300 10200 7300
-$Comp
-L Regulator_Switching:R-78B3.3-2.0 U3
-U 1 1 60D1BAC4
-P 3750 2800
-F 0 "U3" H 3750 3042 50  0000 C CNN
-F 1 "R-78B3.3-2.0" H 3750 2951 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78B-2.0_THT" H 3800 2550 50  0001 L CIN
-F 3 "https://www.recom-power.com/pdf/Innoline/R-78Bxx-2.0.pdf" H 3750 2800 50  0001 C CNN
-	1    3750 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Switching:R-78B5.0-2.0 U2
-U 1 1 60D1CC98
-P 4000 3600
-F 0 "U2" H 4000 3842 50  0000 C CNN
-F 1 "R-78B5.0-2.0" H 4000 3751 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78B-2.0_THT" H 4050 3350 50  0001 L CIN
-F 3 "https://www.recom-power.com/pdf/Innoline/R-78Bxx-2.0.pdf" H 4000 3600 50  0001 C CNN
-	1    4000 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0120
-U 1 1 60D1EEE2
-P 4200 2800
-F 0 "#PWR0120" H 4200 2650 50  0001 C CNN
-F 1 "+3V3" H 4215 2973 50  0000 C CNN
-F 2 "" H 4200 2800 50  0001 C CNN
-F 3 "" H 4200 2800 50  0001 C CNN
-	1    4200 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR0139
-U 1 1 60D2034D
-P 3200 2800
-F 0 "#PWR0139" H 3200 2650 50  0001 C CNN
-F 1 "+BATT" H 3215 2973 50  0000 C CNN
-F 2 "" H 3200 2800 50  0001 C CNN
-F 3 "" H 3200 2800 50  0001 C CNN
-	1    3200 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-BATT #PWR0140
-U 1 1 60D2138E
-P 3200 3200
-F 0 "#PWR0140" H 3200 3050 50  0001 C CNN
-F 1 "-BATT" H 3215 3373 50  0000 C CNN
-F 2 "" H 3200 3200 50  0001 C CNN
-F 3 "" H 3200 3200 50  0001 C CNN
-	1    3200 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0141
-U 1 1 60D223D3
-P 4200 3100
-F 0 "#PWR0141" H 4200 2850 50  0001 C CNN
-F 1 "GND" H 4205 2927 50  0000 C CNN
-F 2 "" H 4200 3100 50  0001 C CNN
-F 3 "" H 4200 3100 50  0001 C CNN
-	1    4200 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR0142
-U 1 1 60D235CB
-P 3500 3600
-F 0 "#PWR0142" H 3500 3450 50  0001 C CNN
-F 1 "+BATT" H 3515 3773 50  0000 C CNN
-F 2 "" H 3500 3600 50  0001 C CNN
-F 3 "" H 3500 3600 50  0001 C CNN
-	1    3500 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-BATT #PWR0143
-U 1 1 60D235D1
-P 3500 4000
-F 0 "#PWR0143" H 3500 3850 50  0001 C CNN
-F 1 "-BATT" H 3515 4173 50  0000 C CNN
-F 2 "" H 3500 4000 50  0001 C CNN
-F 3 "" H 3500 4000 50  0001 C CNN
-	1    3500 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0144
-U 1 1 60D2B36F
-P 4450 3950
-F 0 "#PWR0144" H 4450 3700 50  0001 C CNN
-F 1 "GND" H 4455 3777 50  0000 C CNN
-F 2 "" H 4450 3950 50  0001 C CNN
-F 3 "" H 4450 3950 50  0001 C CNN
-	1    4450 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0145
-U 1 1 60D3339E
-P 4450 3600
-F 0 "#PWR0145" H 4450 3450 50  0001 C CNN
-F 1 "+5V" H 4465 3773 50  0000 C CNN
-F 2 "" H 4450 3600 50  0001 C CNN
-F 3 "" H 4450 3600 50  0001 C CNN
-	1    4450 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 2800 4200 2800
-Wire Wire Line
-	3750 3100 4200 3100
-Wire Wire Line
-	3200 3200 3750 3200
-Wire Wire Line
-	3750 3200 3750 3100
-Connection ~ 3750 3100
-Wire Wire Line
-	3200 2800 3450 2800
-Wire Wire Line
-	3500 3600 3700 3600
-Wire Wire Line
-	3500 4000 4000 4000
-Wire Wire Line
-	4000 4000 4000 3950
-Wire Wire Line
-	4450 3600 4300 3600
-Wire Wire Line
-	4450 3950 4000 3950
-Connection ~ 4000 3950
-Wire Wire Line
-	4000 3950 4000 3900
-$Comp
-L Device:R_Small R1
-U 1 1 60DA427C
-P 4400 8000
-F 0 "R1" V 4596 8000 50  0000 C CNN
-F 1 "33ohm" V 4505 8000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 4400 8000 50  0001 C CNN
-F 3 "~" H 4400 8000 50  0001 C CNN
-	1    4400 8000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 60DAF797
-P 4400 7700
-F 0 "R2" V 4596 7700 50  0000 C CNN
-F 1 "33ohm" V 4505 7700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 4400 7700 50  0001 C CNN
-F 3 "~" H 4400 7700 50  0001 C CNN
-	1    4400 7700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3500 7700 4300 7700
-Wire Wire Line
-	3500 7800 4100 7800
-Wire Wire Line
-	4100 7800 4100 8000
-Wire Wire Line
-	4100 8000 4300 8000
-Wire Wire Line
-	4500 8000 4700 8000
-Wire Wire Line
-	4700 8000 4700 7800
-Text Label 7500 7700 0    50   ~ 0
-i2c_scl_1
-Text Label 7500 7800 0    50   ~ 0
-i2c_sda_1
-Wire Wire Line
-	7500 7700 7300 7700
-Wire Wire Line
-	8550 7000 8700 7000
-Wire Wire Line
-	8550 7350 8700 7350
-Wire Wire Line
-	8700 7350 8700 7000
-Connection ~ 8700 7000
-Wire Wire Line
-	8700 7000 8750 7000
-Wire Wire Line
-	8050 7300 8050 7350
-Wire Wire Line
-	8050 7350 8250 7350
-$Comp
-L Transistor_FET:IRLB8721PBF Q1
-U 1 1 60F056A3
-P 8800 1800
-F 0 "Q1" H 9004 1846 50  0000 L CNN
-F 1 "IRLB8721PBF" H 9004 1755 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9050 1725 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591" H 8800 1800 50  0001 L CNN
-	1    8800 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4001 D2
-U 1 1 60F15F3F
-P 9700 2000
-F 0 "D2" H 9700 2217 50  0000 C CNN
-F 1 "1N4001" H 9700 2126 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9700 1825 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 9700 2000 50  0001 C CNN
-	1    9700 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9550 2100 9550 2000
-Wire Wire Line
-	9550 2100 9750 2100
-Wire Wire Line
-	9850 2000 9850 1700
-Wire Wire Line
-	9850 1700 9250 1700
-Wire Wire Line
-	9250 1700 9250 1600
-Wire Wire Line
-	9250 1600 8900 1600
-$Comp
-L Device:R_Small R3
-U 1 1 60F57316
-P 8400 1800
-F 0 "R3" V 8596 1800 50  0000 C CNN
-F 1 "10kohm" V 8505 1800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 8400 1800 50  0001 C CNN
-F 3 "~" H 8400 1800 50  0001 C CNN
-	1    8400 1800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8900 2000 8500 2000
-Wire Wire Line
-	8500 2000 8500 2100
-Wire Wire Line
-	8300 1800 8300 2000
-Wire Wire Line
-	8300 2000 8500 2000
-Connection ~ 8500 2000
-Wire Wire Line
-	8500 1800 8600 1800
-$Comp
-L power:GND #PWR0146
-U 1 1 60FADEEE
-P 8500 2100
-F 0 "#PWR0146" H 8500 1850 50  0001 C CNN
-F 1 "GND" H 8505 1927 50  0000 C CNN
-F 2 "" H 8500 2100 50  0001 C CNN
-F 3 "" H 8500 2100 50  0001 C CNN
-	1    8500 2100
-	1    0    0    -1  
-$EndComp
-Text Label 8700 2200 0    50   ~ 0
-solenoid_measured_BATT+
-Wire Wire Line
-	9750 2200 9750 2100
-Wire Wire Line
-	8700 2200 9750 2200
-Connection ~ 9750 2100
-Wire Wire Line
-	9750 2100 9850 2100
-Text Label 7950 1500 0    50   ~ 0
-solenoid_mosfet_gate
-Wire Wire Line
-	7950 1500 8600 1500
-Wire Wire Line
-	8600 1500 8600 1800
-Connection ~ 8600 1800
-Text Label 4050 7100 0    50   ~ 0
-solenoid_mosfet_gate
-Wire Wire Line
-	4900 7100 4050 7100
-$Comp
-L Jumper:SolderJumper_2_Open JP51
-U 1 1 60E9D75B
-P 8400 7350
-F 0 "JP51" H 8400 7555 50  0000 C CNN
-F 1 "pump_pwm2" H 8400 7464 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 8400 7350 50  0001 C CNN
-F 3 "~" H 8400 7350 50  0001 C CNN
-	1    8400 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP50
-U 1 1 60E6B731
-P 8400 7000
-F 0 "JP50" H 8400 7205 50  0000 C CNN
-F 1 "pump_pwm1" H 8400 7114 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 8400 7000 50  0001 C CNN
-F 3 "~" H 8400 7000 50  0001 C CNN
-	1    8400 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0106
-U 1 1 60E5F677
-P 7550 6500
-F 0 "#PWR0106" H 7550 6350 50  0001 C CNN
-F 1 "+5V" H 7565 6673 50  0000 C CNN
-F 2 "" H 7550 6500 50  0001 C CNN
-F 3 "" H 7550 6500 50  0001 C CNN
-	1    7550 6500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 6500 7300 6500
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 60E6EE32
-P 4300 6700
-F 0 "JP1" H 4300 6905 50  0000 C CNN
-F 1 "PumpAngGND" H 4300 6814 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4300 6700 50  0001 C CNN
-F 3 "~" H 4300 6700 50  0001 C CNN
-	1    4300 6700
-	1    0    0    -1  
-$EndComp
-Text Label 7900 1300 0    50   ~ 0
-pump_motor_analog_gnd
-Wire Wire Line
-	10250 1550 10400 1550
-Text Label 3050 6700 0    50   ~ 0
-pump_motor_analog_gnd
-Wire Wire Line
-	3050 6700 4150 6700
-Wire Wire Line
-	4450 6700 4900 6700
-$Comp
-L power:+3.3V #PWR0147
-U 1 1 60F0762C
-P 600 3300
-F 0 "#PWR0147" H 600 3150 50  0001 C CNN
-F 1 "+3.3V" H 615 3473 50  0000 C CNN
-F 2 "" H 600 3300 50  0001 C CNN
-F 3 "" H 600 3300 50  0001 C CNN
-	1    600  3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0148
-U 1 1 60F07632
-P 600 3400
-F 0 "#PWR0148" H 600 3150 50  0001 C CNN
-F 1 "GND" H 605 3227 50  0000 C CNN
-F 2 "" H 600 3400 50  0001 C CNN
-F 3 "" H 600 3400 50  0001 C CNN
-	1    600  3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x06_Female J45
-U 1 1 60F07638
-P 1550 3300
-F 0 "J45" H 1578 3276 50  0000 L CNN
-F 1 "Engine Current Sensor" H 1578 3185 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 1550 3300 50  0001 C CNN
-F 3 "~" H 1550 3300 50  0001 C CNN
-	1    1550 3300
-	1    0    0    -1  
-$EndComp
-Text Label 800  3100 0    50   ~ 0
-i2c_scl_1
-Text Label 800  3200 0    50   ~ 0
-i2c_sda_1
-Wire Wire Line
-	800  3100 1350 3100
-Wire Wire Line
-	800  3200 1350 3200
-Wire Wire Line
-	600  3300 1350 3300
-Wire Wire Line
-	600  3400 1350 3400
-Wire Wire Line
-	1350 3800 1350 3600
-Text Label 50   3700 0    50   ~ 0
-engine_measured_BATT+
-Wire Wire Line
-	1000 3700 1000 3500
-Wire Wire Line
-	1000 3500 1350 3500
-Wire Wire Line
-	50   3700 1000 3700
-$Comp
-L power:-BATT #PWR0149
-U 1 1 60F07649
-P 1150 3800
-F 0 "#PWR0149" H 1150 3650 50  0001 C CNN
-F 1 "-BATT" H 1165 3973 50  0000 C CNN
-F 2 "" H 1150 3800 50  0001 C CNN
-F 3 "" H 1150 3800 50  0001 C CNN
-	1    1150 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 3800 1150 3800
-Wire Wire Line
-	9750 1050 9650 1050
-Wire Wire Line
-	9650 1050 9650 950 
-Connection ~ 9650 950 
-Wire Wire Line
-	9650 950  9750 950 
-Wire Wire Line
-	7900 1300 7900 1350
-Wire Wire Line
-	7900 1350 9750 1350
-$Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J1
-U 1 1 60FB8F70
-P 9950 1150
-F 0 "J1" H 10000 1567 50  0000 C CNN
-F 1 "MAXON Pump Controller" H 10000 1476 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-12BE" H 9950 1150 50  0001 C CNN
-F 3 "~" H 9950 1150 50  0001 C CNN
-	1    9950 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L SeaFlight~Glider:Solenoid_Socket_2pin J31
-U 1 1 6103C6FA
-P 10050 2000
-F 0 "J31" H 10078 1976 50  0000 L CNN
-F 1 "Solenoid" H 10078 1885 50  0000 L CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-02BE" H 10050 2000 50  0001 C CNN
-F 3 "~" H 10050 2000 50  0001 C CNN
-	1    10050 2000
-	1    0    0    -1  
-$EndComp
-Connection ~ 9850 2000
-Text Label 4050 7200 0    50   ~ 0
+Text Label 2800 950  2    50   ~ 0
 leak_sense_output
-Wire Wire Line
-	4050 7200 4900 7200
-Text Label 4650 7600 0    50   ~ 0
-SDO
-Text Label 4650 7500 0    50   ~ 0
-SDI
-Text Label 4650 7400 0    50   ~ 0
-SCK
-Wire Wire Line
-	4650 7400 4900 7400
-Wire Wire Line
-	4650 7500 4900 7500
-Wire Wire Line
-	4650 7600 4900 7600
-Wire Wire Line
-	7500 7800 7300 7800
-Wire Wire Line
-	7300 7200 7500 7200
-Wire Wire Line
-	7300 7100 7500 7100
-Text Label 7300 6300 0    50   ~ 0
-3v3_feather
-Text Label 7500 7600 0    50   ~ 0
-imu_cs
-Wire Wire Line
-	7300 7400 7500 7400
-Wire Wire Line
-	7300 7500 7500 7500
-Wire Wire Line
-	7300 7600 7500 7600
-Text Label 3700 7300 0    50   ~ 0
-sdcard_cs
-Wire Wire Line
-	4900 7300 3700 7300
-Text Label 7700 5250 0    50   ~ 0
-sdcard_cs
-Text Label 7700 5350 0    50   ~ 0
-SDI
-Text Label 7700 5550 0    50   ~ 0
-SCK
-Wire Wire Line
-	7300 7300 8050 7300
-Wire Wire Line
-	7300 7000 8250 7000
-$Comp
-L power:GND #PWR0105
-U 1 1 60CAA183
-P 7300 8000
-F 0 "#PWR0105" H 7300 7750 50  0001 C CNN
-F 1 "GND" H 7305 7827 50  0000 C CNN
-F 2 "" H 7300 8000 50  0001 C CNN
-F 3 "" H 7300 8000 50  0001 C CNN
-	1    7300 8000
-	1    0    0    -1  
-$EndComp
-$Comp
-L engine-board-rescue:FEATHER_M0_BASIC_PROTO-FEATHER_M0_BASIC_PROTO-engine-board-rescue U1
-U 1 1 60CE6FB5
-P 6100 7200
-F 0 "U1" H 6100 8367 50  0000 C CNN
-F 1 "FEATHER_M0_BASIC_PROTO" H 6100 8276 50  0000 C CNN
-F 2 "Module:ADAFRUIT_FEATHER" H 6100 7200 50  0001 L BNN
-F 3 "" H 6100 7200 50  0001 L BNN
-F 4 "Adafruit" H 6100 7200 50  0001 L BNN "MANUFACTURER"
-F 5 "Manufacturer Recommendation" H 6100 7200 50  0001 L BNN "STANDARD"
-	1    6100 7200
-	1    0    0    -1  
-$EndComp
-Text Label 7700 5450 0    50   ~ 0
-SDO
-Wire Wire Line
-	7700 5250 8150 5250
-Wire Wire Line
-	9450 3250 10150 3250
-Wire Wire Line
-	9300 3350 10150 3350
-Wire Wire Line
-	9300 4050 9950 4050
-Wire Wire Line
-	9550 5050 10000 5050
-Wire Wire Line
-	9300 5150 10000 5150
-$Comp
-L teensy:Teensy4.1 U4
-U 1 1 610143A9
-P 1700 6300
-F 0 "U4" H 1700 8865 50  0000 C CNN
-F 1 "Teensy4.1" H 1700 8774 50  0000 C CNN
-F 2 "Module:Teensy41" H 1300 6700 50  0001 C CNN
-F 3 "" H 1300 6700 50  0001 C CNN
-	1    1700 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 7700 4850 7700
-Wire Wire Line
-	4850 8100 100  8100
-Wire Wire Line
-	4700 7800 4800 7800
-Wire Wire Line
-	4850 8100 4850 7700
-Connection ~ 4850 7700
-Wire Wire Line
-	4850 7700 4900 7700
-Wire Wire Line
-	4800 7800 4800 8050
-Wire Wire Line
-	4800 8050 150  8050
-Connection ~ 4800 7800
-Wire Wire Line
-	4800 7800 4900 7800
-Wire Wire Line
-	100  8100 100  7000
-Wire Wire Line
-	100  7000 600  7000
-Wire Wire Line
-	150  8050 150  7100
-Wire Wire Line
-	150  7100 600  7100
-$Comp
-L power:+5V #PWR0150
-U 1 1 61251FE6
-P 2950 4150
-F 0 "#PWR0150" H 2950 4000 50  0001 C CNN
-F 1 "+5V" H 2965 4323 50  0000 C CNN
-F 2 "" H 2950 4150 50  0001 C CNN
-F 3 "" H 2950 4150 50  0001 C CNN
-	1    2950 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0151
-U 1 1 61266FE4
-P 3350 4250
-F 0 "#PWR0151" H 3350 4000 50  0001 C CNN
-F 1 "GND" H 3355 4077 50  0000 C CNN
-F 2 "" H 3350 4250 50  0001 C CNN
-F 3 "" H 3350 4250 50  0001 C CNN
-	1    3350 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 4250 3350 4250
-Wire Wire Line
-	2800 4150 2950 4150
-Text Label 3100 4850 0    50   ~ 0
+Text Label 1200 850  2    50   ~ 0
 i2c_scl_1
-Text Label 4250 4900 0    50   ~ 0
+Text Label 1200 750  2    50   ~ 0
 i2c_sda_1
-Text Label 3950 5100 0    50   ~ 0
-pump_motor_ccw
-Text Label 3900 5450 0    50   ~ 0
-pump_motor_cw
-Text Label 3650 6250 0    50   ~ 0
-solenoid_mosfet_gate
-Text Label 3350 6500 0    50   ~ 0
-leak_sense_output
-Text Label 3100 5650 0    50   ~ 0
+Text Label 4600 1100 2    50   ~ 0
+i2c_scl_1
+Text Label 4600 1000 2    50   ~ 0
+i2c_sda_1
+$Comp
+L teensy:Teensy3.6_All_Pins U101
+U 1 1 61A700C3
+P 2750 5200
+F 0 "U101" H 2750 7837 60  0000 C CNN
+F 1 "Teensy3.6_All_Pins" H 2750 7731 60  0000 C CNN
+F 2 "Symbol:Teensy35_36" H 2750 5250 60  0000 C CNN
+F 3 "" H 2750 5250 60  0000 C CNN
+F 4 "DEV-14058" H 2750 5200 50  0001 C CNN "MPN"
+F 5 "36.88" H 2750 5200 50  0001 C CNN "Price"
+F 6 "https://www.digikey.com/en/products/detail/DEV-14058/1568-1465-ND/6569369?itemSeq=383715082" H 2750 5200 50  0001 C CNN "Link"
+	1    2750 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 6450 4250 6450
+Wire Wire Line
+	4250 6450 4250 2950
+Wire Wire Line
+	4250 2950 3900 2950
+Wire Wire Line
+	6400 6400 4300 6400
+Wire Wire Line
+	4300 6400 4300 2850
+Wire Wire Line
+	4300 2850 3900 2850
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 61AA8ACA
+P 1200 4450
+AR Path="/61AA8ACA" Ref="#PWR0104"  Part="1" 
+AR Path="/61B60659/61AA8ACA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0104" H 1200 4300 50  0001 C CNN
+F 1 "+3V3" H 1215 4623 50  0000 C CNN
+F 2 "" H 1200 4450 50  0001 C CNN
+F 3 "" H 1200 4450 50  0001 C CNN
+	1    1200 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4450 1600 4450
+Wire Wire Line
+	1200 4450 1200 5550
+Wire Wire Line
+	1200 5550 1600 5550
+Connection ~ 1200 4450
+$Comp
+L power:GND #PWR0102
+U 1 1 61AAE195
+P 750 5650
+F 0 "#PWR0102" H 750 5400 50  0001 C CNN
+F 1 "GND" H 755 5477 50  0000 C CNN
+F 2 "" H 750 5650 50  0001 C CNN
+F 3 "" H 750 5650 50  0001 C CNN
+	1    750  5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT101
+U 1 1 61AB1C52
+P 750 5550
+F 0 "BT101" H 868 5646 50  0000 L CNN
+F 1 "Battery_Cell" H 868 5555 50  0000 L CNN
+F 2 "" V 750 5610 50  0001 C CNN
+F 3 "~" V 750 5610 50  0001 C CNN
+	1    750  5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  5650 1600 5650
+Connection ~ 750  5650
+Wire Wire Line
+	1600 5450 1100 5450
+Wire Wire Line
+	1100 5450 1100 5350
+Wire Wire Line
+	1100 5350 750  5350
+$Comp
+L power:GND #PWR0101
+U 1 1 61AE01EE
+P 650 6700
+F 0 "#PWR0101" H 650 6450 50  0001 C CNN
+F 1 "GND" H 655 6527 50  0000 C CNN
+F 2 "" H 650 6700 50  0001 C CNN
+F 3 "" H 650 6700 50  0001 C CNN
+	1    650  6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  6700 850  6700
+Wire Wire Line
+	850  6700 850  6850
+Wire Wire Line
+	850  6850 1600 6850
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 61AE3B18
+P 5250 6750
+AR Path="/61AE3B18" Ref="#PWR0108"  Part="1" 
+AR Path="/61B60659/61AE3B18" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0108" H 5250 6600 50  0001 C CNN
+F 1 "+3V3" H 5265 6923 50  0000 C CNN
+F 2 "" H 5250 6750 50  0001 C CNN
+F 3 "" H 5250 6750 50  0001 C CNN
+	1    5250 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP101
+U 1 1 61AE7814
+P 4850 6750
+F 0 "JP101" H 4850 6955 50  0000 C CNN
+F 1 "PumpAngGND" H 4850 6864 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4850 6750 50  0001 C CNN
+F 3 "~" H 4850 6750 50  0001 C CNN
+	1    4850 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 6750 5000 6750
+Wire Wire Line
+	4700 6750 3900 6750
+$Comp
+L power:GND #PWR0107
+U 1 1 61AEFCAE
+P 4150 5550
+F 0 "#PWR0107" H 4150 5300 50  0001 C CNN
+F 1 "GND" H 4155 5377 50  0000 C CNN
+F 2 "" H 4150 5550 50  0001 C CNN
+F 3 "" H 4150 5550 50  0001 C CNN
+	1    4150 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5550 3900 5550
+Wire Wire Line
+	3900 5450 4150 5450
+Wire Wire Line
+	4150 5450 4150 5550
+Connection ~ 4150 5550
+$Comp
+L power:GND #PWR0106
+U 1 1 61AF6040
+P 4150 4250
+F 0 "#PWR0106" H 4150 4000 50  0001 C CNN
+F 1 "GND" H 4155 4077 50  0000 C CNN
+F 2 "" H 4150 4250 50  0001 C CNN
+F 3 "" H 4150 4250 50  0001 C CNN
+	1    4150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4250 3900 4250
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 61AFAAAE
+P 4100 4150
+AR Path="/61AFAAAE" Ref="#PWR0105"  Part="1" 
+AR Path="/61B60659/61AFAAAE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0105" H 4100 4000 50  0001 C CNN
+F 1 "+3V3" H 4115 4323 50  0000 C CNN
+F 2 "" H 4100 4150 50  0001 C CNN
+F 3 "" H 4100 4150 50  0001 C CNN
+	1    4100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4150 3900 4150
+$Comp
+L power:GND #PWR0103
+U 1 1 61AFF33A
+P 1200 3050
+F 0 "#PWR0103" H 1200 2800 50  0001 C CNN
+F 1 "GND" H 1205 2877 50  0000 C CNN
+F 2 "" H 1200 3050 50  0001 C CNN
+F 3 "" H 1200 3050 50  0001 C CNN
+	1    1200 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3050 1200 3050
+Text Label 1600 4850 2    50   ~ 0
+irid_TXD
+Text Label 1600 4750 2    50   ~ 0
+irid_RXD
+Text Label 3900 7150 0    50   ~ 0
+irid_CTS
+Text Label 3900 7050 0    50   ~ 0
+irid_RTS
+Text Label 3900 6950 0    50   ~ 0
+irid_SLEEP
+Text Label 3900 6850 0    50   ~ 0
+irid_NET_AV
+Text Label 4600 1400 2    50   ~ 0
+irid_CTS
+Text Label 4600 1500 2    50   ~ 0
+irid_RTS
+Text Label 4600 1600 2    50   ~ 0
+irid_NET_AV
+Text Label 4600 1200 2    50   ~ 0
+irid_SLEEP
+Text Label 4600 1800 2    50   ~ 0
+irid_TXD
+Text Label 4600 1300 2    50   ~ 0
+irid_RXD
+Text Label 3900 6250 0    50   ~ 0
+irid_RI
+Text Label 6450 800  2    50   ~ 0
+i2c_scl_1
+Text Label 6450 900  2    50   ~ 0
+i2c_sda_1
+Text Label 6450 1350 2    50   ~ 0
 pump_motor_analog_speed
-Text Label 3600 5900 0    50   ~ 0
+Text Label 6450 1450 2    50   ~ 0
 pump_motor_analog_current
+Text Label 6450 1750 2    50   ~ 0
+solenoid_mosfet_gate
+Text Label 6450 1650 2    50   ~ 0
+pump_motor_analog_gnd
+Text Label 6450 1550 2    50   ~ 0
+turbine_1_pwm
+Text Label 6450 1850 2    50   ~ 0
+turbine_2_pwm
+Text Label 6450 1150 2    50   ~ 0
+pump_motor_ccw
+Text Label 6450 1250 2    50   ~ 0
+pump_motor_cw
+Text Label 6450 1050 2    50   ~ 0
+pump_motor_pwm
 $Comp
-L power:GND #PWR0152
-U 1 1 61382D7B
-P 300 4150
-F 0 "#PWR0152" H 300 3900 50  0001 C CNN
-F 1 "GND" H 305 3977 50  0000 C CNN
-F 2 "" H 300 4150 50  0001 C CNN
-F 3 "" H 300 4150 50  0001 C CNN
-	1    300  4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0153
-U 1 1 6139657D
-P 600 7300
-F 0 "#PWR0153" H 600 7050 50  0001 C CNN
-F 1 "GND" H 605 7127 50  0000 C CNN
-F 2 "" H 600 7300 50  0001 C CNN
-F 3 "" H 600 7300 50  0001 C CNN
-	1    600  7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0154
-U 1 1 613A9CB3
-P 400 7300
-F 0 "#PWR0154" H 400 7050 50  0001 C CNN
-F 1 "GND" H 405 7127 50  0000 C CNN
-F 2 "" H 400 7300 50  0001 C CNN
-F 3 "" H 400 7300 50  0001 C CNN
-	1    400  7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	600  7200 400  7200
-Wire Wire Line
-	400  7200 400  7300
-Wire Wire Line
-	300  4150 600  4150
-Wire Wire Line
-	8150 5350 7700 5350
-$Comp
-L power:GND #PWR0155
-U 1 1 61088802
-P 7500 5650
-F 0 "#PWR0155" H 7500 5400 50  0001 C CNN
-F 1 "GND" H 7505 5477 50  0000 C CNN
-F 2 "" H 7500 5650 50  0001 C CNN
-F 3 "" H 7500 5650 50  0001 C CNN
-	1    7500 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0156
-U 1 1 610B239F
-P 7700 5900
-F 0 "#PWR0156" H 7700 5750 50  0001 C CNN
-F 1 "+3.3V" H 7715 6073 50  0000 C CNN
-F 2 "" H 7700 5900 50  0001 C CNN
-F 3 "" H 7700 5900 50  0001 C CNN
-	1    7700 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 5450 8150 5450
-Wire Wire Line
-	7700 5550 8150 5550
-Wire Wire Line
-	7500 5650 8150 5650
-Wire Wire Line
-	7700 5900 7900 5900
-Wire Wire Line
-	7900 5900 7900 5750
-Wire Wire Line
-	7900 5750 8150 5750
-$Comp
-L Connector:Conn_01x08_Female J50
-U 1 1 6103265B
-P 8350 5450
-F 0 "J50" H 8378 5426 50  0000 L CNN
-F 1 "SD Card" H 8378 5335 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-08A_1x08_P2.54mm_Vertical" H 8350 5450 50  0001 C CNN
-F 3 "~" H 8350 5450 50  0001 C CNN
-	1    8350 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensor_Motion:IMU_BN0080 U51
-U 1 1 610231E3
-P 3700 1450
-F 0 "U51" H 3775 1465 50  0000 C CNN
-F 1 "IMU_BN0080" H 3775 1374 50  0000 C CNN
-F 2 "Module:DIP-24_900_ELL" H 3700 1450 50  0001 C CNN
-F 3 "https://www.sparkfun.com/products/14686" H 3775 1373 50  0001 C CNN
-	1    3700 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0157
-U 1 1 6103A73D
-P 4650 1750
-F 0 "#PWR0157" H 4650 1600 50  0001 C CNN
-F 1 "+3.3V" H 4665 1923 50  0000 C CNN
-F 2 "" H 4650 1750 50  0001 C CNN
-F 3 "" H 4650 1750 50  0001 C CNN
-	1    4650 1750
-	1    0    0    -1  
-$EndComp
-Text Label 4350 2000 0    50   ~ 0
-SDO
-Text Label 4350 2100 0    50   ~ 0
-SDI
-Text Label 4350 1900 0    50   ~ 0
-SCK
-Wire Wire Line
-	4350 1900 4150 1900
-Wire Wire Line
-	4350 2000 4150 2000
-Wire Wire Line
-	4350 2100 4150 2100
-Wire Wire Line
-	4650 1750 4650 1800
-Wire Wire Line
-	4650 1800 4150 1800
-Wire Wire Line
-	4300 1350 4300 1700
-Wire Wire Line
-	4300 1700 4150 1700
-Text Label 4350 2200 0    50   ~ 0
-imu_cs
-Wire Wire Line
-	4350 2200 4150 2200
-$Comp
-L power:+3.3V #PWR0158
-U 1 1 6114E584
-P 3000 2000
-F 0 "#PWR0158" H 3000 1850 50  0001 C CNN
-F 1 "+3.3V" H 3015 2173 50  0000 C CNN
-F 2 "" H 3000 2000 50  0001 C CNN
-F 3 "" H 3000 2000 50  0001 C CNN
-	1    3000 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 1350 4300 1350
-$Comp
-L power:GND #PWR0159
-U 1 1 61025D8D
-P 4450 1350
-F 0 "#PWR0159" H 4450 1100 50  0001 C CNN
-F 1 "GND" H 4455 1177 50  0000 C CNN
-F 2 "" H 4450 1350 50  0001 C CNN
-F 3 "" H 4450 1350 50  0001 C CNN
-	1    4450 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0160
-U 1 1 6117ABB4
-P 3000 1500
-F 0 "#PWR0160" H 3000 1250 50  0001 C CNN
-F 1 "GND" H 3005 1327 50  0000 C CNN
-F 2 "" H 3000 1500 50  0001 C CNN
-F 3 "" H 3000 1500 50  0001 C CNN
-	1    3000 1500
-	1    0    0    -1  
-$EndComp
-Text Label 2900 2200 0    50   ~ 0
-i2c_scl_1
-Text Label 2900 2100 0    50   ~ 0
-i2c_sda_1
-Wire Wire Line
-	2900 2200 3400 2200
-Wire Wire Line
-	2900 2100 3400 2100
-Wire Wire Line
-	3000 2000 3400 2000
-Wire Wire Line
-	3000 1500 3200 1500
-Wire Wire Line
-	3200 1500 3200 1900
-Wire Wire Line
-	3200 1900 3400 1900
-$Comp
-L Connector:Conn_01x04_Female J48
-U 1 1 6109042B
-P 8350 4750
-F 0 "J48" H 8378 4726 50  0000 L CNN
-F 1 "QWIIC 2" H 8378 4635 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 8350 4750 50  0001 C CNN
-F 3 "~" H 8350 4750 50  0001 C CNN
-	1    8350 4750
-	1    0    0    -1  
-$EndComp
-Text Label 7700 4650 0    50   ~ 0
-i2c_scl_1
-Text Label 7700 4750 0    50   ~ 0
-i2c_sda_1
-$Comp
-L power:+3.3V #PWR0102
-U 1 1 610D948A
-P 7500 4800
-F 0 "#PWR0102" H 7500 4650 50  0001 C CNN
-F 1 "+3.3V" H 7515 4973 50  0000 C CNN
-F 2 "" H 7500 4800 50  0001 C CNN
-F 3 "" H 7500 4800 50  0001 C CNN
-	1    7500 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0161
-U 1 1 610F094F
-P 7500 4950
-F 0 "#PWR0161" H 7500 4700 50  0001 C CNN
-F 1 "GND" H 7505 4777 50  0000 C CNN
-F 2 "" H 7500 4950 50  0001 C CNN
-F 3 "" H 7500 4950 50  0001 C CNN
-	1    7500 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 4650 8150 4650
-Wire Wire Line
-	7700 4750 8150 4750
-Wire Wire Line
-	7500 4800 7500 4850
-Wire Wire Line
-	7500 4850 8150 4850
-Wire Wire Line
-	7500 4950 8150 4950
-$Comp
-L Connector:Conn_01x04_Female J47
-U 1 1 6116B43D
-P 8350 4100
-F 0 "J47" H 8378 4076 50  0000 L CNN
-F 1 "QWIIC 1" H 8378 3985 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 8350 4100 50  0001 C CNN
-F 3 "~" H 8350 4100 50  0001 C CNN
-	1    8350 4100
-	1    0    0    -1  
-$EndComp
-Text Label 7700 4000 0    50   ~ 0
-i2c_scl_1
-Text Label 7700 4100 0    50   ~ 0
-i2c_sda_1
-$Comp
-L power:+3.3V #PWR0162
-U 1 1 6116B445
-P 7500 4150
-F 0 "#PWR0162" H 7500 4000 50  0001 C CNN
-F 1 "+3.3V" H 7515 4323 50  0000 C CNN
-F 2 "" H 7500 4150 50  0001 C CNN
-F 3 "" H 7500 4150 50  0001 C CNN
-	1    7500 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0163
-U 1 1 6116B44B
-P 7500 4300
-F 0 "#PWR0163" H 7500 4050 50  0001 C CNN
-F 1 "GND" H 7505 4127 50  0000 C CNN
-F 2 "" H 7500 4300 50  0001 C CNN
-F 3 "" H 7500 4300 50  0001 C CNN
-	1    7500 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 4000 8150 4000
-Wire Wire Line
-	7700 4100 8150 4100
-Wire Wire Line
-	7500 4150 7500 4200
-Wire Wire Line
-	7500 4200 8150 4200
-Wire Wire Line
-	7500 4300 8150 4300
-$Comp
-L Connector:Conn_01x08_Female J2
-U 1 1 611A3BDB
-P 8600 3300
-F 0 "J2" H 8628 3276 50  0000 L CNN
-F 1 "Power Rail" H 8628 3185 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-08A_1x08_P2.54mm_Vertical" H 8600 3300 50  0001 C CNN
-F 3 "~" H 8600 3300 50  0001 C CNN
-	1    8600 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR0164
-U 1 1 611BE48A
-P 7550 3500
-F 0 "#PWR0164" H 7550 3350 50  0001 C CNN
-F 1 "+BATT" H 7565 3673 50  0000 C CNN
-F 2 "" H 7550 3500 50  0001 C CNN
-F 3 "" H 7550 3500 50  0001 C CNN
-	1    7550 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-BATT #PWR0165
-U 1 1 611D7AFE
-P 7850 3700
-F 0 "#PWR0165" H 7850 3550 50  0001 C CNN
-F 1 "-BATT" H 7865 3873 50  0000 C CNN
-F 2 "" H 7850 3700 50  0001 C CNN
-F 3 "" H 7850 3700 50  0001 C CNN
-	1    7850 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 3700 8400 3700
-$Comp
-L power:+3.3V #PWR0166
-U 1 1 61224084
-P 8400 3000
-F 0 "#PWR0166" H 8400 2850 50  0001 C CNN
-F 1 "+3.3V" H 8415 3173 50  0000 C CNN
-F 2 "" H 8400 3000 50  0001 C CNN
-F 3 "" H 8400 3000 50  0001 C CNN
-	1    8400 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0167
-U 1 1 6123DB4E
-P 7800 3100
-F 0 "#PWR0167" H 7800 2850 50  0001 C CNN
-F 1 "GND" H 7805 2927 50  0000 C CNN
-F 2 "" H 7800 3100 50  0001 C CNN
-F 3 "" H 7800 3100 50  0001 C CNN
-	1    7800 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 3100 8400 3100
-$Comp
-L Jumper:Jumper_2_Open JP5
-U 1 1 61048286
-P 3050 1200
-F 0 "JP5" H 3050 975 50  0000 C CNN
-F 1 "IMU PS1 Jump" H 3050 1066 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3050 1200 50  0001 C CNN
-F 3 "~" H 3050 1200 50  0001 C CNN
-	1    3050 1200
+L Jumper:SolderJumper_2_Open JP105
+U 1 1 61B6FFF6
+P 5000 6950
+F 0 "JP105" H 5000 7155 50  0000 C CNN
+F 1 "PumpAngGND" H 5000 7064 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5000 6950 50  0001 C CNN
+F 3 "~" H 5000 6950 50  0001 C CNN
+	1    5000 6950
 	-1   0    0    1   
 $EndComp
-$Comp
-L Jumper:Jumper_2_Open JP6
-U 1 1 6104AD0C
-P 3700 1200
-F 0 "JP6" H 3700 975 50  0000 C CNN
-F 1 "IMU PS0 Jump" H 3700 1066 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3700 1200 50  0001 C CNN
-F 3 "~" H 3700 1200 50  0001 C CNN
-	1    3700 1200
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR0168
-U 1 1 6106887A
-P 2700 1200
-F 0 "#PWR0168" H 2700 1050 50  0001 C CNN
-F 1 "+3.3V" H 2715 1373 50  0000 C CNN
-F 2 "" H 2700 1200 50  0001 C CNN
-F 3 "" H 2700 1200 50  0001 C CNN
-	1    2700 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0169
-U 1 1 61082151
-P 3400 1000
-F 0 "#PWR0169" H 3400 850 50  0001 C CNN
-F 1 "+3.3V" H 3415 1173 50  0000 C CNN
-F 2 "" H 3400 1000 50  0001 C CNN
-F 3 "" H 3400 1000 50  0001 C CNN
-	1    3400 1000
-	1    0    0    -1  
-$EndComp
+Text Label 6250 6950 2    50   ~ 0
+pump_motor_analog_gnd
 Wire Wire Line
-	2700 1200 2850 1200
+	6250 6950 5150 6950
 Wire Wire Line
-	3400 1000 3400 1200
+	4850 6950 4400 6950
 Wire Wire Line
-	3400 1200 3500 1200
+	4400 6950 4400 6350
 Wire Wire Line
-	3250 1200 3250 1800
-Wire Wire Line
-	3250 1800 3400 1800
-Wire Wire Line
-	3900 1200 3900 1350
-Wire Wire Line
-	3900 1350 3400 1350
-Wire Wire Line
-	3400 1350 3400 1700
-$Comp
-L Jumper:SolderJumper_2_Open JP7
-U 1 1 6113D622
-P 2950 4850
-F 0 "JP7" H 2950 5055 50  0000 C CNN
-F 1 "teensy_scl" H 2950 4964 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2950 4850 50  0001 C CNN
-F 3 "~" H 2950 4850 50  0001 C CNN
-	1    2950 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP8
-U 1 1 61140393
-P 4100 4900
-F 0 "JP8" H 4100 5105 50  0000 C CNN
-F 1 "teensy sda" H 4100 5014 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4100 4900 50  0001 C CNN
-F 3 "~" H 4100 4900 50  0001 C CNN
-	1    4100 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP9
-U 1 1 6115C309
-P 3800 5100
-F 0 "JP9" H 3800 5305 50  0000 C CNN
-F 1 "teensy_ccw" H 3800 5214 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3800 5100 50  0001 C CNN
-F 3 "~" H 3800 5100 50  0001 C CNN
-	1    3800 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP10
-U 1 1 61176FF9
-P 3750 5450
-F 0 "JP10" H 3750 5655 50  0000 C CNN
-F 1 "teensy_cw" H 3750 5564 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3750 5450 50  0001 C CNN
-F 3 "~" H 3750 5450 50  0001 C CNN
-	1    3750 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP11
-U 1 1 6121D655
-P 2950 5650
-F 0 "JP11" H 2950 5855 50  0000 C CNN
-F 1 "pump_speed" H 2950 5764 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2950 5650 50  0001 C CNN
-F 3 "~" H 2950 5650 50  0001 C CNN
-	1    2950 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP12
-U 1 1 6121D65B
-P 3450 5900
-F 0 "JP12" H 3450 6105 50  0000 C CNN
-F 1 "pump_current" H 3450 6014 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3450 5900 50  0001 C CNN
-F 3 "~" H 3450 5900 50  0001 C CNN
-	1    3450 5900
-	1    0    0    -1  
-$EndComp
-Text Label 3100 6150 0    50   ~ 0
-imu_cs
-$Comp
-L Jumper:SolderJumper_2_Open JP13
-U 1 1 6128E090
-P 3500 6250
-F 0 "JP13" H 3500 6455 50  0000 C CNN
-F 1 "solenoid_gate" H 3500 6364 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3500 6250 50  0001 C CNN
-F 3 "~" H 3500 6250 50  0001 C CNN
-	1    3500 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP14
-U 1 1 6128E096
-P 3200 6500
-F 0 "JP14" H 3200 6705 50  0000 C CNN
-F 1 "leak_in" H 3200 6614 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3200 6500 50  0001 C CNN
-F 3 "~" H 3200 6500 50  0001 C CNN
-	1    3200 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP15
-U 1 1 612DED06
-P 2950 6150
-F 0 "JP15" H 2950 6355 50  0000 C CNN
-F 1 "imu_cs" H 2950 6264 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2950 6150 50  0001 C CNN
-F 3 "~" H 2950 6150 50  0001 C CNN
-	1    2950 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 6500 3050 6350
-Wire Wire Line
-	3050 6350 2800 6350
-Wire Wire Line
-	3350 6250 2800 6250
-Wire Wire Line
-	3300 5900 3150 5900
-Wire Wire Line
-	3150 5900 3150 5750
-Wire Wire Line
-	3150 5750 2800 5750
-Wire Wire Line
-	3600 5450 3350 5450
-Wire Wire Line
-	3350 5450 3350 5350
-Wire Wire Line
-	3350 5350 2800 5350
-Wire Wire Line
-	3650 5100 3350 5100
-Wire Wire Line
-	3350 5100 3350 5250
-Wire Wire Line
-	3350 5250 2800 5250
-Wire Wire Line
-	3950 4900 3950 4800
-Wire Wire Line
-	3950 4800 3500 4800
-Wire Wire Line
-	3500 4800 3500 4950
-Wire Wire Line
-	3500 4950 2800 4950
-Text Label 10950 700  0    50   ~ 0
-leak_sense_output
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J27
-U 1 1 616D944E
-P 10100 300
-F 0 "J27" H 10150 517 50  0000 C CNN
-F 1 "Leak Sensor" H 10150 426 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-04BE" H 10100 300 50  0001 C CNN
-F 3 "~" H 10100 300 50  0001 C CNN
-	1    10100 300 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0116
-U 1 1 61772654
-P 9650 250
-F 0 "#PWR0116" H 9650 100 50  0001 C CNN
-F 1 "+5V" H 9665 423 50  0000 C CNN
-F 2 "" H 9650 250 50  0001 C CNN
-F 3 "" H 9650 250 50  0001 C CNN
-	1    9650 250 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 617B02A7
-P 11000 400
-F 0 "R4" V 11196 400 50  0000 C CNN
-F 1 "1kohm" V 11105 400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 11000 400 50  0001 C CNN
-F 3 "~" H 11000 400 50  0001 C CNN
-	1    11000 400 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R5
-U 1 1 617CE118
-P 11350 400
-F 0 "R5" V 11546 400 50  0000 C CNN
-F 1 "2kohm" V 11455 400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 11350 400 50  0001 C CNN
-F 3 "~" H 11350 400 50  0001 C CNN
-	1    11350 400 
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10400 400  10500 400 
-Wire Wire Line
-	11100 400  11200 400 
-$Comp
-L power:GND #PWR0170
-U 1 1 6184945F
-P 11450 400
-F 0 "#PWR0170" H 11450 150 50  0001 C CNN
-F 1 "GND" H 11455 227 50  0000 C CNN
-F 2 "" H 11450 400 50  0001 C CNN
-F 3 "" H 11450 400 50  0001 C CNN
-	1    11450 400 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10950 500  11200 500 
-Wire Wire Line
-	11200 500  11200 400 
-Connection ~ 11200 400 
-Wire Wire Line
-	11200 400  11250 400 
-$Comp
-L Connector:TestPoint TP1
-U 1 1 618A68E6
-P 10500 400
-F 0 "TP1" H 10558 518 50  0000 L CNN
-F 1 "raw leak" H 10558 427 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_3.0x3.0mm_Drill1.5mm" H 10700 400 50  0001 C CNN
-F 3 "~" H 10700 400 50  0001 C CNN
-	1    10500 400 
-	1    0    0    -1  
-$EndComp
-Connection ~ 10500 400 
-Wire Wire Line
-	10500 400  10900 400 
-$Comp
-L Connector:TestPoint TP2
-U 1 1 618AAE57
-P 11200 900
-F 0 "TP2" H 11258 1018 50  0000 L CNN
-F 1 "leak3v3" H 11258 927 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_3.0x3.0mm_Drill1.5mm" H 11400 900 50  0001 C CNN
-F 3 "~" H 11400 900 50  0001 C CNN
-	1    11200 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10950 900  11200 900 
-Wire Wire Line
-	10950 500  10950 900 
-Text Label 7850 3300 0    50   ~ 0
-i2c_scl_1
-Text Label 7850 3400 0    50   ~ 0
-i2c_sda_1
-Wire Wire Line
-	7850 3300 8400 3300
-Wire Wire Line
-	7850 3400 8400 3400
-Wire Wire Line
-	7550 3500 8150 3500
-Wire Wire Line
-	8150 3500 8150 3600
-Wire Wire Line
-	8150 3600 8400 3600
-$Comp
-L power:+5V #PWR0171
-U 1 1 619ADBCA
-P 8100 3000
-F 0 "#PWR0171" H 8100 2850 50  0001 C CNN
-F 1 "+5V" H 8115 3173 50  0000 C CNN
-F 2 "" H 8100 3000 50  0001 C CNN
-F 3 "" H 8100 3000 50  0001 C CNN
-	1    8100 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 3000 8100 3200
-Wire Wire Line
-	8100 3200 8400 3200
-$Comp
-L Regulator_Controller:Pololu_2812 U10
-U 1 1 61247760
-P 6000 4200
-F 0 "U10" H 6100 5165 50  0000 C CNN
-F 1 "Pololu_2812" H 6100 5074 50  0000 C CNN
-F 2 "Module:Pololu_SlidePwrSwitch" H 6050 5050 50  0001 C CNN
-F 3 "" H 6050 5050 50  0001 C CNN
-	1    6000 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 3450 6900 3500
-Wire Wire Line
-	6900 3500 6650 3500
-Wire Wire Line
-	6650 3500 6650 3600
-Wire Wire Line
-	6650 3600 6550 3600
-Connection ~ 6650 3500
-Wire Wire Line
-	6650 3500 6550 3500
-Wire Wire Line
-	7050 3600 7050 3700
-Wire Wire Line
-	7050 3700 6650 3700
-Wire Wire Line
-	6650 3700 6650 3800
-Wire Wire Line
-	6650 3800 6550 3800
-Connection ~ 6650 3700
-Wire Wire Line
-	6650 3700 6550 3700
-Text Label 6900 3450 0    50   ~ 0
-raw_BATT+
-Text Label 7050 3600 0    50   ~ 0
-raw_BATT-
-$Comp
-L power:+BATT #PWR0110
-U 1 1 610FE757
-P 5500 3400
-F 0 "#PWR0110" H 5500 3250 50  0001 C CNN
-F 1 "+BATT" H 5515 3573 50  0000 C CNN
-F 2 "" H 5500 3400 50  0001 C CNN
-F 3 "" H 5500 3400 50  0001 C CNN
-	1    5500 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-BATT #PWR0111
-U 1 1 61141557
-P 5150 3600
-F 0 "#PWR0111" H 5150 3450 50  0001 C CNN
-F 1 "-BATT" H 5165 3773 50  0000 C CNN
-F 2 "" H 5150 3600 50  0001 C CNN
-F 3 "" H 5150 3600 50  0001 C CNN
-	1    5150 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 3500 5500 3500
-Wire Wire Line
-	5500 3500 5500 3400
-Wire Wire Line
-	5650 3600 5500 3600
-Wire Wire Line
-	5500 3600 5500 3500
-Connection ~ 5500 3500
-Wire Wire Line
-	5650 3700 5500 3700
-Wire Wire Line
-	5150 3700 5150 3600
-Wire Wire Line
-	5650 3800 5500 3800
-Wire Wire Line
-	5500 3800 5500 3700
-Connection ~ 5500 3700
-Wire Wire Line
-	5500 3700 5150 3700
-$Comp
-L power:-BATT #PWR0172
-U 1 1 61278C20
-P 6800 4000
-F 0 "#PWR0172" H 6800 3850 50  0001 C CNN
-F 1 "-BATT" H 6815 4173 50  0000 C CNN
-F 2 "" H 6800 4000 50  0001 C CNN
-F 3 "" H 6800 4000 50  0001 C CNN
-	1    6800 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J53
-U 1 1 613095E0
-P 5800 4200
-F 0 "J53" H 5828 4176 50  0000 L CNN
-F 1 "Switch Bulkhead" H 5828 4085 50  0000 L CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-02BE" H 5800 4200 50  0001 C CNN
-F 3 "~" H 5800 4200 50  0001 C CNN
-	1    5800 4200
-	1    0    0    -1  
-$EndComp
-Text Label 4900 4200 0    50   ~ 0
-external_switch_A
-Text Label 4900 4300 0    50   ~ 0
-external_switch_B
-Wire Wire Line
-	4900 4200 5600 4200
-Wire Wire Line
-	4900 4300 5600 4300
-Text Label 4550 650  0    50   ~ 0
-external_switch_A
-Text Label 3350 650  0    50   ~ 0
-external_switch_B
-Wire Wire Line
-	3350 650  4050 650 
-Wire Wire Line
-	6550 4000 6800 4000
-Text Label 4950 3900 0    50   ~ 0
-external_switch_A
-Text Label 4950 4000 0    50   ~ 0
-external_switch_B
-Wire Wire Line
-	4950 3900 5650 3900
-Wire Wire Line
-	4950 4000 5650 4000
-Text Label 5300 2550 0    50   ~ 0
-raw_BATT+
-Text Label 5200 2750 0    50   ~ 0
-raw_BATT-
-Wire Wire Line
-	6700 450  6950 450 
-Wire Wire Line
-	6950 450  6950 350 
-Wire Wire Line
-	6950 350  7850 350 
-Text Label 7500 7400 0    50   ~ 0
+	4400 6350 3900 6350
+Text Label 1600 3750 2    50   ~ 0
 turbine_1_pwm
-Text Label 7500 7500 0    50   ~ 0
+Text Label 1600 3350 2    50   ~ 0
 turbine_2_pwm
-Text Label 7250 450  0    50   ~ 0
-turbine_1_pwm
-Wire Wire Line
-	7250 450  7850 450 
-$Comp
-L power:GND #PWR0173
-U 1 1 6161F5EC
-P 7850 550
-F 0 "#PWR0173" H 7850 300 50  0001 C CNN
-F 1 "GND" H 7855 377 50  0000 C CNN
-F 2 "" H 7850 550 50  0001 C CNN
-F 3 "" H 7850 550 50  0001 C CNN
-	1    7850 550 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x04_Top_Bottom J62
-U 1 1 616E5FFC
-P 6350 1050
-F 0 "J62" H 6400 1367 50  0000 C CNN
-F 1 "Turbine 2 ESC" H 6400 1276 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-08BE" H 6350 1050 50  0001 C CNN
-F 3 "~" H 6350 1050 50  0001 C CNN
-	1    6350 1050
-	1    0    0    -1  
-$EndComp
-Text Label 5250 950  0    50   ~ 0
-turbine1_measured_pwr
-$Comp
-L power:-BATT #PWR0174
-U 1 1 616E6003
-P 5000 1050
-F 0 "#PWR0174" H 5000 900 50  0001 C CNN
-F 1 "-BATT" H 5015 1223 50  0000 C CNN
-F 2 "" H 5000 1050 50  0001 C CNN
-F 3 "" H 5000 1050 50  0001 C CNN
-	1    5000 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 950  6150 950 
-Wire Wire Line
-	5000 1050 5000 1150
-Text Label 6850 1050 0    50   ~ 0
-turbine2_wht
-Text Label 6850 1150 0    50   ~ 0
-turbine2_grn
-Text Label 6850 1250 0    50   ~ 0
-turbine2_blu
-Wire Wire Line
-	6850 1050 6650 1050
-Wire Wire Line
-	6850 1150 6650 1150
-Wire Wire Line
-	6850 1250 6650 1250
-Wire Wire Line
-	5000 1150 5250 1150
-Wire Wire Line
-	5250 1150 5250 1050
-Wire Wire Line
-	5250 1050 6150 1050
-Text Label 5550 1150 0    50   ~ 0
-turbine_2_pwm
-Wire Wire Line
-	5550 1150 6150 1150
-$Comp
-L power:GND #PWR0175
-U 1 1 616E6016
-P 6150 1250
-F 0 "#PWR0175" H 6150 1000 50  0001 C CNN
-F 1 "GND" H 6155 1077 50  0000 C CNN
-F 2 "" H 6150 1250 50  0001 C CNN
-F 3 "" H 6150 1250 50  0001 C CNN
-	1    6150 1250
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
