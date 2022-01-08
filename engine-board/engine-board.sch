@@ -438,7 +438,7 @@ U 1 1 61AB1C52
 P 750 5550
 F 0 "BT101" H 868 5646 50  0000 L CNN
 F 1 "Battery_Cell" H 868 5555 50  0000 L CNN
-F 2 "" V 750 5610 50  0001 C CNN
+F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 750 5610 50  0001 C CNN
 F 3 "~" V 750 5610 50  0001 C CNN
 	1    750  5550
 	1    0    0    -1  
@@ -629,4 +629,130 @@ Text Label 1600 3750 2    50   ~ 0
 turbine_1_pwm
 Text Label 1600 3350 2    50   ~ 0
 turbine_2_pwm
+$Comp
+L engine-board-eagle-import:TEST-POINTTP_15TH_THRU TP101
+U 1 1 61D0D736
+P 4800 7800
+F 0 "TP101" H 4844 8040 70  0000 C CNN
+F 1 "i2c_sda_1" H 4844 7919 70  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 4800 7800 50  0001 C CNN
+F 3 "https://www.keyelco.com/userAssets/file/M65p64.pdf" H 4800 7800 50  0001 C CNN
+F 4 "0.23" H 4800 7800 50  0001 C CNN "Price"
+F 5 "680" H 4800 7800 50  0001 C CNN "MFN"
+F 6 "https://www.digikey.com/en/products/detail/keystone-electronics/680/316581" H 4800 7800 50  0001 C CNN "Link"
+	1    4800 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 7350 3900 7800
+Wire Wire Line
+	3900 7800 4800 7800
+$Comp
+L engine-board-eagle-import:TEST-POINTTP_15TH_THRU TP102
+U 1 1 61D129F9
+P 5400 7550
+F 0 "TP102" H 5444 7790 70  0000 C CNN
+F 1 "i2c_scl_1" H 5444 7669 70  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 5400 7550 50  0001 C CNN
+F 3 "https://www.keyelco.com/userAssets/file/M65p64.pdf" H 5400 7550 50  0001 C CNN
+F 4 "0.23" H 5400 7550 50  0001 C CNN "Price"
+F 5 "680" H 5400 7550 50  0001 C CNN "MFN"
+F 6 "https://www.digikey.com/en/products/detail/keystone-electronics/680/316581" H 5400 7550 50  0001 C CNN "Link"
+	1    5400 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 7550 5050 7550
+Wire Wire Line
+	5050 7550 5050 7250
+Wire Wire Line
+	5050 7250 3900 7250
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61DA7F8F
+P 9650 2450
+F 0 "H1" H 9750 2496 50  0000 L CNN
+F 1 "MountingHole" H 9750 2405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.3mm_M5_Pad" H 9650 2450 50  0001 C CNN
+F 3 "~" H 9650 2450 50  0001 C CNN
+	1    9650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61DAC0EA
+P 9650 2650
+F 0 "H2" H 9750 2696 50  0000 L CNN
+F 1 "MountingHole" H 9750 2605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.3mm_M5_Pad" H 9650 2650 50  0001 C CNN
+F 3 "~" H 9650 2650 50  0001 C CNN
+	1    9650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 61DAEE2D
+P 9650 2850
+F 0 "H3" H 9750 2896 50  0000 L CNN
+F 1 "MountingHole" H 9750 2805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.3mm_M5_Pad" H 9650 2850 50  0001 C CNN
+F 3 "~" H 9650 2850 50  0001 C CNN
+	1    9650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61DB1B7F
+P 9650 3050
+F 0 "H4" H 9750 3096 50  0000 L CNN
+F 1 "MountingHole" H 9750 3005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.3mm_M5_Pad" H 9650 3050 50  0001 C CNN
+F 3 "~" H 9650 3050 50  0001 C CNN
+	1    9650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 61DB4859
+P 9650 3250
+F 0 "H5" H 9750 3296 50  0000 L CNN
+F 1 "MountingHole" H 9750 3205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.3mm_M5_Pad" H 9650 3250 50  0001 C CNN
+F 3 "~" H 9650 3250 50  0001 C CNN
+	1    9650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 61DB7527
+P 9650 3450
+F 0 "H6" H 9750 3496 50  0000 L CNN
+F 1 "MountingHole" H 9750 3405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.3mm_M5_Pad" H 9650 3450 50  0001 C CNN
+F 3 "~" H 9650 3450 50  0001 C CNN
+	1    9650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 61DBE384
+P 9650 3650
+F 0 "H7" H 9750 3696 50  0000 L CNN
+F 1 "MountingHole" H 9750 3605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.3mm_M5_Pad" H 9650 3650 50  0001 C CNN
+F 3 "~" H 9650 3650 50  0001 C CNN
+	1    9650 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 61DC1124
+P 9650 3850
+F 0 "H8" H 9750 3896 50  0000 L CNN
+F 1 "MountingHole" H 9750 3805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.3mm_M5_Pad" H 9650 3850 50  0001 C CNN
+F 3 "~" H 9650 3850 50  0001 C CNN
+	1    9650 3850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
