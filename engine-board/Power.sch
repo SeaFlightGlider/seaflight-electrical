@@ -144,19 +144,6 @@ F 6 "11.35" H 5450 900 50  0001 C CNN "Price"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
-U 1 1 61B81F43
-P 5900 900
-AR Path="/61B81F43" Ref="#PWR?"  Part="1" 
-AR Path="/61B60659/61B81F43" Ref="#PWR0416"  Part="1" 
-F 0 "#PWR0416" H 5900 750 50  0001 C CNN
-F 1 "+3V3" H 5915 1073 50  0000 C CNN
-F 2 "" H 5900 900 50  0001 C CNN
-F 3 "" H 5900 900 50  0001 C CNN
-	1    5900 900 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:-BATT #PWR?
 U 1 1 61B81F49
 P 4900 1300
@@ -183,18 +170,12 @@ F 3 "" H 5900 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 900  5900 900 
-Wire Wire Line
 	5450 1200 5900 1200
 Wire Wire Line
 	4900 1300 5450 1300
 Wire Wire Line
 	5450 1300 5450 1200
 Connection ~ 5450 1200
-Wire Wire Line
-	4200 900  5150 900 
-Text Label 4200 900  0    50   ~ 0
-3v_measured_BATT+
 $Comp
 L Regulator_Switching:R-78B5.0-2.0 U?
 U 1 1 61B911F3
@@ -240,14 +221,14 @@ $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 61B91205
-P 5950 2150
+P 7000 3050
 AR Path="/61B91205" Ref="#PWR?"  Part="1" 
 AR Path="/61B60659/61B91205" Ref="#PWR0418"  Part="1" 
-F 0 "#PWR0418" H 5950 2000 50  0001 C CNN
-F 1 "+5V" H 5965 2323 50  0000 C CNN
-F 2 "" H 5950 2150 50  0001 C CNN
-F 3 "" H 5950 2150 50  0001 C CNN
-	1    5950 2150
+F 0 "#PWR0418" H 7000 2900 50  0001 C CNN
+F 1 "+5V" H 7015 3223 50  0000 C CNN
+F 2 "" H 7000 3050 50  0001 C CNN
+F 3 "" H 7000 3050 50  0001 C CNN
+	1    7000 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -255,16 +236,10 @@ Wire Wire Line
 Wire Wire Line
 	5500 2550 5500 2500
 Wire Wire Line
-	5950 2150 5800 2150
-Wire Wire Line
 	5950 2500 5500 2500
 Connection ~ 5500 2500
 Wire Wire Line
 	5500 2500 5500 2450
-Text Label 4250 2150 0    50   ~ 0
-5v_measured_BATT+
-Wire Wire Line
-	4250 2150 5200 2150
 $Comp
 L Connector_Generic:Conn_02x06_Top_Bottom J?
 U 1 1 61B9DE9B
@@ -329,11 +304,11 @@ P 4300 6400
 AR Path="/61BB0AA1" Ref="U?"  Part="1" 
 AR Path="/61B60659/61BB0AA1" Ref="U401"  Part="1" 
 F 0 "U401" H 4400 7365 50  0000 C CNN
-F 1 "Pololu_2812" H 4400 7274 50  0000 C CNN
-F 2 "Module:Pololu_SlidePwrSwitch" H 4350 7250 50  0001 C CNN
-F 3 "https://www.pololu.com/product/2812" H 4350 7250 50  0001 C CNN
-F 4 "https://www.pololu.com/product/2812" H 4300 6400 50  0001 C CNN "Link"
-F 5 "2812" H 4300 6400 50  0001 C CNN "MPM"
+F 1 "Pololu_2814" H 4400 7274 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 4350 7250 50  0001 C CNN
+F 3 "https://www.pololu.com/product/2814" H 4350 7250 50  0001 C CNN
+F 4 "https://www.pololu.com/product/2814" H 4300 6400 50  0001 C CNN "Link"
+F 5 "2814" H 4300 6400 50  0001 C CNN "MPM"
 F 6 "4.75" H 4300 6400 50  0001 C CNN "Price"
 	1    4300 6400
 	1    0    0    -1  
@@ -367,14 +342,14 @@ raw_BATT-
 $Comp
 L power:-BATT #PWR?
 U 1 1 61BB0AB5
-P 3450 5800
+P 3150 5800
 AR Path="/61BB0AB5" Ref="#PWR?"  Part="1" 
 AR Path="/61B60659/61BB0AB5" Ref="#PWR0411"  Part="1" 
-F 0 "#PWR0411" H 3450 5650 50  0001 C CNN
-F 1 "-BATT" H 3465 5973 50  0000 C CNN
-F 2 "" H 3450 5800 50  0001 C CNN
-F 3 "" H 3450 5800 50  0001 C CNN
-	1    3450 5800
+F 0 "#PWR0411" H 3150 5650 50  0001 C CNN
+F 1 "-BATT" H 3165 5973 50  0000 C CNN
+F 2 "" H 3150 5800 50  0001 C CNN
+F 3 "" H 3150 5800 50  0001 C CNN
+	1    3150 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -386,14 +361,11 @@ Wire Wire Line
 Wire Wire Line
 	3950 5900 3800 5900
 Wire Wire Line
-	3450 5900 3450 5800
+	3150 5900 3150 5800
 Wire Wire Line
 	3950 6000 3800 6000
 Wire Wire Line
 	3800 6000 3800 5900
-Connection ~ 3800 5900
-Wire Wire Line
-	3800 5900 3450 5900
 $Comp
 L power:-BATT #PWR?
 U 1 1 61BB0AC4
@@ -563,30 +535,20 @@ F 3 "" H 7000 2350 50  0001 C CNN
 	1    7000 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7650 2750 7750 2750
-Wire Wire Line
-	7650 2900 7650 2750
-Wire Wire Line
-	8100 2900 7650 2900
 $Comp
 L power:+BATT #PWR?
 U 1 1 618FB501
-P 8100 2900
+P 5000 2150
 AR Path="/618FB501" Ref="#PWR?"  Part="1" 
 AR Path="/618F9F5D/618FB501" Ref="#PWR?"  Part="1" 
 AR Path="/61B60659/618FB501" Ref="#PWR0425"  Part="1" 
-F 0 "#PWR0425" H 8100 2750 50  0001 C CNN
-F 1 "+BATT" H 8115 3073 50  0000 C CNN
-F 2 "" H 8100 2900 50  0001 C CNN
-F 3 "" H 8100 2900 50  0001 C CNN
-	1    8100 2900
+F 0 "#PWR0425" H 5000 2000 50  0001 C CNN
+F 1 "+BATT" H 5015 2323 50  0000 C CNN
+F 2 "" H 5000 2150 50  0001 C CNN
+F 3 "" H 5000 2150 50  0001 C CNN
+	1    5000 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7400 2650 7750 2650
-Wire Wire Line
-	7400 2850 7400 2650
 Wire Wire Line
 	7000 2350 7750 2350
 Wire Wire Line
@@ -599,27 +561,6 @@ Text Label 7200 2550 0    50   ~ 0
 i2c_sda_1
 Text Label 7200 2450 0    50   ~ 0
 i2c_scl_1
-$Comp
-L Connector:Conn_01x06_Female J?
-U 1 1 618FB515
-P 7950 2450
-AR Path="/618FB515" Ref="J?"  Part="1" 
-AR Path="/618F9F5D/618FB515" Ref="J?"  Part="1" 
-AR Path="/61B60659/618FB515" Ref="J407"  Part="1" 
-F 0 "J407" H 7978 2426 50  0000 L CNN
-F 1 "5V Current Sensor" H 7978 2335 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 7950 2450 50  0001 C CNN
-F 3 "~" H 7950 2450 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 7950 2450 50  0001 C CNN "Link"
-F 5 "Samtec Inc." H 7950 2450 50  0001 C CNN "MANUFACTURER"
-F 6 "SSQ-106-01-G-S" H 7950 2450 50  0001 C CNN "MPN"
-F 7 "1.35" H 7950 2450 50  0001 C CNN "Price"
-F 8 "9.95" H 7950 2450 50  0001 C CNN "Price2"
-F 9 "https://www.adafruit.com/product/904" H 7950 2450 50  0001 C CNN "Link2"
-F 10 "ADDR=0x41" H 8200 2500 50  0000 C CNN "I2C_ADDR"
-	1    7950 2450
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 6190A218
@@ -648,27 +589,6 @@ F 3 "" H 7000 1050 50  0001 C CNN
 	1    7000 1050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x06_Female J?
-U 1 1 6190A228
-P 7950 1150
-AR Path="/6190A228" Ref="J?"  Part="1" 
-AR Path="/618F9F5D/6190A228" Ref="J?"  Part="1" 
-AR Path="/61B60659/6190A228" Ref="J406"  Part="1" 
-F 0 "J406" H 7978 1126 50  0000 L CNN
-F 1 "3V Current Sensor" H 7978 1035 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 7950 1150 50  0001 C CNN
-F 3 "~" H 7950 1150 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 7950 1150 50  0001 C CNN "Link"
-F 5 "Samtec Inc." H 7950 1150 50  0001 C CNN "MANUFACTURER"
-F 6 "SSQ-106-01-G-S" H 7950 1150 50  0001 C CNN "MPN"
-F 7 "1.35" H 7950 1150 50  0001 C CNN "Price"
-F 8 "ADDR=0x44" H 8200 1200 50  0000 C CNN "I2C_ADDR"
-F 9 "https://www.adafruit.com/product/904" H 7950 1150 50  0001 C CNN "Link2"
-F 10 "9.95" H 7950 1150 50  0001 C CNN "Price2"
-	1    7950 1150
-	1    0    0    -1  
-$EndComp
 Text Label 7200 1150 0    50   ~ 0
 i2c_scl_1
 Text Label 7200 1250 0    50   ~ 0
@@ -681,30 +601,20 @@ Wire Wire Line
 	7000 950  7750 950 
 Wire Wire Line
 	7000 1050 7750 1050
-Wire Wire Line
-	7400 1550 7400 1350
-Wire Wire Line
-	7400 1350 7750 1350
 $Comp
 L power:+BATT #PWR?
 U 1 1 6190A238
-P 8100 1600
+P 4900 900
 AR Path="/6190A238" Ref="#PWR?"  Part="1" 
 AR Path="/618F9F5D/6190A238" Ref="#PWR?"  Part="1" 
 AR Path="/61B60659/6190A238" Ref="#PWR0424"  Part="1" 
-F 0 "#PWR0424" H 8100 1450 50  0001 C CNN
-F 1 "+BATT" H 8115 1773 50  0000 C CNN
-F 2 "" H 8100 1600 50  0001 C CNN
-F 3 "" H 8100 1600 50  0001 C CNN
-	1    8100 1600
+F 0 "#PWR0424" H 4900 750 50  0001 C CNN
+F 1 "+BATT" H 4915 1073 50  0000 C CNN
+F 2 "" H 4900 900 50  0001 C CNN
+F 3 "" H 4900 900 50  0001 C CNN
+	1    4900 900 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8100 1600 7650 1600
-Wire Wire Line
-	7650 1600 7650 1450
-Wire Wire Line
-	7650 1450 7750 1450
 $Comp
 L power:+3.3V #PWR?
 U 1 1 6192596B
@@ -733,27 +643,6 @@ F 3 "" H 3100 4400 50  0001 C CNN
 	1    3100 4400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x06_Female J?
-U 1 1 6192597B
-P 4050 4500
-AR Path="/6192597B" Ref="J?"  Part="1" 
-AR Path="/618F9F5D/6192597B" Ref="J?"  Part="1" 
-AR Path="/61B60659/6192597B" Ref="J403"  Part="1" 
-F 0 "J403" H 4078 4476 50  0000 L CNN
-F 1 "INA219 Engine Current Sensor" H 4078 4385 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 4050 4500 50  0001 C CNN
-F 3 "~" H 4050 4500 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 4050 4500 50  0001 C CNN "Link"
-F 5 "Samtec Inc." H 4050 4500 50  0001 C CNN "MANUFACTURER"
-F 6 "SSQ-106-01-G-S" H 4050 4500 50  0001 C CNN "MPN"
-F 7 "1.35" H 4050 4500 50  0001 C CNN "Price"
-F 8 "9.95" H 4050 4500 50  0001 C CNN "Price2"
-F 9 "https://www.adafruit.com/product/904" H 4050 4500 50  0001 C CNN "Link2"
-F 10 "ADDR=0x40" H 4300 4550 50  0000 C CNN "I2C_ADDR"
-	1    4050 4500
-	1    0    0    -1  
-$EndComp
 Text Label 3300 4500 0    50   ~ 0
 i2c_scl_1
 Text Label 3300 4600 0    50   ~ 0
@@ -767,25 +656,25 @@ Wire Wire Line
 Wire Wire Line
 	3100 4400 3850 4400
 Wire Wire Line
-	3850 5000 3850 4800
+	3850 5200 3850 5000
 Wire Wire Line
-	3500 4700 3850 4700
+	3500 4900 3850 4900
 $Comp
 L power:+BATT #PWR?
 U 1 1 6192598A
-P 3700 5000
+P 3700 5200
 AR Path="/6192598A" Ref="#PWR?"  Part="1" 
 AR Path="/618F9F5D/6192598A" Ref="#PWR?"  Part="1" 
 AR Path="/61B60659/6192598A" Ref="#PWR0412"  Part="1" 
-F 0 "#PWR0412" H 3700 4850 50  0001 C CNN
-F 1 "+BATT" H 3715 5173 50  0000 C CNN
-F 2 "" H 3700 5000 50  0001 C CNN
-F 3 "" H 3700 5000 50  0001 C CNN
-	1    3700 5000
+F 0 "#PWR0412" H 3700 5050 50  0001 C CNN
+F 1 "+BATT" H 3715 5373 50  0000 C CNN
+F 2 "" H 3700 5200 50  0001 C CNN
+F 3 "" H 3700 5200 50  0001 C CNN
+	1    3700 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 5000 3850 5000
+	3700 5200 3850 5200
 Wire Wire Line
 	5350 5900 6200 5900
 Connection ~ 5350 5900
@@ -813,7 +702,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 5450 3500 5450
 Wire Wire Line
-	3500 4700 3500 5450
+	3500 4900 3500 5450
 Connection ~ 3500 5450
 Wire Wire Line
 	3500 5450 3800 5450
@@ -821,12 +710,155 @@ Text HLabel 4450 3650 0    50   Input ~ 0
 i2c_scl_1
 Text HLabel 4450 3800 0    50   Input ~ 0
 i2c_sda_1
+$Comp
+L Connector:Conn_01x08_Female J?
+U 1 1 61D010DF
+P 4050 4600
+AR Path="/61D010DF" Ref="J?"  Part="1" 
+AR Path="/618F9F5D/61D010DF" Ref="J?"  Part="1" 
+AR Path="/61B60659/61D010DF" Ref="J403"  Part="1" 
+F 0 "J403" H 4078 4576 50  0000 L CNN
+F 1 "Engine Current Sensor" H 4078 4485 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 4050 4600 50  0001 C CNN
+F 3 "~" H 4050 4600 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 4050 4600 50  0001 C CNN "Link"
+F 5 "Samtec Inc." H 4050 4600 50  0001 C CNN "MANUFACTURER"
+F 6 "SSQ-108-01-G-S" H 4050 4600 50  0001 C CNN "MPN"
+F 7 "1.35" H 4050 4600 50  0001 C CNN "Price"
+F 8 "9.95" H 4050 4600 50  0001 C CNN "Price2"
+F 9 "https://www.adafruit.com/product/4226" H 4050 4600 50  0001 C CNN "Link2"
+F 10 "ADDR=0x40" H 4300 4650 50  0000 C CNN "I2C_ADDR"
+	1    4050 4600
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	7400 2850 4250 2850
+	3150 5900 3800 5900
+Connection ~ 3800 5900
+$Comp
+L Connector:Conn_01x08_Female J?
+U 1 1 61D4B368
+P 7950 2550
+AR Path="/61D4B368" Ref="J?"  Part="1" 
+AR Path="/618F9F5D/61D4B368" Ref="J?"  Part="1" 
+AR Path="/61B60659/61D4B368" Ref="J407"  Part="1" 
+F 0 "J407" H 7978 2526 50  0000 L CNN
+F 1 "5V Current Sensor" H 7978 2435 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 7950 2550 50  0001 C CNN
+F 3 "~" H 7950 2550 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 7950 2550 50  0001 C CNN "Link"
+F 5 "Samtec Inc." H 7950 2550 50  0001 C CNN "MANUFACTURER"
+F 6 "SSQ-108-01-G-S" H 7950 2550 50  0001 C CNN "MPN"
+F 7 "1.35" H 7950 2550 50  0001 C CNN "Price"
+F 8 "9.95" H 7950 2550 50  0001 C CNN "Price2"
+F 9 "https://www.adafruit.com/product/4226" H 7950 2550 50  0001 C CNN "Link2"
+F 10 "ADDR=0x41" H 8200 2600 50  0000 C CNN "I2C_ADDR"
+	1    7950 2550
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4250 2850 4250 2150
+	3850 4800 3500 4800
 Wire Wire Line
-	7400 1550 4200 1550
+	3500 4800 3500 4900
+Connection ~ 3500 4900
 Wire Wire Line
-	4200 1550 4200 900 
+	7600 3050 7600 2950
+Wire Wire Line
+	7600 2950 7750 2950
+Wire Wire Line
+	7750 2750 7750 2850
+Connection ~ 7750 2850
+$Comp
+L Connector:Conn_01x08_Female J?
+U 1 1 61DAFA14
+P 7950 1250
+AR Path="/61DAFA14" Ref="J?"  Part="1" 
+AR Path="/618F9F5D/61DAFA14" Ref="J?"  Part="1" 
+AR Path="/61B60659/61DAFA14" Ref="J406"  Part="1" 
+F 0 "J406" H 7978 1226 50  0000 L CNN
+F 1 "3V Current Sensor" H 7978 1135 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 7950 1250 50  0001 C CNN
+F 3 "~" H 7950 1250 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 7950 1250 50  0001 C CNN "Link"
+F 5 "Samtec Inc." H 7950 1250 50  0001 C CNN "MANUFACTURER"
+F 6 "SSQ-108-01-G-S" H 7950 1250 50  0001 C CNN "MPN"
+F 7 "1.35" H 7950 1250 50  0001 C CNN "Price"
+F 8 "9.95" H 7950 1250 50  0001 C CNN "Price2"
+F 9 "https://www.adafruit.com/product/4226" H 7950 1250 50  0001 C CNN "Link2"
+F 10 "ADDR=0x44" H 8200 1300 50  0000 C CNN "I2C_ADDR"
+	1    7950 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1400 7050 1400
+Wire Wire Line
+	7050 1400 7050 1550
+Wire Wire Line
+	7050 1550 7500 1550
+Wire Wire Line
+	7750 1450 7500 1450
+Wire Wire Line
+	7500 1450 7500 1550
+Connection ~ 7500 1550
+Wire Wire Line
+	7500 1550 7750 1550
+Wire Wire Line
+	4900 900  5150 900 
+Wire Wire Line
+	6750 900  6750 1400
+Wire Wire Line
+	5750 900  6750 900 
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61DE19EF
+P 6550 1650
+AR Path="/61DE19EF" Ref="#PWR?"  Part="1" 
+AR Path="/618F9F5D/61DE19EF" Ref="#PWR?"  Part="1" 
+AR Path="/61B60659/61DE19EF" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 6550 1500 50  0001 C CNN
+F 1 "+3.3V" H 6565 1823 50  0000 C CNN
+F 2 "" H 6550 1650 50  0001 C CNN
+F 3 "" H 6550 1650 50  0001 C CNN
+	1    6550 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1650 7750 1650
+Wire Wire Line
+	5000 2150 5200 2150
+Wire Wire Line
+	7600 3050 7000 3050
+Wire Wire Line
+	7250 2850 7250 2700
+Wire Wire Line
+	7250 2700 6350 2700
+Wire Wire Line
+	6350 2700 6350 2150
+Wire Wire Line
+	5800 2150 6350 2150
+Wire Wire Line
+	7250 2850 7750 2850
+$Comp
+L MiscellaneousDevices:SWITCH_SPDT SW401
+U 1 1 61D557E7
+P 2450 6600
+F 0 "SW401" H 2450 6886 50  0000 C CNN
+F 1 "POWER" H 2450 6795 50  0000 C CNN
+F 2 "Module:SliderSwitch_Simple" H 2450 6908 60  0001 C CNN
+F 3 "https://www.adafruit.com/product/805" H 2450 6802 60  0001 C CNN
+F 4 "0.95" H 2450 6600 50  0001 C CNN "Price"
+	1    2450 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 6600 2300 6850
+Wire Wire Line
+	2300 6850 3150 6850
+Wire Wire Line
+	3150 6850 3150 6700
+Connection ~ 3150 6700
+Wire Wire Line
+	2600 6650 3050 6650
+Wire Wire Line
+	3050 6650 3050 6600
+Connection ~ 3050 6600
 $EndSCHEMATC

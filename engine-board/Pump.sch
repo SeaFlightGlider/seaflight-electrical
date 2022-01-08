@@ -79,7 +79,6 @@ Wire Wire Line
 	2750 2800 2650 2800
 Wire Wire Line
 	2650 2800 2650 2700
-Connection ~ 2650 2700
 Wire Wire Line
 	2650 2700 2750 2700
 Wire Wire Line
@@ -89,8 +88,8 @@ L Connector_Generic:Conn_02x06_Top_Bottom J?
 U 1 1 619BE7D1
 P 2950 2900
 AR Path="/619BE7D1" Ref="J?"  Part="1" 
-AR Path="/619906DF/619BE7D1" Ref="J302"  Part="1" 
-F 0 "J302" H 3000 3317 50  0000 C CNN
+AR Path="/619906DF/619BE7D1" Ref="J1"  Part="1" 
+F 0 "J1" H 3000 3317 50  0000 C CNN
 F 1 "MAXON Pump Controller" H 3000 3226 50  0000 C CNN
 F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-12BE" H 2950 2900 50  0001 C CNN
 F 3 "~" H 2950 2900 50  0001 C CNN
@@ -105,26 +104,6 @@ Wire Wire Line
 	3600 2500 3600 2700
 Wire Wire Line
 	3250 2700 3600 2700
-$Comp
-L Connector:Conn_01x06_Female J?
-U 1 1 619E9F9A
-P 9000 2300
-AR Path="/619E9F9A" Ref="J?"  Part="1" 
-AR Path="/619906DF/619E9F9A" Ref="J308"  Part="1" 
-F 0 "J308" H 9028 2276 50  0000 L CNN
-F 1 "Solenoid Current Sensor" H 9028 2185 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 9000 2300 50  0001 C CNN
-F 3 "~" H 9000 2300 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 9000 2300 50  0001 C CNN "Link"
-F 5 "Samtec Inc." H 9000 2300 50  0001 C CNN "MANUFACTURER"
-F 6 "SSQ-106-01-G-S" H 9000 2300 50  0001 C CNN "MPN"
-F 7 "1.35" H 9000 2300 50  0001 C CNN "Price"
-F 8 "ADDR=0x42" H 9250 2350 50  0000 C CNN "I2C_ADDR"
-F 9 "9.95" H 9000 2300 50  0001 C CNN "Price2"
-F 10 "https://www.adafruit.com/product/904" H 9000 2300 50  0001 C CNN "Link2"
-	1    9000 2300
-	1    0    0    -1  
-$EndComp
 Text Label 8250 2300 0    50   ~ 0
 i2c_scl_1
 Text Label 8250 2400 0    50   ~ 0
@@ -133,18 +112,8 @@ Wire Wire Line
 	8250 2300 8800 2300
 Wire Wire Line
 	8250 2400 8800 2400
-Wire Wire Line
-	8800 2800 8800 2600
-Text Label 7500 2700 0    50   ~ 0
+Text Label 7600 2800 0    50   ~ 0
 solenoid_measured_BATT+
-Wire Wire Line
-	8450 2700 8450 2500
-Wire Wire Line
-	8450 2500 8800 2500
-Wire Wire Line
-	7500 2700 8450 2700
-Wire Wire Line
-	8800 2800 8600 2800
 $Comp
 L Transistor_FET:IRLB8721PBF Q?
 U 1 1 619E9FAA
@@ -233,8 +202,6 @@ Wire Wire Line
 Connection ~ 9100 1600
 Wire Wire Line
 	9100 1600 9200 1600
-Wire Wire Line
-	7950 1000 7950 1300
 Connection ~ 7950 1300
 $Comp
 L SeaFlight~Glider:Solenoid_Socket_2pin J?
@@ -257,14 +224,14 @@ Connection ~ 9200 1500
 $Comp
 L power:+BATT #PWR?
 U 1 1 619E9FDE
-P 8600 2800
+P 7650 2400
 AR Path="/619E9FDE" Ref="#PWR?"  Part="1" 
 AR Path="/619906DF/619E9FDE" Ref="#PWR0319"  Part="1" 
-F 0 "#PWR0319" H 8600 2650 50  0001 C CNN
-F 1 "+BATT" H 8615 2973 50  0000 C CNN
-F 2 "" H 8600 2800 50  0001 C CNN
-F 3 "" H 8600 2800 50  0001 C CNN
-	1    8600 2800
+F 0 "#PWR0319" H 7650 2250 50  0001 C CNN
+F 1 "+BATT" H 7665 2573 50  0000 C CNN
+F 2 "" H 7650 2400 50  0001 C CNN
+F 3 "" H 7650 2400 50  0001 C CNN
+	1    7650 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -566,27 +533,6 @@ F 3 "" H 2150 1650 50  0001 C CNN
 	1    2150 1650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x06_Female J?
-U 1 1 61954B2D
-P 3100 1750
-AR Path="/61954B2D" Ref="J?"  Part="1" 
-AR Path="/618F9F5D/61954B2D" Ref="J?"  Part="1" 
-AR Path="/619906DF/61954B2D" Ref="J303"  Part="1" 
-F 0 "J303" H 3128 1726 50  0000 L CNN
-F 1 "Pump Current Sensor" H 3128 1635 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 3100 1750 50  0001 C CNN
-F 3 "~" H 3100 1750 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 3100 1750 50  0001 C CNN "Link"
-F 5 "Samtec Inc." H 3100 1750 50  0001 C CNN "MANUFACTURER"
-F 6 "SSQ-106-01-G-S" H 3100 1750 50  0001 C CNN "MPN"
-F 7 "1.35" H 3100 1750 50  0001 C CNN "Price"
-F 8 "9.95" H 3100 1750 50  0001 C CNN "Price2"
-F 9 "https://www.adafruit.com/product/904" H 3100 1750 50  0001 C CNN "Link2"
-F 10 "ADDR=0x43" H 3350 1800 50  0000 C CNN "I2C_ADDR"
-	1    3100 1750
-	1    0    0    -1  
-$EndComp
 Text Label 2350 1750 0    50   ~ 0
 i2c_scl_1
 Text Label 2350 1850 0    50   ~ 0
@@ -599,34 +545,24 @@ Wire Wire Line
 	2150 1550 2900 1550
 Wire Wire Line
 	2150 1650 2900 1650
-Text Label 1600 2150 0    50   ~ 0
+Text Label 1950 2250 0    50   ~ 0
 pump_measured_BATT+
 Wire Wire Line
-	2550 2150 2550 1950
-Wire Wire Line
-	2550 1950 2900 1950
-Wire Wire Line
-	1600 2150 2550 2150
+	1950 2250 2900 2250
 $Comp
 L power:+BATT #PWR?
 U 1 1 61954B3D
-P 3250 2200
+P 1850 1900
 AR Path="/61954B3D" Ref="#PWR?"  Part="1" 
 AR Path="/618F9F5D/61954B3D" Ref="#PWR?"  Part="1" 
 AR Path="/619906DF/61954B3D" Ref="#PWR0307"  Part="1" 
-F 0 "#PWR0307" H 3250 2050 50  0001 C CNN
-F 1 "+BATT" H 3265 2373 50  0000 C CNN
-F 2 "" H 3250 2200 50  0001 C CNN
-F 3 "" H 3250 2200 50  0001 C CNN
-	1    3250 2200
+F 0 "#PWR0307" H 1850 1750 50  0001 C CNN
+F 1 "+BATT" H 1865 2073 50  0000 C CNN
+F 2 "" H 1850 1900 50  0001 C CNN
+F 3 "" H 1850 1900 50  0001 C CNN
+	1    1850 1900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3250 2200 2800 2200
-Wire Wire Line
-	2800 2200 2800 2050
-Wire Wire Line
-	2800 2050 2900 2050
 $Comp
 L power:+3.3V #PWR?
 U 1 1 61954B46
@@ -655,27 +591,6 @@ F 3 "" H 5950 5300 50  0001 C CNN
 	1    5950 5300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x06_Female J?
-U 1 1 61954B56
-P 6900 5400
-AR Path="/61954B56" Ref="J?"  Part="1" 
-AR Path="/618F9F5D/61954B56" Ref="J?"  Part="1" 
-AR Path="/619906DF/61954B56" Ref="J307"  Part="1" 
-F 0 "J307" H 6928 5376 50  0000 L CNN
-F 1 "Turbine Current Sensor" H 6928 5285 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6900 5400 50  0001 C CNN
-F 3 "~" H 6900 5400 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 6900 5400 50  0001 C CNN "Link"
-F 5 "Samtec Inc." H 6900 5400 50  0001 C CNN "MANUFACTURER"
-F 6 "SSQ-106-01-G-S" H 6900 5400 50  0001 C CNN "MPN"
-F 7 "1.35" H 6900 5400 50  0001 C CNN "Price"
-F 8 "9.95" H 6900 5400 50  0001 C CNN "Price2"
-F 9 "https://www.adafruit.com/product/904" H 6900 5400 50  0001 C CNN "Link2"
-F 10 "ADDR=0x45" H 7150 5450 50  0000 C CNN "I2C_ADDR"
-	1    6900 5400
-	1    0    0    -1  
-$EndComp
 Text Label 6150 5400 0    50   ~ 0
 i2c_scl_1
 Text Label 6150 5500 0    50   ~ 0
@@ -683,15 +598,15 @@ i2c_sda_1
 $Comp
 L power:+BATT #PWR?
 U 1 1 61954B5E
-P 6500 5900
+P 5500 5750
 AR Path="/61954B5E" Ref="#PWR?"  Part="1" 
 AR Path="/618F9F5D/61954B5E" Ref="#PWR?"  Part="1" 
 AR Path="/619906DF/61954B5E" Ref="#PWR0315"  Part="1" 
-F 0 "#PWR0315" H 6500 5750 50  0001 C CNN
-F 1 "+BATT" H 6515 6073 50  0000 C CNN
-F 2 "" H 6500 5900 50  0001 C CNN
-F 3 "" H 6500 5900 50  0001 C CNN
-	1    6500 5900
+F 0 "#PWR0315" H 5500 5600 50  0001 C CNN
+F 1 "+BATT" H 5515 5923 50  0000 C CNN
+F 2 "" H 5500 5750 50  0001 C CNN
+F 3 "" H 5500 5750 50  0001 C CNN
+	1    5500 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -702,24 +617,181 @@ Wire Wire Line
 	5950 5200 6700 5200
 Wire Wire Line
 	5950 5300 6700 5300
-Wire Wire Line
-	6700 5900 6700 5700
-Text Label 5400 5800 0    50   ~ 0
+Text Label 5750 5900 0    50   ~ 0
 turbine1_measured_pwr
 Wire Wire Line
-	6350 5800 6350 5600
-Wire Wire Line
-	6350 5600 6700 5600
-Wire Wire Line
-	5400 5800 6350 5800
-Wire Wire Line
-	6500 5900 6700 5900
-Wire Wire Line
-	1600 2150 1600 2700
-Wire Wire Line
-	1600 2700 2650 2700
+	5750 5900 6700 5900
 Wire Wire Line
 	900  3100 900  3200
 Text HLabel 6450 4650 0    50   Input ~ 0
 turbine_2_pwm
+$Comp
+L Connector:Conn_01x08_Female J?
+U 1 1 61E1A241
+P 6900 5500
+AR Path="/61E1A241" Ref="J?"  Part="1" 
+AR Path="/618F9F5D/61E1A241" Ref="J?"  Part="1" 
+AR Path="/61B60659/61E1A241" Ref="J?"  Part="1" 
+AR Path="/619906DF/61E1A241" Ref="J307"  Part="1" 
+F 0 "J307" H 6928 5476 50  0000 L CNN
+F 1 "Turbine Current Sensor" H 6928 5385 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 6900 5500 50  0001 C CNN
+F 3 "~" H 6900 5500 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 6900 5500 50  0001 C CNN "Link"
+F 5 "Samtec Inc." H 6900 5500 50  0001 C CNN "MANUFACTURER"
+F 6 "SSQ-108-01-G-S" H 6900 5500 50  0001 C CNN "MPN"
+F 7 "1.35" H 6900 5500 50  0001 C CNN "Price"
+F 8 "9.95" H 6900 5500 50  0001 C CNN "Price2"
+F 9 "https://www.adafruit.com/product/4226" H 6900 5500 50  0001 C CNN "Link2"
+F 10 "ADDR=0x45" H 7150 5550 50  0000 C CNN "I2C_ADDR"
+	1    6900 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5800 6400 5800
+Wire Wire Line
+	5500 5800 5500 5750
+Wire Wire Line
+	6700 5700 6400 5700
+Wire Wire Line
+	6400 5700 6400 5800
+Connection ~ 6400 5800
+Wire Wire Line
+	6400 5800 5500 5800
+$Comp
+L Connector:Conn_01x08_Female J?
+U 1 1 61E43F26
+P 9000 2400
+AR Path="/61E43F26" Ref="J?"  Part="1" 
+AR Path="/618F9F5D/61E43F26" Ref="J?"  Part="1" 
+AR Path="/61B60659/61E43F26" Ref="J?"  Part="1" 
+AR Path="/619906DF/61E43F26" Ref="J308"  Part="1" 
+F 0 "J308" H 9028 2376 50  0000 L CNN
+F 1 "Solenoid Current Sensor" H 9028 2285 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 9000 2400 50  0001 C CNN
+F 3 "~" H 9000 2400 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 9000 2400 50  0001 C CNN "Link"
+F 5 "Samtec Inc." H 9000 2400 50  0001 C CNN "MANUFACTURER"
+F 6 "SSQ-108-01-G-S" H 9000 2400 50  0001 C CNN "MPN"
+F 7 "1.35" H 9000 2400 50  0001 C CNN "Price"
+F 8 "9.95" H 9000 2400 50  0001 C CNN "Price2"
+F 9 "https://www.adafruit.com/product/4226" H 9000 2400 50  0001 C CNN "Link2"
+F 10 "ADDR=0x42" H 9250 2450 50  0000 C CNN "I2C_ADDR"
+	1    9000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2800 8800 2800
+Wire Wire Line
+	8800 2700 8650 2700
+Wire Wire Line
+	8650 2700 8650 2600
+Wire Wire Line
+	8650 2600 8800 2600
+Wire Wire Line
+	8650 2600 7650 2600
+Wire Wire Line
+	7650 2600 7650 2400
+Connection ~ 8650 2600
+$Comp
+L Connector:Conn_01x08_Female J?
+U 1 1 61E6388C
+P 3100 1850
+AR Path="/61E6388C" Ref="J?"  Part="1" 
+AR Path="/618F9F5D/61E6388C" Ref="J?"  Part="1" 
+AR Path="/61B60659/61E6388C" Ref="J?"  Part="1" 
+AR Path="/619906DF/61E6388C" Ref="J303"  Part="1" 
+F 0 "J303" H 3128 1826 50  0000 L CNN
+F 1 "Pump Current Sensor" H 3128 1735 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 3100 1850 50  0001 C CNN
+F 3 "~" H 3100 1850 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 3100 1850 50  0001 C CNN "Link"
+F 5 "Samtec Inc." H 3100 1850 50  0001 C CNN "MANUFACTURER"
+F 6 "SSQ-108-01-G-S" H 3100 1850 50  0001 C CNN "MPN"
+F 7 "1.35" H 3100 1850 50  0001 C CNN "Price"
+F 8 "9.95" H 3100 1850 50  0001 C CNN "Price2"
+F 9 "https://www.adafruit.com/product/4226" H 3100 1850 50  0001 C CNN "Link2"
+F 10 "ADDR=0x43" H 3350 1900 50  0000 C CNN "I2C_ADDR"
+	1    3100 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2150 2750 2150
+Wire Wire Line
+	2750 2150 2750 2050
+Wire Wire Line
+	2750 2050 2900 2050
+Wire Wire Line
+	2750 2050 1850 2050
+Wire Wire Line
+	1850 2050 1850 1900
+Connection ~ 2750 2050
+Wire Wire Line
+	2650 2700 1950 2700
+Wire Wire Line
+	1950 2700 1950 2250
+Connection ~ 2650 2700
+$Comp
+L engine-board-eagle-import:TEST-POINTTP_15TH_THRU TP?
+U 1 1 61D301E8
+P 9600 2000
+AR Path="/61D301E8" Ref="TP?"  Part="1" 
+AR Path="/618F9F5D/61D301E8" Ref="TP?"  Part="1" 
+AR Path="/619906DF/61D301E8" Ref="TP304"  Part="1" 
+F 0 "TP304" H 9644 2240 70  0000 C CNN
+F 1 "TP_SolBat+" H 9644 2119 70  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 9600 2000 50  0001 C CNN
+F 3 "https://www.keyelco.com/userAssets/file/M65p64.pdf" H 9600 2000 50  0001 C CNN
+F 4 "0.23" H 9600 2000 50  0001 C CNN "Price"
+F 5 "680" H 9600 2000 50  0001 C CNN "MFN"
+F 6 "https://www.digikey.com/en/products/detail/keystone-electronics/680/316581" H 9600 2000 50  0001 C CNN "Link"
+	1    9600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 1700 9100 2000
+Wire Wire Line
+	9100 2000 9600 2000
+Connection ~ 9100 1700
+$Comp
+L engine-board-eagle-import:TEST-POINTTP_15TH_THRU TP?
+U 1 1 61D3D5E1
+P 9300 1200
+AR Path="/61D3D5E1" Ref="TP?"  Part="1" 
+AR Path="/618F9F5D/61D3D5E1" Ref="TP?"  Part="1" 
+AR Path="/619906DF/61D3D5E1" Ref="TP302"  Part="1" 
+F 0 "TP302" H 9350 1450 70  0000 C CNN
+F 1 "TP_SolVolt" H 9344 1319 70  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 9300 1200 50  0001 C CNN
+F 3 "https://www.keyelco.com/userAssets/file/M65p64.pdf" H 9300 1200 50  0001 C CNN
+F 4 "0.23" H 9300 1200 50  0001 C CNN "Price"
+F 5 "680" H 9300 1200 50  0001 C CNN "MFN"
+F 6 "https://www.digikey.com/en/products/detail/keystone-electronics/680/316581" H 9300 1200 50  0001 C CNN "Link"
+	1    9300 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 9200 1200
+$Comp
+L engine-board-eagle-import:TEST-POINTTP_15TH_THRU TP?
+U 1 1 61D4B1C3
+P 8100 950
+AR Path="/61D4B1C3" Ref="TP?"  Part="1" 
+AR Path="/618F9F5D/61D4B1C3" Ref="TP?"  Part="1" 
+AR Path="/619906DF/61D4B1C3" Ref="TP301"  Part="1" 
+F 0 "TP301" H 8144 1190 70  0000 C CNN
+F 1 "TP_SolGate" H 8144 1069 70  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 8100 950 50  0001 C CNN
+F 3 "https://www.keyelco.com/userAssets/file/M65p64.pdf" H 8100 950 50  0001 C CNN
+F 4 "0.23" H 8100 950 50  0001 C CNN "Price"
+F 5 "680" H 8100 950 50  0001 C CNN "MFN"
+F 6 "https://www.digikey.com/en/products/detail/keystone-electronics/680/316581" H 8100 950 50  0001 C CNN "Link"
+	1    8100 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1200 9200 1200
+Wire Wire Line
+	7950 950  8100 950 
+Wire Wire Line
+	7950 950  7950 1300
 $EndSCHEMATC

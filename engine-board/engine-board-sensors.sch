@@ -123,8 +123,6 @@ F 3 "~" H 9650 1150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8700 1150 8800 1150
-Wire Wire Line
 	9400 1150 9500 1150
 $Comp
 L power:GND #PWR?
@@ -146,43 +144,6 @@ Wire Wire Line
 Connection ~ 9500 1150
 Wire Wire Line
 	9500 1150 9550 1150
-$Comp
-L Connector:TestPoint TP?
-U 1 1 61A5B5F5
-P 8800 1150
-AR Path="/61A5B5F5" Ref="TP?"  Part="1" 
-AR Path="/618F9F5D/61A5B5F5" Ref="TP201"  Part="1" 
-F 0 "TP201" H 8858 1268 50  0000 L CNN
-F 1 "raw leak" H 8858 1177 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_3.0x3.0mm_Drill1.5mm" H 9000 1150 50  0001 C CNN
-F 3 "~" H 9000 1150 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/keystone-electronics/1041/315158" H 8800 1150 50  0001 C CNN "Link"
-F 5 "Keystone" H 8800 1150 50  0001 C CNN "MANUFACTURER"
-F 6 "1041" H 8800 1150 50  0001 C CNN "MPN"
-F 7 "0.30" H 8800 1150 50  0001 C CNN "Price"
-	1    8800 1150
-	1    0    0    -1  
-$EndComp
-Connection ~ 8800 1150
-Wire Wire Line
-	8800 1150 9200 1150
-$Comp
-L Connector:TestPoint TP?
-U 1 1 61A5B5FD
-P 9500 1650
-AR Path="/61A5B5FD" Ref="TP?"  Part="1" 
-AR Path="/618F9F5D/61A5B5FD" Ref="TP202"  Part="1" 
-F 0 "TP202" H 9558 1768 50  0000 L CNN
-F 1 "leak3v3" H 9558 1677 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_3.0x3.0mm_Drill1.5mm" H 9700 1650 50  0001 C CNN
-F 3 "~" H 9700 1650 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/keystone-electronics/1041/315158" H 9500 1650 50  0001 C CNN "Link"
-F 5 "Keystone" H 9500 1650 50  0001 C CNN "MANUFACTURER"
-F 6 "1041" H 9500 1650 50  0001 C CNN "MPN"
-F 7 "0.30" H 9500 1650 50  0001 C CNN "Price"
-	1    9500 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9250 1650 9500 1650
 Wire Wire Line
@@ -644,4 +605,43 @@ F 3 "~" H 7100 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7250 4400 7550 4400
+$Comp
+L engine-board-eagle-import:TEST-POINTTP_15TH_THRU TP?
+U 1 1 61D1F9DE
+P 9500 1650
+AR Path="/61D1F9DE" Ref="TP?"  Part="1" 
+AR Path="/618F9F5D/61D1F9DE" Ref="TP202"  Part="1" 
+F 0 "TP202" H 9544 1890 70  0000 C CNN
+F 1 "TP_LeakSense" H 9544 1769 70  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 9500 1650 50  0001 C CNN
+F 3 "https://www.keyelco.com/userAssets/file/M65p64.pdf" H 9500 1650 50  0001 C CNN
+F 4 "0.23" H 9500 1650 50  0001 C CNN "Price"
+F 5 "680" H 9500 1650 50  0001 C CNN "MFN"
+F 6 "https://www.digikey.com/en/products/detail/keystone-electronics/680/316581" H 9500 1650 50  0001 C CNN "Link"
+	1    9500 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1150 8950 1150
+$Comp
+L engine-board-eagle-import:TEST-POINTTP_15TH_THRU TP?
+U 1 1 61D26F9C
+P 8950 850
+AR Path="/61D26F9C" Ref="TP?"  Part="1" 
+AR Path="/618F9F5D/61D26F9C" Ref="TP201"  Part="1" 
+F 0 "TP201" H 8994 1090 70  0000 C CNN
+F 1 "TP_RawLeak" H 8994 969 70  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 8950 850 50  0001 C CNN
+F 3 "https://www.keyelco.com/userAssets/file/M65p64.pdf" H 8950 850 50  0001 C CNN
+F 4 "0.23" H 8950 850 50  0001 C CNN "Price"
+F 5 "680" H 8950 850 50  0001 C CNN "MFN"
+F 6 "https://www.digikey.com/en/products/detail/keystone-electronics/680/316581" H 8950 850 50  0001 C CNN "Link"
+	1    8950 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 850  8950 1150
+Connection ~ 8950 1150
+Wire Wire Line
+	8950 1150 9200 1150
 $EndSCHEMATC
