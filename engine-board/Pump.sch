@@ -503,7 +503,7 @@ Text HLabel 6450 3850 0    50   Input ~ 0
 turbine_1_pwm
 Text HLabel 900  3200 2    50   Input ~ 0
 pump_motor_analog_gnd
-Text HLabel 7950 1000 0    50   Input ~ 0
+Text HLabel 7950 950  0    50   Input ~ 0
 solenoid_mosfet_gate
 $Comp
 L power:+3.3V #PWR?
@@ -731,67 +731,9 @@ Wire Wire Line
 Wire Wire Line
 	1950 2700 1950 2250
 Connection ~ 2650 2700
-$Comp
-L engine-board-eagle-import:TEST-POINTTP_15TH_THRU TP?
-U 1 1 61D301E8
-P 9600 2000
-AR Path="/61D301E8" Ref="TP?"  Part="1" 
-AR Path="/618F9F5D/61D301E8" Ref="TP?"  Part="1" 
-AR Path="/619906DF/61D301E8" Ref="TP304"  Part="1" 
-F 0 "TP304" H 9644 2240 70  0000 C CNN
-F 1 "TP_SolBat+" H 9644 2119 70  0000 C CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 9600 2000 50  0001 C CNN
-F 3 "https://www.keyelco.com/userAssets/file/M65p64.pdf" H 9600 2000 50  0001 C CNN
-F 4 "0.23" H 9600 2000 50  0001 C CNN "Price"
-F 5 "680" H 9600 2000 50  0001 C CNN "MFN"
-F 6 "https://www.digikey.com/en/products/detail/keystone-electronics/680/316581" H 9600 2000 50  0001 C CNN "Link"
-	1    9600 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 1700 9100 2000
-Wire Wire Line
-	9100 2000 9600 2000
-Connection ~ 9100 1700
-$Comp
-L engine-board-eagle-import:TEST-POINTTP_15TH_THRU TP?
-U 1 1 61D3D5E1
-P 9300 1200
-AR Path="/61D3D5E1" Ref="TP?"  Part="1" 
-AR Path="/618F9F5D/61D3D5E1" Ref="TP?"  Part="1" 
-AR Path="/619906DF/61D3D5E1" Ref="TP302"  Part="1" 
-F 0 "TP302" H 9350 1450 70  0000 C CNN
-F 1 "TP_SolVolt" H 9344 1319 70  0000 C CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 9300 1200 50  0001 C CNN
-F 3 "https://www.keyelco.com/userAssets/file/M65p64.pdf" H 9300 1200 50  0001 C CNN
-F 4 "0.23" H 9300 1200 50  0001 C CNN "Price"
-F 5 "680" H 9300 1200 50  0001 C CNN "MFN"
-F 6 "https://www.digikey.com/en/products/detail/keystone-electronics/680/316581" H 9300 1200 50  0001 C CNN "Link"
-	1    9300 1200
-	1    0    0    -1  
-$EndComp
 Connection ~ 9200 1200
-$Comp
-L engine-board-eagle-import:TEST-POINTTP_15TH_THRU TP?
-U 1 1 61D4B1C3
-P 8100 950
-AR Path="/61D4B1C3" Ref="TP?"  Part="1" 
-AR Path="/618F9F5D/61D4B1C3" Ref="TP?"  Part="1" 
-AR Path="/619906DF/61D4B1C3" Ref="TP301"  Part="1" 
-F 0 "TP301" H 8144 1190 70  0000 C CNN
-F 1 "TP_SolGate" H 8144 1069 70  0000 C CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 8100 950 50  0001 C CNN
-F 3 "https://www.keyelco.com/userAssets/file/M65p64.pdf" H 8100 950 50  0001 C CNN
-F 4 "0.23" H 8100 950 50  0001 C CNN "Price"
-F 5 "680" H 8100 950 50  0001 C CNN "MFN"
-F 6 "https://www.digikey.com/en/products/detail/keystone-electronics/680/316581" H 8100 950 50  0001 C CNN "Link"
-	1    8100 950 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9300 1200 9200 1200
-Wire Wire Line
-	7950 950  8100 950 
 Wire Wire Line
 	7950 950  7950 1300
 $EndSCHEMATC

@@ -21,18 +21,18 @@ AR Path="/61B70763" Ref="J?"  Part="1"
 AR Path="/61B60659/61B70763" Ref="J401"  Part="1" 
 F 0 "J401" H 1142 3025 50  0000 C CNN
 F 1 "USB/SER/CHRGR" H 1142 2934 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1600_2x08_P3.00mm_Horizontal" H 1142 2843 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1621_2x08-1MP_P3.00mm_Horizontal" H 1142 2843 50  0001 C CNN
 F 3 "~" H 1250 2050 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/molex/0430451202/252537" H 1250 2050 50  0001 C CNN "Link"
+F 4 "https://www.digikey.com/en/products/detail/molex/0430451623/3044583?s=N4IgTCBcDaICwGYAMcCsBGAbGBIC6AvkA" H 1250 2050 50  0001 C CNN "Link"
 F 5 "Molex" H 1250 2050 50  0001 C CNN "MANUFACTURER"
-F 6 "0430451202" H 1250 2050 50  0001 C CNN "MPN"
-F 7 "4.98" H 1250 2050 50  0001 C CNN "Price"
+F 6 "430451623" H 1250 2050 50  0001 C CNN "MPN"
+F 7 "6.91" H 1250 2050 50  0001 C CNN "Price"
 	1    1250 2050
 	-1   0    0    -1  
 $EndComp
 Text Label 1800 1650 0    50   ~ 0
 usb_pwr
-Text Label 1800 1750 0    50   ~ 0
+Text Label 1450 1750 0    50   ~ 0
 usb_data_D0
 Text Label 1800 1850 0    50   ~ 0
 usb_data_D1
@@ -58,8 +58,6 @@ Text Label 1800 2850 0    50   ~ 0
 lipo_bat1_therm2
 Wire Wire Line
 	1450 1650 1800 1650
-Wire Wire Line
-	1450 1750 1800 1750
 Wire Wire Line
 	1450 1850 1800 1850
 Wire Wire Line
