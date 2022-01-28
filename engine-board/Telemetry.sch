@@ -179,15 +179,15 @@ irid_sleep
 $Comp
 L Device:HW U501
 U 1 1 61AFA4DA
-P 8200 3100
-F 0 "U501" H 8225 3146 50  0000 L CNN
-F 1 "RockBLOCK 9603 Accessory Cable" H 8225 3055 50  0000 L CNN
-F 2 "" H 8200 3100 50  0001 C CNN
-F 3 "" H 8200 3100 50  0001 C CNN
-F 4 "4.95" H 8200 3100 50  0001 C CNN "Price"
-F 5 "4529" H 8200 3100 50  0001 C CNN "MPM"
-F 6 "https://www.adafruit.com/product/4529" H 8200 3100 50  0001 C CNN "Link"
-	1    8200 3100
+P 8000 3050
+F 0 "U501" H 8025 3096 50  0000 L CNN
+F 1 "RockBLOCK 9603 Accessory Cable" H 8025 3005 50  0000 L CNN
+F 2 "" H 8000 3050 50  0001 C CNN
+F 3 "" H 8000 3050 50  0001 C CNN
+F 4 "4.95" H 8000 3050 50  0001 C CNN "Price"
+F 5 "4529" H 8000 3050 50  0001 C CNN "MPM"
+F 6 "https://www.adafruit.com/product/4529" H 8000 3050 50  0001 C CNN "Link"
+	1    8000 3050
 	1    0    0    -1  
 $EndComp
 $Comp

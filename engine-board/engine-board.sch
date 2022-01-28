@@ -34,23 +34,23 @@ Wire Wire Line
 $Comp
 L Device:R_Small R102
 U 1 1 60DA427C
-P 6000 6350
-F 0 "R102" V 6196 6350 50  0000 C CNN
-F 1 "33ohm" V 6105 6350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 6000 6350 50  0001 C CNN
-F 3 "~" H 6000 6350 50  0001 C CNN
-	1    6000 6350
+P 6000 6300
+F 0 "R102" V 6196 6300 50  0000 C CNN
+F 1 "33ohm" V 6105 6300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 6000 6300 50  0001 C CNN
+F 3 "~" H 6000 6300 50  0001 C CNN
+	1    6000 6300
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R101
 U 1 1 60DAF797
-P 6000 6050
-F 0 "R101" V 6196 6050 50  0000 C CNN
-F 1 "33ohm" V 6105 6050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 6000 6050 50  0001 C CNN
-F 3 "~" H 6000 6050 50  0001 C CNN
-	1    6000 6050
+P 6000 6000
+F 0 "R101" V 6196 6000 50  0000 C CNN
+F 1 "33ohm" V 6105 6000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 6000 6000 50  0001 C CNN
+F 3 "~" H 6000 6000 50  0001 C CNN
+	1    6000 6000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -162,8 +162,6 @@ Wire Wire Line
 	8900 5550 9100 5550
 Wire Wire Line
 	8900 5450 9100 5450
-Text Label 8900 4650 0    50   ~ 0
-3v3_feather
 Text Label 9100 5950 0    50   ~ 0
 imu_cs
 Wire Wire Line
@@ -630,44 +628,6 @@ turbine_1_pwm
 Text Label 1600 3350 2    50   ~ 0
 turbine_2_pwm
 $Comp
-L engine-board-eagle-import:TEST-POINTTP_15TH_THRU TP101
-U 1 1 61D0D736
-P 4800 7800
-F 0 "TP101" H 4844 8040 70  0000 C CNN
-F 1 "i2c_sda_1" H 4844 7919 70  0000 C CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 4800 7800 50  0001 C CNN
-F 3 "https://www.keyelco.com/userAssets/file/M65p64.pdf" H 4800 7800 50  0001 C CNN
-F 4 "0.23" H 4800 7800 50  0001 C CNN "Price"
-F 5 "680" H 4800 7800 50  0001 C CNN "MFN"
-F 6 "https://www.digikey.com/en/products/detail/keystone-electronics/680/316581" H 4800 7800 50  0001 C CNN "Link"
-	1    4800 7800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 7350 3900 7800
-Wire Wire Line
-	3900 7800 4800 7800
-$Comp
-L engine-board-eagle-import:TEST-POINTTP_15TH_THRU TP102
-U 1 1 61D129F9
-P 5400 7550
-F 0 "TP102" H 5444 7790 70  0000 C CNN
-F 1 "i2c_scl_1" H 5444 7669 70  0000 C CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 5400 7550 50  0001 C CNN
-F 3 "https://www.keyelco.com/userAssets/file/M65p64.pdf" H 5400 7550 50  0001 C CNN
-F 4 "0.23" H 5400 7550 50  0001 C CNN "Price"
-F 5 "680" H 5400 7550 50  0001 C CNN "MFN"
-F 6 "https://www.digikey.com/en/products/detail/keystone-electronics/680/316581" H 5400 7550 50  0001 C CNN "Link"
-	1    5400 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 7550 5050 7550
-Wire Wire Line
-	5050 7550 5050 7250
-Wire Wire Line
-	5050 7250 3900 7250
-$Comp
 L Mechanical:MountingHole H1
 U 1 1 61DA7F8F
 P 9650 2450
@@ -712,28 +672,6 @@ F 3 "~" H 9650 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H5
-U 1 1 61DB4859
-P 9650 3250
-F 0 "H5" H 9750 3296 50  0000 L CNN
-F 1 "MountingHole" H 9750 3205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_5.3mm_M5_Pad" H 9650 3250 50  0001 C CNN
-F 3 "~" H 9650 3250 50  0001 C CNN
-	1    9650 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H6
-U 1 1 61DB7527
-P 9650 3450
-F 0 "H6" H 9750 3496 50  0000 L CNN
-F 1 "MountingHole" H 9750 3405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_5.3mm_M5_Pad" H 9650 3450 50  0001 C CNN
-F 3 "~" H 9650 3450 50  0001 C CNN
-	1    9650 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H7
 U 1 1 61DBE384
 P 9650 3650
@@ -755,4 +693,30 @@ F 3 "~" H 9650 3850 50  0001 C CNN
 	1    9650 3850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1600 7350 1600 7550
+Wire Wire Line
+	1600 7250 950  7250
+Wire Wire Line
+	950  7250 950  7600
+Wire Wire Line
+	1600 7150 900  7150
+Wire Wire Line
+	900  7150 900  7650
+Wire Wire Line
+	1600 7050 550  7050
+Wire Wire Line
+	550  7050 550  7700
+Wire Wire Line
+	5900 6050 5900 6000
+Wire Wire Line
+	6100 6050 6100 6000
+Wire Wire Line
+	6100 6350 6100 6300
+Wire Wire Line
+	5900 6350 5900 6300
+Text Label 4600 700  2    50   ~ 0
+usb_data_D0
+Text Label 4600 800  2    50   ~ 0
+usb_data_D1
 $EndSCHEMATC
