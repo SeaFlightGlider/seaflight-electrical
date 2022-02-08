@@ -736,4 +736,58 @@ Wire Wire Line
 	9300 1200 9200 1200
 Wire Wire Line
 	7950 950  7950 1300
+$Comp
+L power:GND #PWR?
+U 1 1 62064BBD
+P 850 4650
+AR Path="/618F9F5D/62064BBD" Ref="#PWR?"  Part="1" 
+AR Path="/619906DF/62064BBD" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 850 4400 50  0001 C CNN
+F 1 "GND" H 855 4477 50  0000 C CNN
+F 2 "" H 850 4650 50  0001 C CNN
+F 3 "" H 850 4650 50  0001 C CNN
+	1    850  4650
+	1    0    0    -1  
+$EndComp
+Text Label 2050 4550 0    50   ~ 0
+i2c_scl_1
+Text Label 2050 4650 0    50   ~ 0
+i2c_sda_1
+$Comp
+L Connector_Generic:Conn_02x02_Top_Bottom J?
+U 1 1 62064BCC
+P 1750 4550
+AR Path="/618F9F5D/62064BCC" Ref="J?"  Part="1" 
+AR Path="/619906DF/62064BCC" Ref="J302"  Part="1" 
+F 0 "J302" H 1800 4767 50  0000 C CNN
+F 1 "VL6180 Range Sensor" H 1800 4676 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0421_2x02-1MP_P3.00mm_Horizontal" H 1750 4550 50  0001 C CNN
+F 3 "~" H 1750 4550 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/molex/0430450422/1635030" H 1750 4550 50  0001 C CNN "Link"
+F 5 "Molex" H 1750 4550 50  0001 C CNN "MANUFACTURER"
+F 6 "0430450422" H 1750 4550 50  0001 C CNN "MPN"
+F 7 "2.38" H 1750 4550 50  0001 C CNN "Price"
+F 8 "430250400" H 1750 4550 50  0001 C CNN "MATE_MPN"
+F 9 "0.48" H 1750 4550 50  0001 C CNN "MATE_Price"
+F 10 "https://www.digikey.com/en/products/detail/molex/0430250400/252497" H 1750 4550 50  0001 C CNN "MATE_Link"
+	1    1750 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4550 1550 4550
+Wire Wire Line
+	850  4650 1550 4650
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6206BFFF
+P 1100 4550
+AR Path="/6206BFFF" Ref="#PWR?"  Part="1" 
+AR Path="/619906DF/6206BFFF" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 1100 4400 50  0001 C CNN
+F 1 "+3.3V" H 1115 4723 50  0000 C CNN
+F 2 "" H 1100 4550 50  0001 C CNN
+F 3 "" H 1100 4550 50  0001 C CNN
+	1    1100 4550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

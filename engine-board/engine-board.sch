@@ -271,6 +271,8 @@ F0 "Power" 50
 F1 "Power.sch" 50
 F2 "i2c_scl_1" I L 1200 750 50 
 F3 "i2c_sda_1" I L 1200 850 50 
+F4 "external_switch_A" I L 1200 950 50 
+F5 "external_switch_B" I L 1200 1050 50 
 $EndSheet
 $Sheet
 S 4600 650  750  1400
@@ -719,4 +721,8 @@ Text Label 4600 700  2    50   ~ 0
 usb_data_D0
 Text Label 4600 800  2    50   ~ 0
 usb_data_D1
+Text Label 1200 950  2    50   ~ 0
+ext_sw_A
+Text Label 1200 1050 2    50   ~ 0
+ext_sw_B
 $EndSCHEMATC
