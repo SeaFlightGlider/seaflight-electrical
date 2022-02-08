@@ -377,27 +377,6 @@ F 3 "" H 5100 6200 50  0001 C CNN
 	1    5100 6200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x02_Female J?
-U 1 1 61BB0ACA
-P 4150 6600
-AR Path="/61BB0ACA" Ref="J?"  Part="1" 
-AR Path="/61B60659/61BB0ACA" Ref="J404"  Part="1" 
-F 0 "J404" H 4178 6576 50  0000 L CNN
-F 1 "Switch Bulkhead" H 4178 6485 50  0000 L CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-02BE" H 4150 6600 50  0001 C CNN
-F 3 "~" H 4150 6600 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/cui-devices/TBP01R1W-508-02BE/10238425" H 4150 6600 50  0001 C CNN "Link"
-F 5 "CUI Devices" H 4150 6600 50  0001 C CNN "MANUFACTURER"
-F 6 "TBP01R1W-508-02BE" H 4150 6600 50  0001 C CNN "MPN"
-F 7 "0.77" H 4150 6600 50  0001 C CNN "Price"
-	1    4150 6600
-	1    0    0    -1  
-$EndComp
-Text Label 3250 6600 0    50   ~ 0
-external_switch_A
-Text Label 3250 6700 0    50   ~ 0
-external_switch_B
 Wire Wire Line
 	4850 6200 5100 6200
 Text Label 3250 6100 0    50   ~ 0
@@ -686,15 +665,7 @@ Connection ~ 6400 5700
 Wire Wire Line
 	6400 5700 6400 5750
 Wire Wire Line
-	3050 6100 3050 6600
-Wire Wire Line
-	3050 6600 3950 6600
-Wire Wire Line
 	3050 6100 3950 6100
-Wire Wire Line
-	3150 6200 3150 6700
-Wire Wire Line
-	3150 6700 3950 6700
 Wire Wire Line
 	3150 6200 3950 6200
 Wire Wire Line
@@ -852,11 +823,39 @@ Wire Wire Line
 Wire Wire Line
 	2300 6850 3150 6850
 Wire Wire Line
-	3150 6850 3150 6700
-Connection ~ 3150 6700
-Wire Wire Line
 	2600 6650 3050 6650
+Text HLabel 3050 6100 0    50   Input ~ 0
+external_switch_A
+Text HLabel 3150 6650 2    50   Input ~ 0
+external_switch_B
 Wire Wire Line
-	3050 6650 3050 6600
-Connection ~ 3050 6600
+	3050 6100 3050 6650
+Wire Wire Line
+	3150 6200 3150 6850
+$Comp
+L Connector:Conn_01x01_Male J404
+U 1 1 6201AA81
+P 6450 4600
+F 0 "J404" H 6558 4781 50  0000 C CNN
+F 1 "RAW_BATT-" H 6558 4690 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 6450 4600 50  0001 C CNN
+F 3 "~" H 6450 4600 50  0001 C CNN
+	1    6450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J408
+U 1 1 6201B167
+P 6450 4800
+F 0 "J408" H 6558 4981 50  0000 C CNN
+F 1 "RAW_BATT+" H 6558 4890 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 6450 4800 50  0001 C CNN
+F 3 "~" H 6450 4800 50  0001 C CNN
+	1    6450 4800
+	1    0    0    -1  
+$EndComp
+Text Label 6650 4800 0    50   ~ 0
+raw_BATT+
+Text Label 6650 4600 0    50   ~ 0
+raw_BATT-
 $EndSCHEMATC

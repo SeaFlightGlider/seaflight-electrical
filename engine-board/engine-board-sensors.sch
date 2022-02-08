@@ -256,12 +256,15 @@ U 1 1 61BD83C9
 P 2050 1450
 F 0 "J201" H 2100 1667 50  0000 C CNN
 F 1 "Reservoir Pressure Sensor" H 2100 1576 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-04BE" H 2050 1450 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0421_2x02-1MP_P3.00mm_Horizontal" H 2050 1450 50  0001 C CNN
 F 3 "~" H 2050 1450 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/cui-devices/TBP01R1W-508-04BE/10238427?WT.z_cid=ref_neda_dkc_buynow_cuidevices&utm_source=ecia&utm_medium=aggregator&utm_campaign=cuidevices" H 2050 1450 50  0001 C CNN "Link"
-F 5 "CUI Devices" H 2050 1450 50  0001 C CNN "MANUFACTURER"
-F 6 "TBP01R1W-508-04BE" H 2050 1450 50  0001 C CNN "MPN"
-F 7 "1.28" H 2050 1450 50  0001 C CNN "Price"
+F 4 "https://www.digikey.com/en/products/detail/molex/0430450422/1635030" H 2050 1450 50  0001 C CNN "Link"
+F 5 "Molex" H 2050 1450 50  0001 C CNN "MANUFACTURER"
+F 6 "0430450422" H 2050 1450 50  0001 C CNN "MPN"
+F 7 "2.38" H 2050 1450 50  0001 C CNN "Price"
+F 8 "430250400" H 2050 1450 50  0001 C CNN "MATE_MPN"
+F 9 "0.48" H 2050 1450 50  0001 C CNN "MATE_Price"
+F 10 "https://www.digikey.com/en/products/detail/molex/0430250400/252497" H 2050 1450 50  0001 C CNN "MATE_Link"
 	1    2050 1450
 	1    0    0    -1  
 $EndComp
@@ -301,12 +304,15 @@ U 1 1 61BD83DF
 P 2050 1900
 F 0 "J202" H 2100 2117 50  0000 C CNN
 F 1 "Bladder Pressure Sensor" H 2100 2026 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-04BE" H 2050 1900 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0421_2x02-1MP_P3.00mm_Horizontal" H 2050 1900 50  0001 C CNN
 F 3 "~" H 2050 1900 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/cui-devices/TBP01R1W-508-04BE/10238427?WT.z_cid=ref_neda_dkc_buynow_cuidevices&utm_source=ecia&utm_medium=aggregator&utm_campaign=cuidevices" H 2050 1900 50  0001 C CNN "Link"
-F 5 "CUI Devices" H 2050 1900 50  0001 C CNN "MANUFACTURER"
-F 6 "TBP01R1W-508-04BE" H 2050 1900 50  0001 C CNN "MPN"
-F 7 "1.28" H 2050 1900 50  0001 C CNN "Price"
+F 4 "https://www.digikey.com/en/products/detail/molex/0430450422/1635030" H 2050 1900 50  0001 C CNN "Link"
+F 5 "Molex" H 2050 1900 50  0001 C CNN "MANUFACTURER"
+F 6 "0430450422" H 2050 1900 50  0001 C CNN "MPN"
+F 7 "2.38" H 2050 1900 50  0001 C CNN "Price"
+F 8 "430250400" H 2050 1900 50  0001 C CNN "MATE_MPN"
+F 9 "0.48" H 2050 1900 50  0001 C CNN "MATE_Price"
+F 10 "https://www.digikey.com/en/products/detail/molex/0430250400/252497" H 2050 1900 50  0001 C CNN "MATE_Link"
 	1    2050 1900
 	1    0    0    -1  
 $EndComp
@@ -607,4 +613,59 @@ Wire Wire Line
 	7250 4400 7550 4400
 Wire Wire Line
 	8700 1150 9200 1150
+$Comp
+L power:GND #PWR0114
+U 1 1 61FDFD4D
+P 1150 2700
+F 0 "#PWR0114" H 1150 2450 50  0001 C CNN
+F 1 "GND" H 1155 2527 50  0000 C CNN
+F 2 "" H 1150 2700 50  0001 C CNN
+F 3 "" H 1150 2700 50  0001 C CNN
+	1    1150 2700
+	1    0    0    -1  
+$EndComp
+Text Label 2250 2600 0    50   ~ 0
+i2c_scl_1
+Text Label 2250 2700 0    50   ~ 0
+i2c_sda_1
+Wire Wire Line
+	1150 2700 1850 2700
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61FE7BB0
+P 1150 2600
+AR Path="/61FE7BB0" Ref="#PWR?"  Part="1" 
+AR Path="/618F9F5D/61FE7BB0" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 1150 2450 50  0001 C CNN
+F 1 "+3.3V" H 1165 2773 50  0000 C CNN
+F 2 "" H 1150 2600 50  0001 C CNN
+F 3 "" H 1150 2600 50  0001 C CNN
+	1    1150 2600
+	1    0    0    -1  
+$EndComp
+Text Label 4200 900  0    50   ~ 0
+i2c_scl_1
+Text Label 4200 750  0    50   ~ 0
+i2c_sda_1
+Wire Wire Line
+	4200 750  4000 750 
+Wire Wire Line
+	4200 900  4000 900 
+Text HLabel 1850 2800 0    50   Input ~ 0
+ext_SWA
+Text HLabel 2250 2800 2    50   Input ~ 0
+ext_SWB
+$Comp
+L Glider:QuickFit_02x03_Header-Connector U201
+U 1 1 62037C79
+P 2050 2300
+F 0 "U201" H 2050 2225 50  0000 C CNN
+F 1 "QuickFit_02x03_Header-Connector" H 2050 2134 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0621_2x03-1MP_P3.00mm_Horizontal" H 2000 2450 50  0001 C CNN
+F 3 "" H 2000 2450 50  0001 C CNN
+	1    2050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2600 1150 2600
 $EndSCHEMATC

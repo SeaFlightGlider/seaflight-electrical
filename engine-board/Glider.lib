@@ -1,0 +1,38 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# QuickFit_02x03_Header-Connector
+#
+DEF QuickFit_02x03_Header-Connector U 0 40 Y Y 1 F N
+F0 "U" 0 -150 50 H V C CNN
+F1 "QuickFit_02x03_Header-Connector" 50 -200 50 H V C CNN
+F2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0621_2x03-1MP_P3.00mm_Horizontal" -50 150 50 H I C CNN
+F3 "" -50 150 50 H I C CNN
+DRAW
+X 1 1 -200 -300 100 R 50 50 0 0 U
+X 2 2 -200 -400 100 R 50 50 0 0 U
+X 3 3 -200 -500 100 R 50 50 0 0 U
+X 4 4 200 -300 100 L 50 50 0 0 U
+X 5 5 200 -400 100 L 50 50 1 1 U
+X 6 6 200 -500 100 L 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+# QuickFit_2x3_extPressSwitch
+#
+DEF QuickFit_2x3_extPressSwitch U 0 40 Y Y 1 F N
+F0 "U" 0 -150 50 H V C CNN
+F1 "QuickFit_2x3_extPressSwitch" 50 -200 50 H V C CNN
+F2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0621_2x03-1MP_P3.00mm_Horizontal" -50 150 50 H I C CNN
+F3 "" -50 150 50 H I C CNN
+DRAW
+X 1 1 -200 -300 100 R 50 50 0 0 U
+X 2 2 -200 -400 100 R 50 50 0 0 U
+X 3 3 -200 -500 100 R 50 50 0 0 U
+X 4 4 200 -300 100 L 50 50 0 0 U
+X 5 5 200 -400 100 L 50 50 1 1 U
+X 6 6 200 -500 100 L 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#End Library
