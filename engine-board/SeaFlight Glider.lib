@@ -1,6 +1,34 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Batt_Therm
+#
+DEF Batt_Therm U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Batt_Therm" 50 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+ENDDRAW
+ENDDEF
+#
+# QuickFit_02x03_Header-Connector
+#
+DEF QuickFit_02x03_Header-Connector U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "QuickFit_02x03_Header-Connector" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+X 1 1 -250 -150 100 R 50 50 1 1 U
+X 2 2 -250 -250 100 R 50 50 1 1 U
+X 3 3 -250 -350 100 R 50 50 1 1 U
+X 4 4 200 -350 100 L 50 50 1 1 U
+X 5 5 200 -250 100 L 50 50 1 1 U
+X 6 6 200 -150 100 L 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
 # Solenoid_Socket_2pin
 #
 DEF Solenoid_Socket_2pin J 0 40 Y N 1 F N

@@ -83,23 +83,6 @@ Wire Wire Line
 	2650 2700 2750 2700
 Wire Wire Line
 	900  3100 2750 3100
-$Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J?
-U 1 1 619BE7D1
-P 2950 2900
-AR Path="/619BE7D1" Ref="J?"  Part="1" 
-AR Path="/619906DF/619BE7D1" Ref="J1"  Part="1" 
-F 0 "J1" H 3000 3317 50  0000 C CNN
-F 1 "MAXON Pump Controller" H 3000 3226 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-12BE" H 2950 2900 50  0001 C CNN
-F 3 "~" H 2950 2900 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/cui-devices/TBP01R1W-508-12BE/10238432" H 2950 2900 50  0001 C CNN "Link"
-F 5 "TBP01R1W-508-12BE" H 2950 2900 50  0001 C CNN "MPN"
-F 6 "CUI Devices" H 2950 2900 50  0001 C CNN "MANUFACTURER"
-F 7 "2.07" H 2950 2900 50  0001 C CNN "Price"
-	1    2950 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3600 2500 3600 2700
 Wire Wire Line
@@ -482,6 +465,9 @@ F 0 "J301" H 2950 5667 50  0000 C CNN
 F 1 "Steering Turbines" H 2950 5576 50  0000 C CNN
 F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0821_2x04-1MP_P3.00mm_Horizontal" H 2900 5350 50  0001 C CNN
 F 3 "~" H 2900 5350 50  0001 C CNN
+F 4 "https://www.digikey.com/short/zjp71dn8" H 2900 5350 50  0001 C CNN "Link"
+F 5 "0430450821" H 2900 5350 50  0001 C CNN "MPM"
+F 6 "2.63" H 2900 5350 50  0001 C CNN "Price"
 	1    2900 5350
 	1    0    0    -1  
 $EndComp
@@ -788,6 +774,23 @@ F 1 "+3.3V" H 1115 4723 50  0000 C CNN
 F 2 "" H 1100 4550 50  0001 C CNN
 F 3 "" H 1100 4550 50  0001 C CNN
 	1    1100 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J?
+U 1 1 619BE7D1
+P 2950 2900
+AR Path="/619BE7D1" Ref="J?"  Part="1" 
+AR Path="/619906DF/619BE7D1" Ref="J1"  Part="1" 
+F 0 "J1" H 3000 3317 50  0000 C CNN
+F 1 "Pump Controller" H 3000 3226 50  0000 C CNN
+F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-12BE" H 2950 2900 50  0001 C CNN
+F 3 "~" H 2950 2900 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/cui-devices/TBP01R1W-508-12BE/10238432" H 2950 2900 50  0001 C CNN "Link"
+F 5 "TBP01R1W-508-12BE" H 2950 2900 50  0001 C CNN "MPN"
+F 6 "CUI Devices" H 2950 2900 50  0001 C CNN "MANUFACTURER"
+F 7 "2.07" H 2950 2900 50  0001 C CNN "Price"
+	1    2950 2900
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
