@@ -190,7 +190,7 @@ F 3 "" H 8900 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L engine-board-rescue:FEATHER_M0_BASIC_PROTO-FEATHER_M0_BASIC_PROTO-engine-board-rescue U102
+L engine-board-rescue:FEATHER_M0_BASIC_PROTO-FEATHER_M0_BASIC_PROTO-engine-board-rescue-engine-board-rescue U102
 U 1 1 60CE6FB5
 P 7700 5550
 F 0 "U102" H 7700 6717 50  0000 C CNN
@@ -246,6 +246,8 @@ F1 "engine-board-sensors.sch" 50
 F2 "i2c_sda_1" I L 2800 750 50 
 F3 "i2c_scl_1" I L 2800 850 50 
 F4 "leak_sense_output" I L 2800 950 50 
+F5 "ext_SWA" I L 2800 1050 50 
+F6 "ext_SWB" I L 2800 1150 50 
 $EndSheet
 $Sheet
 S 6450 650  1200 1400
@@ -265,7 +267,7 @@ F11 "solenoid_mosfet_gate" I L 6450 1750 50
 F12 "turbine_2_pwm" I L 6450 1850 50 
 $EndSheet
 $Sheet
-S 1200 600  800  750 
+S 1200 600  800  1000
 U 61B60659
 F0 "Power" 50
 F1 "Power.sch" 50
@@ -273,6 +275,11 @@ F2 "i2c_scl_1" I L 1200 750 50
 F3 "i2c_sda_1" I L 1200 850 50 
 F4 "external_switch_A" I L 1200 950 50 
 F5 "external_switch_B" I L 1200 1050 50 
+F6 "rs232_tx" I L 1200 1150 50 
+F7 "rs232_rx" I L 1200 1250 50 
+F8 "rs232_gnd" I L 1200 1350 50 
+F9 "usb_D0" I L 1200 1450 50 
+F10 "usb_D1" I L 1200 1550 50 
 $EndSheet
 $Sheet
 S 4600 650  750  1400
@@ -376,7 +383,7 @@ i2c_scl_1
 Text Label 4600 1000 2    50   ~ 0
 i2c_sda_1
 $Comp
-L teensy:Teensy3.6_All_Pins U101
+L engine-board-rescue:Teensy3.6_All_Pins-teensy U101
 U 1 1 61A700C3
 P 2750 5200
 F 0 "U101" H 2750 7837 60  0000 C CNN
@@ -546,16 +553,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0103
 U 1 1 61AFF33A
-P 1200 3050
-F 0 "#PWR0103" H 1200 2800 50  0001 C CNN
-F 1 "GND" H 1205 2877 50  0000 C CNN
-F 2 "" H 1200 3050 50  0001 C CNN
-F 3 "" H 1200 3050 50  0001 C CNN
-	1    1200 3050
+P 850 3050
+F 0 "#PWR0103" H 850 2800 50  0001 C CNN
+F 1 "GND" H 855 2877 50  0000 C CNN
+F 2 "" H 850 3050 50  0001 C CNN
+F 3 "" H 850 3050 50  0001 C CNN
+	1    850  3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1600 3050 1200 3050
 Text Label 1600 4850 2    50   ~ 0
 irid_TXD
 Text Label 1600 4750 2    50   ~ 0
@@ -717,12 +722,30 @@ Wire Wire Line
 	6100 6350 6100 6300
 Wire Wire Line
 	5900 6350 5900 6300
-Text Label 4600 700  2    50   ~ 0
+Text Label 1200 1450 2    50   ~ 0
 usb_data_D0
-Text Label 4600 800  2    50   ~ 0
+Text Label 1200 1550 2    50   ~ 0
 usb_data_D1
 Text Label 1200 950  2    50   ~ 0
 ext_sw_A
 Text Label 1200 1050 2    50   ~ 0
 ext_sw_B
+Text Label 2800 1050 2    50   ~ 0
+ext_sw_A
+Text Label 2800 1150 2    50   ~ 0
+ext_sw_B
+Wire Wire Line
+	1600 3050 850  3050
+Text Label 1200 1150 2    50   ~ 0
+rs232_tx
+Text Label 1600 3250 2    50   ~ 0
+rs232_tx
+Text Label 1200 1250 2    50   ~ 0
+rs232_rx
+Text Label 1600 3150 2    50   ~ 0
+rs232_rx
+Text Label 1200 1350 2    50   ~ 0
+rs232_gnd
+Text Label 850  3050 2    50   ~ 0
+rs232_gnd
 $EndSCHEMATC

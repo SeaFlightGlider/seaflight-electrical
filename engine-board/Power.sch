@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L engine-board-rescue:QuickFit_01x16_Header-Connector J?
+L engine-board-rescue:QuickFit_01x16_Header-Connector-engine-board-rescue J?
 U 1 1 61B70763
 P 1250 2050
 AR Path="/61B70763" Ref="J?"  Part="1" 
@@ -27,21 +27,13 @@ F 4 "https://www.digikey.com/en/products/detail/molex/0430451623/3044583?s=N4IgT
 F 5 "Molex" H 1250 2050 50  0001 C CNN "MANUFACTURER"
 F 6 "430451623" H 1250 2050 50  0001 C CNN "MPN"
 F 7 "6.91" H 1250 2050 50  0001 C CNN "Price"
+F 8 "0430251608" H 1250 2050 50  0001 C CNN "MATE_MPM"
+F 9 "1.61" H 1250 2050 50  0001 C CNN "MATE_Price"
+F 10 "https://www.digikey.com/en/products/detail/molex/0430251608/3310170" H 1250 2050 50  0001 C CNN "MATE_Link"
+F 11 "" H 1250 2050 50  0001 C CNN "Field11"
 	1    1250 2050
 	-1   0    0    -1  
 $EndComp
-Text Label 1800 1650 0    50   ~ 0
-usb_pwr
-Text Label 1450 1750 0    50   ~ 0
-usb_data_D0
-Text Label 1800 1850 0    50   ~ 0
-usb_data_D1
-Text Label 1800 1950 0    50   ~ 0
-rs232_tx
-Text Label 1800 2050 0    50   ~ 0
-rs232_rx
-Text Label 1800 2150 0    50   ~ 0
-rs232_gnd
 Text Label 1800 2250 0    50   ~ 0
 lipo_bat1_sense5
 Text Label 1800 2350 0    50   ~ 0
@@ -57,16 +49,6 @@ lipo_bat1_therm1
 Text Label 1800 2850 0    50   ~ 0
 lipo_bat1_therm2
 Wire Wire Line
-	1450 1650 1800 1650
-Wire Wire Line
-	1450 1850 1800 1850
-Wire Wire Line
-	1450 1950 1800 1950
-Wire Wire Line
-	1450 2050 1800 2050
-Wire Wire Line
-	1450 2150 1800 2150
-Wire Wire Line
 	1450 2250 1800 2250
 Wire Wire Line
 	1450 2350 1800 2350
@@ -81,50 +63,35 @@ Wire Wire Line
 Wire Wire Line
 	1450 2850 1800 2850
 $Comp
-L power:GND #PWR?
-U 1 1 61B70783
-P 2600 1550
-AR Path="/61B70783" Ref="#PWR?"  Part="1" 
-AR Path="/61B60659/61B70783" Ref="#PWR0407"  Part="1" 
-F 0 "#PWR0407" H 2600 1300 50  0001 C CNN
-F 1 "GND" H 2605 1377 50  0000 C CNN
-F 2 "" H 2600 1550 50  0001 C CNN
-F 3 "" H 2600 1550 50  0001 C CNN
-	1    2600 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 1550 2600 1550
-$Comp
 L power:+BATT #PWR?
 U 1 1 61B7078A
-P 2500 1350
+P 2500 1450
 AR Path="/61B7078A" Ref="#PWR?"  Part="1" 
 AR Path="/61B60659/61B7078A" Ref="#PWR0406"  Part="1" 
-F 0 "#PWR0406" H 2500 1200 50  0001 C CNN
-F 1 "+BATT" H 2515 1523 50  0000 C CNN
-F 2 "" H 2500 1350 50  0001 C CNN
-F 3 "" H 2500 1350 50  0001 C CNN
-	1    2500 1350
+F 0 "#PWR0406" H 2500 1300 50  0001 C CNN
+F 1 "+BATT" H 2515 1623 50  0000 C CNN
+F 2 "" H 2500 1450 50  0001 C CNN
+F 3 "" H 2500 1450 50  0001 C CNN
+	1    2500 1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:-BATT #PWR?
 U 1 1 61B70790
-P 2850 1450
+P 2850 1650
 AR Path="/61B70790" Ref="#PWR?"  Part="1" 
 AR Path="/61B60659/61B70790" Ref="#PWR0408"  Part="1" 
-F 0 "#PWR0408" H 2850 1300 50  0001 C CNN
-F 1 "-BATT" H 2865 1623 50  0000 C CNN
-F 2 "" H 2850 1450 50  0001 C CNN
-F 3 "" H 2850 1450 50  0001 C CNN
-	1    2850 1450
+F 0 "#PWR0408" H 2850 1500 50  0001 C CNN
+F 1 "-BATT" H 2865 1823 50  0000 C CNN
+F 2 "" H 2850 1650 50  0001 C CNN
+F 3 "" H 2850 1650 50  0001 C CNN
+	1    2850 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 1450 2850 1450
+	1450 1650 1750 1650
 Wire Wire Line
-	1450 1350 2500 1350
+	1450 1450 1750 1450
 $Comp
 L Regulator_Switching:R-78B3.3-2.0 U?
 U 1 1 61B81F3D
@@ -238,65 +205,16 @@ Wire Wire Line
 Connection ~ 5500 2500
 Wire Wire Line
 	5500 2500 5500 2450
-$Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J?
-U 1 1 61B9DE9B
-P 7000 5850
-AR Path="/61B9DE9B" Ref="J?"  Part="1" 
-AR Path="/61B60659/61B9DE9B" Ref="J405"  Part="1" 
-F 0 "J405" H 7050 6267 50  0000 C CNN
-F 1 "Battery Input" H 7050 6176 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-12BE" H 7000 5850 50  0001 C CNN
-F 3 "~" H 7000 5850 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/cui-devices/TBP01R1W-508-12BE/10238432" H 7000 5850 50  0001 C CNN "Link"
-F 5 "CUI Devices" H 7000 5850 50  0001 C CNN "MANUFACTURER"
-F 6 "TBP01R1W-508-12BE" H 7000 5850 50  0001 C CNN "MPN"
-F 7 "2.07" H 7000 5850 50  0001 C CNN "Price"
-	1    7000 5850
-	1    0    0    -1  
-$EndComp
-Text Label 6050 6050 0    50   ~ 0
-lipo_bat1_sense1
-Text Label 6050 6150 0    50   ~ 0
-lipo_bat1_sense2
-Text Label 7450 5650 0    50   ~ 0
-lipo_bat1_sense3
-Text Label 7450 5750 0    50   ~ 0
-lipo_bat1_sense4
-Text Label 7450 5850 0    50   ~ 0
-lipo_bat1_sense5
-Text Label 7500 6050 0    50   ~ 0
+Text Label 8300 3300 2    50   ~ 0
 lipo_bat_therm1
-Text Label 7500 6150 0    50   ~ 0
+Text Label 8300 3400 2    50   ~ 0
 lipo_bat_therm2
-Wire Wire Line
-	6400 5650 6800 5650
 Wire Wire Line
 	6400 5650 6400 5700
 Wire Wire Line
-	6400 5750 6800 5750
-Wire Wire Line
-	6800 5850 6200 5850
-Wire Wire Line
-	6800 5950 6200 5950
-Wire Wire Line
 	6200 5950 6200 5900
-Wire Wire Line
-	6800 6050 6050 6050
-Wire Wire Line
-	6800 6150 6050 6150
-Wire Wire Line
-	7450 5650 7300 5650
-Wire Wire Line
-	7450 5750 7300 5750
-Wire Wire Line
-	7450 5850 7300 5850
-Wire Wire Line
-	7500 6050 7300 6050
-Wire Wire Line
-	7500 6150 7300 6150
 $Comp
-L engine-board-rescue:Pololu_2812-Regulator_Controller U?
+L engine-board-rescue:Pololu_2812-Regulator_Controller-engine-board-rescue U?
 U 1 1 61BB0AA1
 P 4300 6400
 AR Path="/61BB0AA1" Ref="U?"  Part="1" 
@@ -807,9 +725,11 @@ Wire Wire Line
 Wire Wire Line
 	7250 2850 7750 2850
 $Comp
-L MiscellaneousDevices:SWITCH_SPDT SW401
+L engine-board-rescue:SWITCH_SPDT-MiscellaneousDevices SW401
 U 1 1 61D557E7
 P 2450 6600
+AR Path="/61D557E7" Ref="SW401"  Part="1" 
+AR Path="/61B60659/61D557E7" Ref="SW401"  Part="1" 
 F 0 "SW401" H 2450 6886 50  0000 C CNN
 F 1 "POWER" H 2450 6795 50  0000 C CNN
 F 2 "Module:SliderSwitch_Simple" H 2450 6908 60  0001 C CNN
@@ -846,16 +766,149 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Male J408
 U 1 1 6201B167
-P 6450 4800
-F 0 "J408" H 6558 4981 50  0000 C CNN
-F 1 "RAW_BATT+" H 6558 4890 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 6450 4800 50  0001 C CNN
-F 3 "~" H 6450 4800 50  0001 C CNN
-	1    6450 4800
+P 6450 4900
+F 0 "J408" H 6558 5081 50  0000 C CNN
+F 1 "RAW_BATT+" H 6558 4990 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 6450 4900 50  0001 C CNN
+F 3 "~" H 6450 4900 50  0001 C CNN
+	1    6450 4900
 	1    0    0    -1  
 $EndComp
-Text Label 6650 4800 0    50   ~ 0
+Text Label 6650 4900 0    50   ~ 0
 raw_BATT+
 Text Label 6650 4600 0    50   ~ 0
 raw_BATT-
+Text HLabel 1450 1950 2    50   Input ~ 0
+rs232_tx
+Text HLabel 1450 2050 2    50   Input ~ 0
+rs232_rx
+Text HLabel 3400 2900 2    50   Input ~ 0
+rs232_gnd
+Text HLabel 1450 1750 2    50   Input ~ 0
+usb_D0
+Text HLabel 1450 1850 2    50   Input ~ 0
+usb_D1
+$Comp
+L power:GND #PWR?
+U 1 1 61B70783
+P 2950 2150
+AR Path="/61B70783" Ref="#PWR?"  Part="1" 
+AR Path="/61B60659/61B70783" Ref="#PWR0407"  Part="1" 
+F 0 "#PWR0407" H 2950 1900 50  0001 C CNN
+F 1 "GND" H 2955 1977 50  0000 C CNN
+F 2 "" H 2950 2150 50  0001 C CNN
+F 3 "" H 2950 2150 50  0001 C CNN
+	1    2950 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2150 2950 2150
+Wire Wire Line
+	1450 1350 1750 1350
+Wire Wire Line
+	1750 1350 1750 1450
+Connection ~ 1750 1450
+Wire Wire Line
+	1750 1450 2500 1450
+Wire Wire Line
+	1450 1550 1750 1550
+Wire Wire Line
+	1750 1550 1750 1650
+Connection ~ 1750 1650
+Wire Wire Line
+	1750 1650 2850 1650
+$Comp
+L Connector:Conn_01x01_Male J409
+U 1 1 62163C07
+P 7300 4600
+F 0 "J409" H 7408 4781 50  0000 C CNN
+F 1 "RAW_BATT-" H 7408 4690 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 7300 4600 50  0001 C CNN
+F 3 "~" H 7300 4600 50  0001 C CNN
+	1    7300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J410
+U 1 1 62163C0D
+P 7300 4900
+F 0 "J410" H 7408 5081 50  0000 C CNN
+F 1 "RAW_BATT+" H 7408 4990 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 7300 4900 50  0001 C CNN
+F 3 "~" H 7300 4900 50  0001 C CNN
+	1    7300 4900
+	1    0    0    -1  
+$EndComp
+Text Label 7500 4900 0    50   ~ 0
+raw_BATT+
+Text Label 7500 4600 0    50   ~ 0
+raw_BATT-
+$Comp
+L Connector:Conn_01x01_Male J411
+U 1 1 621694A4
+P 8200 4600
+F 0 "J411" H 8308 4781 50  0000 C CNN
+F 1 "RAW_BATT-" H 8308 4690 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D3.0mm" H 8200 4600 50  0001 C CNN
+F 3 "~" H 8200 4600 50  0001 C CNN
+	1    8200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J412
+U 1 1 621694AA
+P 8200 4900
+F 0 "J412" H 8308 5081 50  0000 C CNN
+F 1 "RAW_BATT+" H 8308 4990 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D3.0mm" H 8200 4900 50  0001 C CNN
+F 3 "~" H 8200 4900 50  0001 C CNN
+	1    8200 4900
+	1    0    0    -1  
+$EndComp
+Text Label 8400 4900 0    50   ~ 0
+raw_BATT+
+Text Label 8400 4600 0    50   ~ 0
+raw_BATT-
+$Comp
+L Connector:Conn_01x05_Female J?
+U 1 1 62171166
+P 8500 3800
+AR Path="/62171166" Ref="J?"  Part="1" 
+AR Path="/618F9F5D/62171166" Ref="J?"  Part="1" 
+AR Path="/61B60659/62171166" Ref="J414"  Part="1" 
+F 0 "J414" H 8528 3776 50  0000 L CNN
+F 1 "Batt Sense" H 8528 3685 50  0000 L CNN
+F 2 "Connector_Wire:SolderWire-0.5sqmm_1x05_P4.6mm_D0.9mm_OD2.1mm_Relief" H 8500 3800 50  0001 C CNN
+F 3 "~" H 8500 3800 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 8500 3800 50  0001 C CNN "Link"
+F 5 "Samtec Inc." H 8500 3800 50  0001 C CNN "MANUFACTURER"
+F 6 "SSQ-108-01-G-S" H 8500 3800 50  0001 C CNN "MPN"
+F 7 "1.35" H 8500 3800 50  0001 C CNN "Price"
+F 8 "9.95" H 8500 3800 50  0001 C CNN "Price2"
+F 9 "https://www.adafruit.com/product/4226" H 8500 3800 50  0001 C CNN "Link2"
+F 10 "ADDR=0x40" H 8750 3850 50  0000 C CNN "I2C_ADDR"
+	1    8500 3800
+	1    0    0    -1  
+$EndComp
+Text Label 8300 3800 2    50   ~ 0
+lipo_bat1_sense3
+Text Label 8300 3900 2    50   ~ 0
+lipo_bat1_sense4
+Text Label 8300 4000 2    50   ~ 0
+lipo_bat1_sense5
+Text Label 8300 3600 2    50   ~ 0
+lipo_bat1_sense1
+Text Label 8300 3700 2    50   ~ 0
+lipo_bat1_sense2
+$Comp
+L Connector:Conn_01x02_Female J413
+U 1 1 621B1224
+P 8500 3300
+F 0 "J413" H 8528 3276 50  0000 L CNN
+F 1 "Batt_Therm" H 8528 3185 50  0000 L CNN
+F 2 "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm_Relief" H 8500 3300 50  0001 C CNN
+F 3 "~" H 8500 3300 50  0001 C CNN
+	1    8500 3300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

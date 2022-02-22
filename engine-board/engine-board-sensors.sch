@@ -624,9 +624,9 @@ F 3 "" H 1150 2700 50  0001 C CNN
 	1    1150 2700
 	1    0    0    -1  
 $EndComp
-Text Label 2250 2600 0    50   ~ 0
+Text Label 2300 2600 0    50   ~ 0
 i2c_scl_1
-Text Label 2250 2700 0    50   ~ 0
+Text Label 2300 2700 0    50   ~ 0
 i2c_sda_1
 Wire Wire Line
 	1150 2700 1850 2700
@@ -653,19 +653,75 @@ Wire Wire Line
 	4200 900  4000 900 
 Text HLabel 1850 2800 0    50   Input ~ 0
 ext_SWA
-Text HLabel 2250 2800 2    50   Input ~ 0
+Text HLabel 2300 2800 2    50   Input ~ 0
 ext_SWB
 $Comp
-L Glider:QuickFit_02x03_Header-Connector U201
+L SeaFlight~Glider:QuickFit_02x03_Header-Connector U201
 U 1 1 62037C79
-P 2050 2300
-F 0 "U201" H 2050 2225 50  0000 C CNN
-F 1 "QuickFit_02x03_Header-Connector" H 2050 2134 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0621_2x03-1MP_P3.00mm_Horizontal" H 2000 2450 50  0001 C CNN
-F 3 "" H 2000 2450 50  0001 C CNN
-	1    2050 2300
+P 2100 2450
+AR Path="/62037C79" Ref="U201"  Part="1" 
+AR Path="/618F9F5D/62037C79" Ref="U201"  Part="1" 
+F 0 "U201" H 2100 2375 50  0000 C CNN
+F 1 "QuickFit_02x03_Header-Connector" H 2100 2284 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0621_2x03-1MP_P3.00mm_Horizontal" H 2050 2600 50  0001 C CNN
+F 3 "" H 2050 2600 50  0001 C CNN
+F 4 "https://www.digikey.com/short/4c5hw39j" H 2100 2450 50  0001 C CNN "Link"
+F 5 "430450621" H 2100 2450 50  0001 C CNN "MPM"
+F 6 "2.19" H 2100 2450 50  0001 C CNN "Price"
+	1    2100 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1850 2600 1150 2600
+$Comp
+L power:+5V #PWR0219
+U 1 1 62120E88
+P 1500 3500
+F 0 "#PWR0219" H 1500 3350 50  0001 C CNN
+F 1 "+5V" H 1515 3673 50  0000 C CNN
+F 2 "" H 1500 3500 50  0001 C CNN
+F 3 "" H 1500 3500 50  0001 C CNN
+	1    1500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0213
+U 1 1 62120E8E
+P 1250 3600
+F 0 "#PWR0213" H 1250 3350 50  0001 C CNN
+F 1 "GND" H 1255 3427 50  0000 C CNN
+F 2 "" H 1250 3600 50  0001 C CNN
+F 3 "" H 1250 3600 50  0001 C CNN
+	1    1250 3600
+	1    0    0    -1  
+$EndComp
+Text Label 2450 3500 0    50   ~ 0
+i2c_scl_1
+Text Label 2450 3600 0    50   ~ 0
+i2c_sda_1
+Wire Wire Line
+	1500 3500 1950 3500
+Wire Wire Line
+	1250 3600 1950 3600
+$Comp
+L Connector_Generic:Conn_02x02_Top_Bottom J209
+U 1 1 62120E9F
+P 2150 3500
+F 0 "J209" H 2200 3717 50  0000 C CNN
+F 1 "External Pressure Sensor" H 2200 3626 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0421_2x02-1MP_P3.00mm_Horizontal" H 2150 3500 50  0001 C CNN
+F 3 "~" H 2150 3500 50  0001 C CNN
+F 4 "https://www.digikey.com/short/b28q047p" H 2150 3500 50  0001 C CNN "Link"
+F 5 "Molex" H 2150 3500 50  0001 C CNN "MANUFACTURER"
+F 6 "0430450421" H 2150 3500 50  0001 C CNN "MPN"
+F 7 "2.04" H 2150 3500 50  0001 C CNN "Price"
+F 8 "430250400" H 2150 3500 50  0001 C CNN "MATE_MPN"
+F 9 "0.48" H 2150 3500 50  0001 C CNN "MATE_Price"
+F 10 "https://www.digikey.com/en/products/detail/molex/0430250400/252497" H 2150 3500 50  0001 C CNN "MATE_Link"
+F 11 "259" H 2150 3500 50  0001 C CNN "Price2"
+F 12 "https://bluerobotics.com/store/sensors-sonars-cameras/sensors/bar100-sensor-r2-rp/" H 2150 3500 50  0001 C CNN "Link2"
+F 13 "BAR100-SENSOR-R2-RP" H 2150 3500 50  0001 C CNN "MPM2"
+	1    2150 3500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
