@@ -1,4 +1,4 @@
-update=Monday, February 21, 2022 at 12:51:47 PM
+update=Wednesday, February 23, 2022 at 05:17:30 PM
 version=1
 last_client=kicad
 [general]
@@ -249,7 +249,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=hipower
 Clearance=0.2
-TrackWidth=3
+TrackWidth=2
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
