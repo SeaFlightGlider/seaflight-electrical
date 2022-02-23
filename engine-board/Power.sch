@@ -206,9 +206,9 @@ Connection ~ 5500 2500
 Wire Wire Line
 	5500 2500 5500 2450
 Text Label 8300 3300 2    50   ~ 0
-lipo_bat_therm1
+lipo_bat1_therm1
 Text Label 8300 3400 2    50   ~ 0
-lipo_bat_therm2
+lipo_bat1_therm2
 Wire Wire Line
 	6400 5650 6400 5700
 Wire Wire Line

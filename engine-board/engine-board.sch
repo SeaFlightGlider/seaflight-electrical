@@ -748,4 +748,8 @@ Text Label 1200 1350 2    50   ~ 0
 rs232_gnd
 Text Label 850  3050 2    50   ~ 0
 rs232_gnd
+Text Label 4600 900  2    50   ~ 0
+gps_pss
+Text Label 1600 6550 2    50   ~ 0
+gps_pss
 $EndSCHEMATC

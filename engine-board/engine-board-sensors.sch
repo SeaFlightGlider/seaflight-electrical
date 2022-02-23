@@ -265,6 +265,7 @@ F 7 "2.38" H 2050 1450 50  0001 C CNN "Price"
 F 8 "430250400" H 2050 1450 50  0001 C CNN "MATE_MPN"
 F 9 "0.48" H 2050 1450 50  0001 C CNN "MATE_Price"
 F 10 "https://www.digikey.com/en/products/detail/molex/0430250400/252497" H 2050 1450 50  0001 C CNN "MATE_Link"
+F 11 "0" H 2050 1450 50  0001 C CNN "Price2"
 	1    2050 1450
 	1    0    0    -1  
 $EndComp

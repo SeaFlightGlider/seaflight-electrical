@@ -65,51 +65,6 @@ Wire Wire Line
 	7950 1200 8800 1200
 Wire Wire Line
 	7950 1300 8800 1300
-$Comp
-L power:+5V #PWR0502
-U 1 1 6190BE9A
-P 4750 1200
-F 0 "#PWR0502" H 4750 1050 50  0001 C CNN
-F 1 "+5V" H 4765 1373 50  0000 C CNN
-F 2 "" H 4750 1200 50  0001 C CNN
-F 3 "" H 4750 1200 50  0001 C CNN
-	1    4750 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0501
-U 1 1 6190BEA0
-P 4500 1300
-F 0 "#PWR0501" H 4500 1050 50  0001 C CNN
-F 1 "GND" H 4505 1127 50  0000 C CNN
-F 2 "" H 4500 1300 50  0001 C CNN
-F 3 "" H 4500 1300 50  0001 C CNN
-	1    4500 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J501
-U 1 1 6190BEAA
-P 5400 1200
-F 0 "J501" H 5450 1417 50  0000 C CNN
-F 1 "Serial Telemetry" H 5450 1326 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-04BE" H 5400 1200 50  0001 C CNN
-F 3 "~" H 5400 1200 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/cui-devices/TBP01R1W-508-04BE/10238427?WT.z_cid=ref_neda_dkc_buynow_cuidevices&utm_source=ecia&utm_medium=aggregator&utm_campaign=cuidevices" H 5400 1200 50  0001 C CNN "Link"
-F 5 "CUI Devices" H 5400 1200 50  0001 C CNN "MANUFACTURER"
-F 6 "TBP01R1W-508-04BE" H 5400 1200 50  0001 C CNN "MPN"
-F 7 "1.28" H 5400 1200 50  0001 C CNN "Price"
-	1    5400 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 1200 5200 1200
-Wire Wire Line
-	4500 1300 5200 1300
-Text HLabel 5700 1200 2    50   Input ~ 0
-usb_data_D0
-Text HLabel 5700 1300 2    50   Input ~ 0
-usb_data_D1
 Text HLabel 7950 1000 0    50   Input ~ 0
 gps_pps
 Text HLabel 8800 1600 0    50   Input ~ 0
@@ -146,6 +101,7 @@ F 5 "Adafruit" H 9050 2550 50  0001 C CNN "MANUFACTURER"
 F 6 "RockBLOCK 9603" H 9050 2550 50  0001 C CNN "MPN"
 F 7 "249.95" H 9050 2550 50  0001 C CNN "Price"
 F 8 "ADDR=0x63" H 9300 2600 50  0000 C CNN "I2C_ADDR"
+F 9 "0" H 9050 2550 50  0001 C CNN "Price2"
 	1    9050 2550
 	1    0    0    -1  
 $EndComp
@@ -229,6 +185,7 @@ F 5 "Samtec Inc." H 9000 1300 50  0001 C CNN "MANUFACTURER"
 F 6 "SSQ-108-01-G-S" H 9000 1300 50  0001 C CNN "MPN"
 F 7 "1.68" H 9000 1300 50  0001 C CNN "Price"
 F 8 "ADDR=0x42" H 9250 1350 50  0000 C CNN "I2C_ADDR"
+F 9 "0" H 9000 1300 50  0001 C CNN "Price2"
 	1    9000 1300
 	1    0    0    -1  
 $EndComp
