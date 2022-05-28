@@ -74,12 +74,16 @@ AR Path="/61A5B5D1" Ref="J?"  Part="1"
 AR Path="/618F9F5D/61A5B5D1" Ref="J206"  Part="1" 
 F 0 "J206" H 8450 1267 50  0000 C CNN
 F 1 "Leak Sensor" H 8450 1176 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-04BE" H 8400 1050 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0421_2x02-1MP_P3.00mm_Horizontal" H 8400 1050 50  0001 C CNN
 F 3 "~" H 8400 1050 50  0001 C CNN
 F 4 "https://www.digikey.com/en/products/detail/cui-devices/TBP01R1W-508-04BE/10238427?WT.z_cid=ref_neda_dkc_buynow_cuidevices&utm_source=ecia&utm_medium=aggregator&utm_campaign=cuidevices" H 8400 1050 50  0001 C CNN "Link"
 F 5 "CUI Devices" H 8400 1050 50  0001 C CNN "MANUFACTURER"
 F 6 "TBP01R1W-508-04BE" H 8400 1050 50  0001 C CNN "MPN"
 F 7 "1.28" H 8400 1050 50  0001 C CNN "Price"
+F 8 "https://bluerobotics.com/store/sensors-sonars-cameras/leak-sensor/sos-leak-sensor/" H 8400 1050 50  0001 C CNN "Link2"
+F 9 "SOS-SET-R1-RP" H 8400 1050 50  0001 C CNN "MPN2"
+F 10 "Blue Robotics" H 8400 1050 50  0001 C CNN "Manufacturer"
+F 11 "29" H 8400 1050 50  0001 C CNN "Price2"
 	1    8400 1050
 	1    0    0    -1  
 $EndComp
@@ -165,6 +169,10 @@ F 7 "1.47" H 9250 3200 50  0001 C CNN "Price"
 F 8 "ADDR=0x69" H 9500 3300 50  0000 C CNN "I2C_ADDR"
 F 9 "https://www.sparkfun.com/products/14558" H 9250 3200 50  0001 C CNN "Link2"
 F 10 "16.95" H 9250 3200 50  0001 C CNN "Price2"
+F 11 "Sparkfun" H 9250 3200 50  0001 C CNN "Manufacturer"
+F 12 "https://www.digikey.com/en/products/detail/molex/0901210127/760816" H 9250 3200 50  0001 C CNN "MATE_Link"
+F 13 "0901210127" H 9250 3200 50  0001 C CNN "MATE_MPN"
+F 14 "1.34" H 9250 3200 50  0001 C CNN "MATE_Price"
 	1    9250 3200
 	1    0    0    -1  
 $EndComp
@@ -262,10 +270,12 @@ F 4 "https://www.digikey.com/en/products/detail/molex/0430450422/1635030" H 2050
 F 5 "Molex" H 2050 1450 50  0001 C CNN "MANUFACTURER"
 F 6 "0430450422" H 2050 1450 50  0001 C CNN "MPN"
 F 7 "2.38" H 2050 1450 50  0001 C CNN "Price"
-F 8 "430250400" H 2050 1450 50  0001 C CNN "MATE_MPN"
+F 8 "0430250408" H 2050 1450 50  0001 C CNN "MATE_MPN"
 F 9 "0.48" H 2050 1450 50  0001 C CNN "MATE_Price"
-F 10 "https://www.digikey.com/en/products/detail/molex/0430250400/252497" H 2050 1450 50  0001 C CNN "MATE_Link"
-F 11 "0" H 2050 1450 50  0001 C CNN "Price2"
+F 10 "https://www.digikey.com/en/products/detail/molex/0430250408/4481508?s=N4IgTCBcDaICwGYAMYCsS5IBwgLoF8g" H 2050 1450 50  0001 C CNN "MATE_Link"
+F 11 "76.57" H 2050 1450 50  0001 C CNN "Price2"
+F 12 "https://www.alliedelec.com/product/te-connectivity/m30j1-000105-300pg/71023700/" H 2050 1450 50  0001 C CNN "Link2"
+F 13 "M30J1-000105-300PG" H 2050 1450 50  0001 C CNN "MPN2"
 	1    2050 1450
 	1    0    0    -1  
 $EndComp
@@ -311,9 +321,12 @@ F 4 "https://www.digikey.com/en/products/detail/molex/0430450422/1635030" H 2050
 F 5 "Molex" H 2050 1900 50  0001 C CNN "MANUFACTURER"
 F 6 "0430450422" H 2050 1900 50  0001 C CNN "MPN"
 F 7 "2.38" H 2050 1900 50  0001 C CNN "Price"
-F 8 "430250400" H 2050 1900 50  0001 C CNN "MATE_MPN"
+F 8 "0430250408" H 2050 1900 50  0001 C CNN "MATE_MPN"
 F 9 "0.48" H 2050 1900 50  0001 C CNN "MATE_Price"
-F 10 "https://www.digikey.com/en/products/detail/molex/0430250400/252497" H 2050 1900 50  0001 C CNN "MATE_Link"
+F 10 "https://www.digikey.com/en/products/detail/molex/0430250408/4481508" H 2050 1900 50  0001 C CNN "MATE_Link"
+F 11 "https://www.alliedelec.com/product/te-connectivity/m30j1-000105-300pg/71023700/" H 2050 1900 50  0001 C CNN "Link2"
+F 12 "M30J1-000105-300PG" H 2050 1900 50  0001 C CNN "MPN2"
+F 13 "76.57" H 2050 1900 50  0001 C CNN "Price2"
 	1    2050 1900
 	1    0    0    -1  
 $EndComp
@@ -329,9 +342,9 @@ F 0 "J203" H 5878 1176 50  0000 L CNN
 F 1 "HMC6343 COMPASS" H 5878 1085 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5850 1200 50  0001 C CNN
 F 3 "~" H 5850 1200 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 5850 1200 50  0001 C CNN "Link"
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-104-01-G-S/1110615" H 5850 1200 50  0001 C CNN "Link"
 F 5 "Samtec Inc." H 5850 1200 50  0001 C CNN "MANUFACTURER"
-F 6 "SSQ-106-01-G-S" H 5850 1200 50  0001 C CNN "MPN"
+F 6 "SSQ-104-01-G-S" H 5850 1200 50  0001 C CNN "MPN"
 F 7 "1.35" H 5850 1200 50  0001 C CNN "Price"
 F 8 "ADDR=0x32" H 6100 1250 50  0000 C CNN "I2C_ADDR"
 F 9 "https://www.digikey.com/en/products/detail/sparkfun-electronics/SEN-12916/5764505" H 5850 1200 50  0001 C CNN "Link2"
@@ -505,10 +518,17 @@ F 0 "U202" H 6475 4365 50  0000 C CNN
 F 1 "BN0055 IMU" H 6475 4274 50  0000 C CNN
 F 2 "Sensor_Motion:ADA_BN0055" H 6450 4150 50  0001 C CNN
 F 3 "https://www.adafruit.com/product/2472" H 6450 4150 50  0001 C CNN
-F 4 "ADA 2472" H 6450 4150 50  0001 C CNN "MPM"
-F 5 "https://www.adafruit.com/product/2472" H 6450 4150 50  0001 C CNN "Link"
-F 6 "34.95" H 6450 4150 50  0001 C CNN "Price"
+F 4 "" H 6450 4150 50  0001 C CNN "MPM"
+F 5 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 6450 4150 50  0001 C CNN "Link"
+F 6 "1.35" H 6450 4150 50  0001 C CNN "Price"
 F 7 "ADDR=0x28" H 6475 4183 50  0000 C CNN "I2C_ADDR"
+F 8 "SSQ-106-01-G-S" H 6450 4150 50  0001 C CNN "MPN"
+F 9 "https://www.adafruit.com/product/2472" H 6450 4150 50  0001 C CNN "Link2"
+F 10 "ADA 2472" H 6450 4150 50  0001 C CNN "MPN2"
+F 11 "34.95" H 6450 4150 50  0001 C CNN "Price2"
+F 12 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-104-01-G-S/1110615" H 6450 4150 50  0001 C CNN "MATE_Link"
+F 13 "SSQ-104-01-G-S" H 6450 4150 50  0001 C CNN "MATE_MPN"
+F 14 "0.90" H 6450 4150 50  0001 C CNN "MATE_Price"
 	1    6450 4150
 	1    0    0    -1  
 $EndComp
@@ -550,6 +570,10 @@ F 7 ".9" H 9250 3950 50  0001 C CNN "Price"
 F 8 "ADDR=0x77" H 9500 4000 50  0000 C CNN "I2C_ADDR"
 F 9 "https://www.sparkfun.com/products/13676" H 9250 3950 50  0001 C CNN "Link2"
 F 10 "19.95" H 9250 3950 50  0001 C CNN "Price2"
+F 11 "Sparkfun" H 9250 3950 50  0001 C CNN "Manufacturer"
+F 12 "https://www.digikey.com/en/products/detail/molex/0901210124/760813?s=N4IgTCBcDaIJwAYCMYnLAFhAXQL5A" H 9250 3950 50  0001 C CNN "MATE_Link"
+F 13 "0901210124" H 9250 3950 50  0001 C CNN "MATE_MPN"
+F 14 "0.88" H 9250 3950 50  0001 C CNN "MATE_Price"
 	1    9250 3950
 	1    0    0    -1  
 $EndComp
@@ -663,12 +687,15 @@ P 2100 2450
 AR Path="/62037C79" Ref="U201"  Part="1" 
 AR Path="/618F9F5D/62037C79" Ref="U201"  Part="1" 
 F 0 "U201" H 2100 2375 50  0000 C CNN
-F 1 "QuickFit_02x03_Header-Connector" H 2100 2284 50  0000 C CNN
+F 1 "Bulkhead SW EXT PRESS" H 2100 2284 50  0000 C CNN
 F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0621_2x03-1MP_P3.00mm_Horizontal" H 2050 2600 50  0001 C CNN
 F 3 "" H 2050 2600 50  0001 C CNN
 F 4 "https://www.digikey.com/short/4c5hw39j" H 2100 2450 50  0001 C CNN "Link"
-F 5 "430450621" H 2100 2450 50  0001 C CNN "MPM"
+F 5 "0430250600" H 2100 2450 50  0001 C CNN "MATE_MPN"
 F 6 "2.19" H 2100 2450 50  0001 C CNN "Price"
+F 7 "430450621" H 2100 2450 50  0001 C CNN "MPN"
+F 8 "https://www.digikey.com/en/products/detail/molex/0430250600/252498" H 2100 2450 50  0001 C CNN "MATE_Link"
+F 9 "0.52" H 2100 2450 50  0001 C CNN "Mate_Price"
 	1    2100 2450
 	1    0    0    -1  
 $EndComp
@@ -716,12 +743,13 @@ F 4 "https://www.digikey.com/short/b28q047p" H 2150 3500 50  0001 C CNN "Link"
 F 5 "Molex" H 2150 3500 50  0001 C CNN "MANUFACTURER"
 F 6 "0430450421" H 2150 3500 50  0001 C CNN "MPN"
 F 7 "2.04" H 2150 3500 50  0001 C CNN "Price"
-F 8 "430250400" H 2150 3500 50  0001 C CNN "MATE_MPN"
+F 8 "430250408" H 2150 3500 50  0001 C CNN "MATE_MPN"
 F 9 "0.48" H 2150 3500 50  0001 C CNN "MATE_Price"
-F 10 "https://www.digikey.com/en/products/detail/molex/0430250400/252497" H 2150 3500 50  0001 C CNN "MATE_Link"
+F 10 "https://www.digikey.com/en/products/detail/molex/0430250408/4481508" H 2150 3500 50  0001 C CNN "MATE_Link"
 F 11 "259" H 2150 3500 50  0001 C CNN "Price2"
 F 12 "https://bluerobotics.com/store/sensors-sonars-cameras/sensors/bar100-sensor-r2-rp/" H 2150 3500 50  0001 C CNN "Link2"
-F 13 "BAR100-SENSOR-R2-RP" H 2150 3500 50  0001 C CNN "MPM2"
+F 13 "BAR100-SENSOR-R2-RP" H 2150 3500 50  0001 C CNN "MPN2"
+F 14 "Blue Robotics" H 2150 3500 50  0001 C CNN "Manufacturer"
 	1    2150 3500
 	1    0    0    -1  
 $EndComp

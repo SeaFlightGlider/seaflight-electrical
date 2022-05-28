@@ -106,11 +106,12 @@ AR Path="/619906DF/619E9FAA" Ref="Q301"  Part="1"
 F 0 "Q301" H 8354 1346 50  0000 L CNN
 F 1 "IRLB8721PBF" H 8354 1255 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8400 1225 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591" H 8150 1300 50  0001 L CNN
+F 3 "" H 8150 1300 50  0001 L CNN
 F 4 "https://www.digikey.com/en/products/detail/infineon-technologies/IRLB8721PBF/2127670" H 8150 1300 50  0001 C CNN "Link"
-F 5 "Infineon" H 8150 1300 50  0001 C CNN "MANUFACTURER"
-F 6 "IRLB8721PBF" H 8150 1300 50  0001 C CNN "MPN"
+F 5 "" H 8150 1300 50  0001 C CNN "MANUFACTURER"
+F 6 "IRLZ44NPBF" H 8150 1300 50  0001 C CNN "MPN"
 F 7 "1.08" H 8150 1300 50  0001 C CNN "Price"
+F 8 "Infineon" H 8150 1300 50  0001 C CNN "Manufacturer"
 	1    8150 1300
 	1    0    0    -1  
 $EndComp
@@ -124,6 +125,9 @@ F 0 "D301" H 9050 1717 50  0000 C CNN
 F 1 "1N4001" H 9050 1626 50  0000 C CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9050 1325 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 9050 1500 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/1N4001GP-E3-54/2142384" H 9050 1500 50  0001 C CNN "Link"
+F 5 "Vishay" H 9050 1500 50  0001 C CNN "MANUFACTURER"
+F 6 "0.52" H 9050 1500 50  0001 C CNN "Price"
 	1    9050 1500
 	1    0    0    -1  
 $EndComp
@@ -194,12 +198,19 @@ AR Path="/619E9FD7" Ref="J?"  Part="1"
 AR Path="/619906DF/619E9FD7" Ref="J309"  Part="1" 
 F 0 "J309" H 9428 1476 50  0000 L CNN
 F 1 "Solenoid" H 9428 1385 50  0000 L CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-02BE" H 9400 1500 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0221_2x01-1MP_P3.00mm_Horizontal" H 9400 1500 50  0001 C CNN
 F 3 "~" H 9400 1500 50  0001 C CNN
 F 4 "https://www.digikey.com/en/products/detail/cui-devices/TBP01R1W-508-02BE/10238425" H 9400 1500 50  0001 C CNN "Link"
 F 5 "CUI Devices" H 9400 1500 50  0001 C CNN "MANUFACTURER"
 F 6 "TBP01R1W-508-02BE" H 9400 1500 50  0001 C CNN "MPN"
 F 7 "0.77" H 9400 1500 50  0001 C CNN "Price"
+F 8 "https://www.gghyd.com/valves/solenoid-valves/2-way/normally-closed/stainless-steel/air-water-steam-or-oil/20cc02lv7b7a-parker-g7-2-way-normally-closed-1-8-npt-direct-acting-stainless-steel-solenoid-valve.html" H 9400 1500 50  0001 C CNN "Link2"
+F 9 "20CC02LV7B7A" H 9400 1500 50  0001 C CNN "MPN2"
+F 10 "Parker" H 9400 1500 50  0001 C CNN "Manufacturer"
+F 11 "125.0" H 9400 1500 50  0001 C CNN "Price2"
+F 12 "https://www.digikey.com/en/products/detail/cui-devices/TBP01P1W-508-02BE/10238415" H 9400 1500 50  0001 C CNN "MATE_Link"
+F 13 "TBP01P1W-508-02BE" H 9400 1500 50  0001 C CNN "MATE_MPN"
+F 14 "1.17" H 9400 1500 50  0001 C CNN "MATE_Price"
 	1    9400 1500
 	1    0    0    -1  
 $EndComp
@@ -357,12 +368,19 @@ U 1 1 61C756BF
 P 6650 4550
 F 0 "J306" H 6700 4867 50  0000 C CNN
 F 1 "Turbine 2 ESC" H 6700 4776 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-08BE" H 6650 4550 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0821_2x04-1MP_P3.00mm_Horizontal" H 6650 4550 50  0001 C CNN
 F 3 "~" H 6650 4550 50  0001 C CNN
 F 4 "https://www.digikey.com/en/products/detail/cui-devices/TBP01R1W-508-08BE/10238430" H 6650 4550 50  0001 C CNN "Link"
 F 5 "CUI Devices" H 6650 4550 50  0001 C CNN "MANUFACTURER"
 F 6 "TBP01R1W-508-08BE" H 6650 4550 50  0001 C CNN "MPN"
 F 7 "1.75" H 6650 4550 50  0001 C CNN "Price"
+F 8 "https://bluerobotics.com/store/thrusters/speed-controllers/besc30-r3/" H 6650 4550 50  0001 C CNN "Link2"
+F 9 "https://www.digikey.com/en/products/detail/cui-devices/TBP01P1W-508-08BE/10238420" H 6650 4550 50  0001 C CNN "MATE_Link"
+F 10 "TBP01P1W-508-08BE" H 6650 4550 50  0001 C CNN "MATE_MPN"
+F 11 "2.54" H 6650 4550 50  0001 C CNN "MATE_Price"
+F 12 "BESC30-R3" H 6650 4550 50  0001 C CNN "MPN2"
+F 13 "Blue Robotics" H 6650 4550 50  0001 C CNN "Manufacturer"
+F 14 "30" H 6650 4550 50  0001 C CNN "Price2"
 	1    6650 4550
 	1    0    0    -1  
 $EndComp
@@ -424,12 +442,19 @@ U 1 1 61C756E2
 P 6650 3750
 F 0 "J305" H 6700 4067 50  0000 C CNN
 F 1 "Turbine 1 ESC" H 6700 3976 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-08BE" H 6650 3750 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0821_2x04-1MP_P3.00mm_Horizontal" H 6650 3750 50  0001 C CNN
 F 3 "~" H 6650 3750 50  0001 C CNN
 F 4 "https://www.digikey.com/en/products/detail/cui-devices/TBP01R1W-508-08BE/10238430" H 6650 3750 50  0001 C CNN "Link"
 F 5 "CUI Devices" H 6650 3750 50  0001 C CNN "MANUFACTURER"
 F 6 "TBP01R1W-508-08BE" H 6650 3750 50  0001 C CNN "MPN"
 F 7 "1.75" H 6650 3750 50  0001 C CNN "Price"
+F 8 "https://bluerobotics.com/store/thrusters/speed-controllers/besc30-r3/" H 6650 3750 50  0001 C CNN "Link2"
+F 9 "https://www.digikey.com/en/products/detail/cui-devices/TBP01P1W-508-08BE/10238420" H 6650 3750 50  0001 C CNN "MATE_Link"
+F 10 "TBP01P1W-508-08BE" H 6650 3750 50  0001 C CNN "MATE_MPN"
+F 11 "2.54" H 6650 3750 50  0001 C CNN "MATE_Price"
+F 12 "BESC30-R3" H 6650 3750 50  0001 C CNN "MPN2"
+F 13 "Blue Robotics" H 6650 3750 50  0001 C CNN "Manufacturer"
+F 14 "30" H 6650 3750 50  0001 C CNN "Price2"
 	1    6650 3750
 	1    0    0    -1  
 $EndComp
@@ -466,8 +491,12 @@ F 1 "Steering Turbines" H 2950 5576 50  0000 C CNN
 F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0821_2x04-1MP_P3.00mm_Horizontal" H 2900 5350 50  0001 C CNN
 F 3 "~" H 2900 5350 50  0001 C CNN
 F 4 "https://www.digikey.com/short/zjp71dn8" H 2900 5350 50  0001 C CNN "Link"
-F 5 "0430450821" H 2900 5350 50  0001 C CNN "MPM"
+F 5 "0430450821" H 2900 5350 50  0001 C CNN "MPN"
 F 6 "2.63" H 2900 5350 50  0001 C CNN "Price"
+F 7 "https://www.digikey.com/en/products/detail/molex/0430250800/252499" H 2900 5350 50  0001 C CNN "MATE_Link"
+F 8 "430250800" H 2900 5350 50  0001 C CNN "MATE_MPN"
+F 9 "0.6" H 2900 5350 50  0001 C CNN "MATE_Price"
+F 10 "Molex" H 2900 5350 50  0001 C CNN "MANUFACTURER"
 	1    2900 5350
 	1    0    0    -1  
 $EndComp
@@ -623,13 +652,17 @@ F 0 "J307" H 6928 5476 50  0000 L CNN
 F 1 "Turbine Current Sensor" H 6928 5385 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 6900 5500 50  0001 C CNN
 F 3 "~" H 6900 5500 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 6900 5500 50  0001 C CNN "Link"
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-108-01-G-S/1110611" H 6900 5500 50  0001 C CNN "Link"
 F 5 "Samtec Inc." H 6900 5500 50  0001 C CNN "MANUFACTURER"
 F 6 "SSQ-108-01-G-S" H 6900 5500 50  0001 C CNN "MPN"
 F 7 "1.35" H 6900 5500 50  0001 C CNN "Price"
 F 8 "9.95" H 6900 5500 50  0001 C CNN "Price2"
 F 9 "https://www.adafruit.com/product/4226" H 6900 5500 50  0001 C CNN "Link2"
 F 10 "ADDR=0x45" H 7150 5550 50  0000 C CNN "I2C_ADDR"
+F 11 "https://www.digikey.com/en/products/detail/molex/0901210128/760817?s=N4IgTCBcDaIJwAYCMYnLADhAXQL5A" H 6900 5500 50  0001 C CNN "MATE_Link"
+F 12 "0901210128" H 6900 5500 50  0001 C CNN "MATE_MPN"
+F 13 "1.16" H 6900 5500 50  0001 C CNN "MATE_Price"
+F 14 "Adafruit" H 6900 5500 50  0001 C CNN "Manufacturer"
 	1    6900 5500
 	1    0    0    -1  
 $EndComp
@@ -656,13 +689,17 @@ F 0 "J308" H 9028 2376 50  0000 L CNN
 F 1 "Solenoid Current Sensor" H 9028 2285 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 9000 2400 50  0001 C CNN
 F 3 "~" H 9000 2400 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 9000 2400 50  0001 C CNN "Link"
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-108-01-G-S/1110611" H 9000 2400 50  0001 C CNN "Link"
 F 5 "Samtec Inc." H 9000 2400 50  0001 C CNN "MANUFACTURER"
 F 6 "SSQ-108-01-G-S" H 9000 2400 50  0001 C CNN "MPN"
 F 7 "1.35" H 9000 2400 50  0001 C CNN "Price"
 F 8 "9.95" H 9000 2400 50  0001 C CNN "Price2"
 F 9 "https://www.adafruit.com/product/4226" H 9000 2400 50  0001 C CNN "Link2"
 F 10 "ADDR=0x42" H 9250 2450 50  0000 C CNN "I2C_ADDR"
+F 11 "https://www.digikey.com/en/products/detail/molex/0901210128/760817?s=N4IgTCBcDaIJwAYCMYnLADhAXQL5A" H 9000 2400 50  0001 C CNN "MATE_Link"
+F 12 "0901210128" H 9000 2400 50  0001 C CNN "MATE_MPN"
+F 13 "1.16" H 9000 2400 50  0001 C CNN "MATE_Price"
+F 14 "Adafruit" H 9000 2400 50  0001 C CNN "Manufacturer"
 	1    9000 2400
 	1    0    0    -1  
 $EndComp
@@ -698,6 +735,9 @@ F 7 "1.35" H 3100 1850 50  0001 C CNN "Price"
 F 8 "9.95" H 3100 1850 50  0001 C CNN "Price2"
 F 9 "https://www.adafruit.com/product/4226" H 3100 1850 50  0001 C CNN "Link2"
 F 10 "ADDR=0x43" H 3350 1900 50  0000 C CNN "I2C_ADDR"
+F 11 "https://www.digikey.com/en/products/detail/molex/0901210128/760817?s=N4IgTCBcDaIJwAYCMYnLADhAXQL5A" H 3100 1850 50  0001 C CNN "MATE_Link"
+F 12 "0901210128" H 3100 1850 50  0001 C CNN "MATE_MPN"
+F 13 "1.16" H 3100 1850 50  0001 C CNN "MATE_Price"
 	1    3100 1850
 	1    0    0    -1  
 $EndComp
@@ -753,9 +793,13 @@ F 4 "https://www.digikey.com/en/products/detail/molex/0430450422/1635030" H 1750
 F 5 "Molex" H 1750 4550 50  0001 C CNN "MANUFACTURER"
 F 6 "0430450422" H 1750 4550 50  0001 C CNN "MPN"
 F 7 "2.38" H 1750 4550 50  0001 C CNN "Price"
-F 8 "430250400" H 1750 4550 50  0001 C CNN "MATE_MPN"
+F 8 "0430250408" H 1750 4550 50  0001 C CNN "MATE_MPN"
 F 9 "0.48" H 1750 4550 50  0001 C CNN "MATE_Price"
-F 10 "https://www.digikey.com/en/products/detail/molex/0430250400/252497" H 1750 4550 50  0001 C CNN "MATE_Link"
+F 10 "https://www.digikey.com/en/products/detail/molex/0430250408/4481508" H 1750 4550 50  0001 C CNN "MATE_Link"
+F 11 "https://www.sparkfun.com/products/12785" H 1750 4550 50  0001 C CNN "Link2"
+F 12 "SEN-12785" H 1750 4550 50  0001 C CNN "MPN2"
+F 13 "Sparkfun" H 1750 4550 50  0001 C CNN "Manufacturer"
+F 14 "29.50" H 1750 4550 50  0001 C CNN "Price2"
 	1    1750 4550
 	1    0    0    -1  
 $EndComp
@@ -784,7 +828,7 @@ AR Path="/619BE7D1" Ref="J?"  Part="1"
 AR Path="/619906DF/619BE7D1" Ref="J1"  Part="1" 
 F 0 "J1" H 3000 3317 50  0000 C CNN
 F 1 "Pump Controller" H 3000 3226 50  0000 C CNN
-F 2 "TerminalBlock_CUI:CUI_TBP01R1W-508-12BE" H 2950 2900 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1221_2x06-1MP_P3.00mm_Horizontal" H 2950 2900 50  0001 C CNN
 F 3 "~" H 2950 2900 50  0001 C CNN
 F 4 "https://www.digikey.com/en/products/detail/cui-devices/TBP01R1W-508-12BE/10238432" H 2950 2900 50  0001 C CNN "Link"
 F 5 "TBP01R1W-508-12BE" H 2950 2900 50  0001 C CNN "MPN"
@@ -793,4 +837,18 @@ F 7 "2.07" H 2950 2900 50  0001 C CNN "Price"
 	1    2950 2900
 	1    0    0    -1  
 $EndComp
+Text Notes 4138 2936 0    50   ~ 0
+J5 Pin 2 on Maxon 70/30
+Text Notes 4138 3036 0    50   ~ 0
+J5 Pin 3 on Maxon 70/30
+Text Notes 4488 3136 0    50   ~ 0
+J6 Pin 6 on Maxon 70/30
+Text Notes 4538 3236 0    50   ~ 0
+J6 Pin 5 on Maxon 70/30
+Text Notes 988  3336 0    50   ~ 0
+J6 Pin 7 on Maxon 70/30
+Text Notes 4138 2836 0    50   ~ 0
+J5 Pin 1 on Maxon 70/30
+Text Notes 2888 3436 0    50   ~ 0
+J5 Pin 5 on Maxon 70/30
 $EndSCHEMATC
