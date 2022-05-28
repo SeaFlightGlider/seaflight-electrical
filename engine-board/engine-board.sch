@@ -197,8 +197,15 @@ F 0 "U102" H 7700 6717 50  0000 C CNN
 F 1 "FEATHER_M0_BASIC_PROTO" H 7700 6626 50  0000 C CNN
 F 2 "Module:ADAFRUIT_FEATHER" H 7700 5550 50  0001 L BNN
 F 3 "" H 7700 5550 50  0001 L BNN
-F 4 "Adafruit" H 7700 5550 50  0001 L BNN "MANUFACTURER"
+F 4 "" H 7700 5550 50  0001 L BNN "MANUFACTURER"
 F 5 "Manufacturer Recommendation" H 7700 5550 50  0001 L BNN "STANDARD"
+F 6 "https://www.digikey.com/en/products/detail/adafruit-industries-llc/2886/5823440" H 7700 5550 50  0001 C CNN "Link"
+F 7 "https://www.adafruit.com/product/4650" H 7700 5550 50  0001 C CNN "Link2"
+F 8 "14.95" H 7700 5550 50  0001 C CNN "Price2"
+F 9 "2886" H 7700 5550 50  0001 C CNN "MPN"
+F 10 "4650" H 7700 5550 50  0001 C CNN "MPN2"
+F 11 "Adafruit" H 7700 5550 50  0001 C CNN "Manufacturer"
+F 12 "0.95" H 7700 5550 50  0001 C CNN "Price"
 	1    7700 5550
 	1    0    0    -1  
 $EndComp
@@ -365,6 +372,9 @@ F 6 "SSQ-108-01-G-S" H 9450 1200 50  0001 C CNN "MPN"
 F 7 "1.68" H 9450 1200 50  0001 C CNN "Price"
 F 8 "https://www.adafruit.com/product/254" H 9450 1200 50  0001 C CNN "Link2"
 F 9 "7.50" H 9450 1200 50  0001 C CNN "Price2"
+F 10 "https://www.digikey.com/en/products/detail/molex/0901210128/760817?s=N4IgTCBcDaIJwAYCMYnLADhAXQL5A" H 9450 1200 50  0001 C CNN "MATE_Link"
+F 11 "0901210128" H 9450 1200 50  0001 C CNN "MATE_MPN"
+F 12 "1.16" H 9450 1200 50  0001 C CNN "MATE_Price"
 	1    9450 1200
 	1    0    0    -1  
 $EndComp
@@ -374,9 +384,9 @@ Text Label 2800 750  2    50   ~ 0
 i2c_sda_1
 Text Label 2800 950  2    50   ~ 0
 leak_sense_output
-Text Label 1200 850  2    50   ~ 0
-i2c_scl_1
 Text Label 1200 750  2    50   ~ 0
+i2c_scl_1
+Text Label 1200 850  2    50   ~ 0
 i2c_sda_1
 Text Label 4600 1100 2    50   ~ 0
 i2c_scl_1
@@ -390,9 +400,13 @@ F 0 "U101" H 2750 7837 60  0000 C CNN
 F 1 "Teensy3.6_All_Pins" H 2750 7731 60  0000 C CNN
 F 2 "Symbol:Teensy35_36" H 2750 5250 60  0000 C CNN
 F 3 "" H 2750 5250 60  0000 C CNN
-F 4 "DEV-14058" H 2750 5200 50  0001 C CNN "MPN"
-F 5 "36.88" H 2750 5200 50  0001 C CNN "Price"
-F 6 "https://www.digikey.com/en/products/detail/DEV-14058/1568-1465-ND/6569369?itemSeq=383715082" H 2750 5200 50  0001 C CNN "Link"
+F 4 "3883" H 2750 5200 50  0001 C CNN "MPN"
+F 5 "1.25" H 2750 5200 50  0001 C CNN "Price"
+F 6 "https://www.digikey.com/en/products/detail/adafruit-industries-llc/3883/11201426?s=N4IgTCBcDaIC4FMEDsDOBPEBdAvkA" H 2750 5200 50  0001 C CNN "Link"
+F 7 "https://www.digikey.com/en/products/detail/DEV-14058/1568-1465-ND/6569369?itemSeq=383715082" H 2750 5200 50  0001 C CNN "Link2"
+F 8 "36.88" H 2750 5200 50  0001 C CNN "Price2"
+F 9 "DEV-14058" H 2750 5200 50  0001 C CNN "MPN2"
+F 10 "Adafruit" H 2750 5200 50  0001 C CNN "Manufacturer"
 	1    2750 5200
 	1    0    0    -1  
 $EndComp
@@ -447,6 +461,11 @@ F 0 "BT101" H 868 5646 50  0000 L CNN
 F 1 "Battery_Cell" H 868 5555 50  0000 L CNN
 F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 750 5610 50  0001 C CNN
 F 3 "~" V 750 5610 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/keystone-electronics/1060/303556" H 750 5550 50  0001 C CNN "Link"
+F 5 "1060" H 750 5550 50  0001 C CNN "MPN"
+F 6 "" H 750 5550 50  0001 C CNN "Manufacturer"
+F 7 "1.63" H 750 5550 50  0001 C CNN "Price"
+F 8 "Keystone" H 750 5550 50  0001 C CNN "MANUFACTURER"
 	1    750  5550
 	1    0    0    -1  
 $EndComp

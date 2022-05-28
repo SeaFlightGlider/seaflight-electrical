@@ -27,10 +27,11 @@ F 4 "https://www.digikey.com/en/products/detail/molex/0430451623/3044583?s=N4IgT
 F 5 "Molex" H 1250 2050 50  0001 C CNN "MANUFACTURER"
 F 6 "430451623" H 1250 2050 50  0001 C CNN "MPN"
 F 7 "6.91" H 1250 2050 50  0001 C CNN "Price"
-F 8 "0430251608" H 1250 2050 50  0001 C CNN "MATE_MPM"
+F 8 "" H 1250 2050 50  0001 C CNN "MATE_MPM"
 F 9 "1.61" H 1250 2050 50  0001 C CNN "MATE_Price"
 F 10 "https://www.digikey.com/en/products/detail/molex/0430251608/3310170" H 1250 2050 50  0001 C CNN "MATE_Link"
 F 11 "" H 1250 2050 50  0001 C CNN "Field11"
+F 12 "0430251608" H 1250 2050 50  0001 C CNN "MATE_MPN"
 	1    1250 2050
 	-1   0    0    -1  
 $EndComp
@@ -103,8 +104,9 @@ F 1 "R-78B3.3-2.0" H 5450 1051 50  0000 C CNN
 F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78B-2.0_THT" H 5500 650 50  0001 L CIN
 F 3 "https://www.recom-power.com/pdf/Innoline/R-78Bxx-2.0.pdf" H 5450 900 50  0001 C CNN
 F 4 "https://www.digikey.com/en/products/detail/recom-power/R-78B3-3-2-0/6677082" H 5450 900 50  0001 C CNN "Link"
-F 5 "R-78B3.3-2.0" H 5450 900 50  0001 C CNN "MPM"
+F 5 "" H 5450 900 50  0001 C CNN "MPM"
 F 6 "11.35" H 5450 900 50  0001 C CNN "Price"
+F 7 "R-78B3.3-2.0" H 5450 900 50  0001 C CNN "MPN"
 	1    5450 900 
 	1    0    0    -1  
 $EndComp
@@ -152,8 +154,9 @@ F 1 "R-78B5.0-2.0" H 5500 2301 50  0000 C CNN
 F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78B-2.0_THT" H 5550 1900 50  0001 L CIN
 F 3 "https://www.recom-power.com/pdf/Innoline/R-78Bxx-2.0.pdf" H 5500 2150 50  0001 C CNN
 F 4 "https://www.digikey.com/en/products/detail/recom-power/R-78B5-0-2-0/6677084" H 5500 2150 50  0001 C CNN "Link"
-F 5 "R-78B5.0-2.0" H 5500 2150 50  0001 C CNN "MPM"
+F 5 "" H 5500 2150 50  0001 C CNN "MPM"
 F 6 "11.35" H 5500 2150 50  0001 C CNN "Price"
+F 7 "R-78B5.0-2.0" H 5500 2150 50  0001 C CNN "MPN"
 	1    5500 2150
 	1    0    0    -1  
 $EndComp
@@ -221,11 +224,19 @@ AR Path="/61BB0AA1" Ref="U?"  Part="1"
 AR Path="/61B60659/61BB0AA1" Ref="U401"  Part="1" 
 F 0 "U401" H 4400 7365 50  0000 C CNN
 F 1 "Pololu_2814" H 4400 7274 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 4350 7250 50  0001 C CNN
+F 2 "Sensor_Current:Polulu_2814" H 4350 7250 50  0001 C CNN
 F 3 "https://www.pololu.com/product/2814" H 4350 7250 50  0001 C CNN
-F 4 "https://www.pololu.com/product/2814" H 4300 6400 50  0001 C CNN "Link"
-F 5 "2814" H 4300 6400 50  0001 C CNN "MPM"
-F 6 "4.75" H 4300 6400 50  0001 C CNN "Price"
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 4300 6400 50  0001 C CNN "Link"
+F 5 "" H 4300 6400 50  0001 C CNN "MPM"
+F 6 "1.35" H 4300 6400 50  0001 C CNN "Price"
+F 7 "SSQ-106-01-G-S" H 4300 6400 50  0001 C CNN "MPN"
+F 8 "https://www.pololu.com/product/2814" H 4300 6400 50  0001 C CNN "Link2"
+F 9 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 4300 6400 50  0001 C CNN "MATE_Link"
+F 10 "SSQ-104-01-G-S" H 4300 6400 50  0001 C CNN "MATE_MPN"
+F 11 "1.35" H 4300 6400 50  0001 C CNN "MATE_Price"
+F 12 "2814" H 4300 6400 50  0001 C CNN "MPN2"
+F 13 "Polulu" H 4300 6400 50  0001 C CNN "Manufacturer"
+F 14 "4.75" H 4300 6400 50  0001 C CNN "Price2"
 	1    4300 6400
 	1    0    0    -1  
 $EndComp
@@ -312,10 +323,10 @@ F 0 "J402" H 2378 4926 50  0000 L CNN
 F 1 "Power Rail" H 2378 4835 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2350 4950 50  0001 C CNN
 F 3 "~" H 2350 4950 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-108-01-G-S/1110611" H 2350 4950 50  0001 C CNN "Link"
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/TSW-108-05-G-S/1100513" H 2350 4950 50  0001 C CNN "Link"
 F 5 "Samtec Inc." H 2350 4950 50  0001 C CNN "MANUFACTURER"
-F 6 "SSQ-108-01-G-S" H 2350 4950 50  0001 C CNN "MPN"
-F 7 "1.68" H 2350 4950 50  0001 C CNN "Price"
+F 6 "TSW-108-05-G-S" H 2350 4950 50  0001 C CNN "MPN"
+F 7 "0.96" H 2350 4950 50  0001 C CNN "Price"
 	1    2350 4950
 	1    0    0    -1  
 $EndComp
@@ -608,13 +619,17 @@ F 0 "J403" H 4078 4576 50  0000 L CNN
 F 1 "Engine Current Sensor" H 4078 4485 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 4050 4600 50  0001 C CNN
 F 3 "~" H 4050 4600 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 4050 4600 50  0001 C CNN "Link"
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-108-01-G-S/1110611" H 4050 4600 50  0001 C CNN "Link"
 F 5 "Samtec Inc." H 4050 4600 50  0001 C CNN "MANUFACTURER"
 F 6 "SSQ-108-01-G-S" H 4050 4600 50  0001 C CNN "MPN"
 F 7 "1.35" H 4050 4600 50  0001 C CNN "Price"
 F 8 "9.95" H 4050 4600 50  0001 C CNN "Price2"
 F 9 "https://www.adafruit.com/product/4226" H 4050 4600 50  0001 C CNN "Link2"
 F 10 "ADDR=0x40" H 4300 4650 50  0000 C CNN "I2C_ADDR"
+F 11 "https://www.digikey.com/en/products/detail/molex/0901210128/760817?s=N4IgTCBcDaIJwAYCMYnLADhAXQL5A" H 4050 4600 50  0001 C CNN "MATE_Link"
+F 12 "0901210128" H 4050 4600 50  0001 C CNN "MATE_MPN"
+F 13 "1.16" H 4050 4600 50  0001 C CNN "MATE_Price"
+F 14 "Adafruit" H 4050 4600 50  0001 C CNN "Manufacturer"
 	1    4050 4600
 	1    0    0    -1  
 $EndComp
@@ -632,13 +647,17 @@ F 0 "J407" H 7978 2526 50  0000 L CNN
 F 1 "5V Current Sensor" H 7978 2435 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 7950 2550 50  0001 C CNN
 F 3 "~" H 7950 2550 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 7950 2550 50  0001 C CNN "Link"
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-108-01-G-S/1110611" H 7950 2550 50  0001 C CNN "Link"
 F 5 "Samtec Inc." H 7950 2550 50  0001 C CNN "MANUFACTURER"
 F 6 "SSQ-108-01-G-S" H 7950 2550 50  0001 C CNN "MPN"
 F 7 "1.35" H 7950 2550 50  0001 C CNN "Price"
 F 8 "9.95" H 7950 2550 50  0001 C CNN "Price2"
 F 9 "https://www.adafruit.com/product/4226" H 7950 2550 50  0001 C CNN "Link2"
 F 10 "ADDR=0x41" H 8200 2600 50  0000 C CNN "I2C_ADDR"
+F 11 "https://www.digikey.com/en/products/detail/molex/0901210128/760817?s=N4IgTCBcDaIJwAYCMYnLADhAXQL5A" H 7950 2550 50  0001 C CNN "MATE_Link"
+F 12 "0901210128" H 7950 2550 50  0001 C CNN "MATE_MPN"
+F 13 "1.16" H 7950 2550 50  0001 C CNN "MATE_Price"
+F 14 "Adafruit" H 7950 2550 50  0001 C CNN "Manufacturer"
 	1    7950 2550
 	1    0    0    -1  
 $EndComp
@@ -665,13 +684,17 @@ F 0 "J406" H 7978 1226 50  0000 L CNN
 F 1 "3V Current Sensor" H 7978 1135 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 7950 1250 50  0001 C CNN
 F 3 "~" H 7950 1250 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 7950 1250 50  0001 C CNN "Link"
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-108-01-G-S/1110611" H 7950 1250 50  0001 C CNN "Link"
 F 5 "Samtec Inc." H 7950 1250 50  0001 C CNN "MANUFACTURER"
 F 6 "SSQ-108-01-G-S" H 7950 1250 50  0001 C CNN "MPN"
 F 7 "1.35" H 7950 1250 50  0001 C CNN "Price"
 F 8 "9.95" H 7950 1250 50  0001 C CNN "Price2"
 F 9 "https://www.adafruit.com/product/4226" H 7950 1250 50  0001 C CNN "Link2"
 F 10 "ADDR=0x44" H 8200 1300 50  0000 C CNN "I2C_ADDR"
+F 11 "https://www.digikey.com/en/products/detail/molex/0901210128/760817?s=N4IgTCBcDaIJwAYCMYnLADhAXQL5A" H 7950 1250 50  0001 C CNN "MATE_Link"
+F 12 "0901210128" H 7950 1250 50  0001 C CNN "MATE_MPN"
+F 13 "1.16" H 7950 1250 50  0001 C CNN "MATE_Price"
+F 14 "Adafruit" H 7950 1250 50  0001 C CNN "Manufacturer"
 	1    7950 1250
 	1    0    0    -1  
 $EndComp
@@ -735,6 +758,9 @@ F 1 "POWER" H 2450 6795 50  0000 C CNN
 F 2 "Module:SliderSwitch_Simple" H 2450 6908 60  0001 C CNN
 F 3 "https://www.adafruit.com/product/805" H 2450 6802 60  0001 C CNN
 F 4 "0.95" H 2450 6600 50  0001 C CNN "Price"
+F 5 "https://www.adafruit.com/product/805" H 2450 6600 50  0001 C CNN "Link"
+F 6 "805" H 2450 6600 50  0001 C CNN "MPN"
+F 7 "Adafruit" H 2450 6600 50  0001 C CNN "Manufacturer"
 	1    2450 6600
 	1    0    0    -1  
 $EndComp
@@ -880,13 +906,17 @@ F 0 "J414" H 8528 3776 50  0000 L CNN
 F 1 "Batt Sense" H 8528 3685 50  0000 L CNN
 F 2 "Connector_Wire:SolderWire-0.5sqmm_1x05_P4.6mm_D0.9mm_OD2.1mm_Relief" H 8500 3800 50  0001 C CNN
 F 3 "~" H 8500 3800 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-106-01-G-S/1110613" H 8500 3800 50  0001 C CNN "Link"
-F 5 "Samtec Inc." H 8500 3800 50  0001 C CNN "MANUFACTURER"
-F 6 "SSQ-108-01-G-S" H 8500 3800 50  0001 C CNN "MPN"
-F 7 "1.35" H 8500 3800 50  0001 C CNN "Price"
-F 8 "9.95" H 8500 3800 50  0001 C CNN "Price2"
-F 9 "https://www.adafruit.com/product/4226" H 8500 3800 50  0001 C CNN "Link2"
-F 10 "ADDR=0x40" H 8750 3850 50  0000 C CNN "I2C_ADDR"
+F 4 "" H 8500 3800 50  0001 C CNN "Link"
+F 5 "" H 8500 3800 50  0001 C CNN "MANUFACTURER"
+F 6 "" H 8500 3800 50  0001 C CNN "MPN"
+F 7 "" H 8500 3800 50  0001 C CNN "Price"
+F 8 "" H 8500 3800 50  0001 C CNN "Price2"
+F 9 "" H 8500 3800 50  0001 C CNN "Link2"
+F 10 "" H 8750 3850 50  0000 C CNN "I2C_ADDR"
+F 11 "" H 8500 3800 50  0001 C CNN "MATE_Link"
+F 12 "" H 8500 3800 50  0001 C CNN "MATE_MPN"
+F 13 "" H 8500 3800 50  0001 C CNN "MATE_Price"
+F 14 "" H 8500 3800 50  0001 C CNN "Manufacturer"
 	1    8500 3800
 	1    0    0    -1  
 $EndComp
@@ -911,4 +941,8 @@ F 3 "~" H 8500 3300 50  0001 C CNN
 	1    8500 3300
 	1    0    0    -1  
 $EndComp
+Text Label 4450 3650 0    50   ~ 0
+i2c_scl_1
+Text Label 4450 3800 0    50   ~ 0
+i2c_sda_1
 $EndSCHEMATC

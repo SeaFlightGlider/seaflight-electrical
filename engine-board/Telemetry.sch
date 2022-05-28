@@ -96,12 +96,14 @@ F 0 "J503" H 9078 2526 50  0000 L CNN
 F 1 "RockBLOCK 9603" H 9078 2435 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 9050 2550 50  0001 C CNN
 F 3 "~" H 9050 2550 50  0001 C CNN
-F 4 "https://www.adafruit.com/product/4521" H 9050 2550 50  0001 C CNN "Link"
-F 5 "Adafruit" H 9050 2550 50  0001 C CNN "MANUFACTURER"
+F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-110-01-G-S/1110609" H 9050 2550 50  0001 C CNN "Link"
+F 5 "" H 9050 2550 50  0001 C CNN "MANUFACTURER"
 F 6 "RockBLOCK 9603" H 9050 2550 50  0001 C CNN "MPN"
-F 7 "249.95" H 9050 2550 50  0001 C CNN "Price"
+F 7 "2.10" H 9050 2550 50  0001 C CNN "Price"
 F 8 "ADDR=0x63" H 9300 2600 50  0000 C CNN "I2C_ADDR"
-F 9 "0" H 9050 2550 50  0001 C CNN "Price2"
+F 9 "249.95" H 9050 2550 50  0001 C CNN "Price2"
+F 10 "https://www.adafruit.com/product/4521" H 9050 2550 50  0001 C CNN "Link2"
+F 11 "Adafruit" H 9050 2550 50  0001 C CNN "Manufacturer"
 	1    9050 2550
 	1    0    0    -1  
 $EndComp
@@ -141,8 +143,9 @@ F 1 "RockBLOCK 9603 Accessory Cable" H 8025 3005 50  0000 L CNN
 F 2 "" H 8000 3050 50  0001 C CNN
 F 3 "" H 8000 3050 50  0001 C CNN
 F 4 "4.95" H 8000 3050 50  0001 C CNN "Price"
-F 5 "4529" H 8000 3050 50  0001 C CNN "MPM"
+F 5 "" H 8000 3050 50  0001 C CNN "MPM"
 F 6 "https://www.adafruit.com/product/4529" H 8000 3050 50  0001 C CNN "Link"
+F 7 "4529" H 8000 3050 50  0001 C CNN "MPN"
 	1    8000 3050
 	1    0    0    -1  
 $EndComp
@@ -181,11 +184,16 @@ F 1 "NEO08MU GPS" H 9028 1185 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 9000 1300 50  0001 C CNN
 F 3 "~" H 9000 1300 50  0001 C CNN
 F 4 "https://www.digikey.com/en/products/detail/samtec-inc/SSQ-108-01-G-S/1110611" H 9000 1300 50  0001 C CNN "Link"
-F 5 "Samtec Inc." H 9000 1300 50  0001 C CNN "MANUFACTURER"
+F 5 "" H 9000 1300 50  0001 C CNN "MANUFACTURER"
 F 6 "SSQ-108-01-G-S" H 9000 1300 50  0001 C CNN "MPN"
 F 7 "1.68" H 9000 1300 50  0001 C CNN "Price"
 F 8 "ADDR=0x42" H 9250 1350 50  0000 C CNN "I2C_ADDR"
-F 9 "0" H 9000 1300 50  0001 C CNN "Price2"
+F 9 "74.95" H 9000 1300 50  0001 C CNN "Price2"
+F 10 "https://www.sparkfun.com/products/16329" H 9000 1300 50  0001 C CNN "Link2"
+F 11 "https://www.digikey.com/en/products/detail/molex/0901210128/760817?s=N4IgTCBcDaIJwAYCMYnLADhAXQL5A" H 9000 1300 50  0001 C CNN "MATE_Link"
+F 12 "0901210128" H 9000 1300 50  0001 C CNN "MATE_MPN"
+F 13 "1.16" H 9000 1300 50  0001 C CNN "MATE_Price"
+F 14 "Sparkfun" H 9000 1300 50  0001 C CNN "Manufacturer"
 	1    9000 1300
 	1    0    0    -1  
 $EndComp
